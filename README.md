@@ -1,4 +1,4 @@
-# Nome do projeto
+# Webdealer
 
 `CURSO: Análise e Desenvolvimento de Sistemas`
 
@@ -6,7 +6,7 @@
 
 `2º semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O Webdealer tem o propósito de ser uma plataforma que visa apresentar ao mundo ideias inovadoras e promissoras, conectando estudantes, profissionais e empreendedores em potencial a investidores e empresas parceiras. A iniciativa surge da necessidade de transformar projetos criativos, muitas vezes invisíveis, em oportunidades reais. O objetivo é oferecer um ambiente colaborativo, de fácil acesso e intuitivo, onde qualquer pessoa possa publicar suas ideias, atrair colaboradores e estabelecer conexões estratégicas.
 
 ## Integrantes
 
