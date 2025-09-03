@@ -24,10 +24,8 @@ O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permit
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
-
 Propor e desenvolver uma plataforma que conecte mentes talentosas e investidores, permitindo a publicação de ideias de projetos e a busca por colaboradores, de forma que essas ideias possam se tornar projetos concretos.
  
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 > - Modelar os processos de cadastro e validação de ideias e talentos.
 > - Desenvolver protótipos navegáveis que representem a interação intuitiva entre fornecedores de ideias e investidores.
 > - Avaliar a usabilidade da plataforma por meio de testes com potenciais usuários.
