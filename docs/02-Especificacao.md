@@ -75,33 +75,23 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário cadastre projetos | ALTA | 
+|RF-002| Permitir que o projeto seja editável | MÉDIA |
+|RF-003| Pesquisa de projetos por nome | MÉDIA |
+|RF-004| Criação de categorias para filtrar pesquisas | BAIXA |                 
+|RF-005| Sistema de avaliação de projetos | BAIXA |                 
+|RF-006| Criação e modificação de perfil | ALTA |                 
+|RF-007| Exibição dos projetos | ALTA |                 
 
 ### Requisitos não funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
-|RNF-002| Deve processar as requisições do usuário em no máximo 3 segundos |  BAIXA | 
-
-Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
-
-> **Links úteis**:
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [Entenda o que são requisitos de software, a diferença entre requisito funcional e não funcional, e como identificar e documentar cada um deles](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|RNF-002| O sistema deve seguir boas práticas de acessibilidade | BAIXA | 
+|RNF-003| O sistema deve estar no ar no minímo 90% do tempo | ALTA | 
+|RNF-004| O código deve estar relativamente comentado para fácil manutenção | ALTA | 
+|RNF-005| O sistema deve ser multiplataforma | ALTA | 
 
 ## Restrições
 
