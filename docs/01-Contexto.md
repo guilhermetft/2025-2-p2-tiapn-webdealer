@@ -1,6 +1,10 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto. Visando contextualizar melhor o projeto e destacar sua importância para a disciplina, que é **extensionista**, acrescente todas as informações relevantes que julgar necessárias.
+Na era atual, é inegável que vivemos um período marcado pela inovação, em que novas ideias tecnológicas ou não surgem diariamente, transformando empresas, comunidades e a sociedade como um todo. Nesse cenário, muitos jovens talentosos, estudantes e profissionais com espírito empreendedor enfrentam o desafio crucial de transformar suas ideias inovadoras em projetos concretos. Na maioria das vezes, o que impede uma ideia de se tornar realidade é a falta de visibilidade, apoio e conexão com aqueles que possam auxiliá-los e impulsioná-la.
+
+É justamente nesse ponto que surge a Webdealer: nosso projeto acadêmico e inovador que conecta estudantes, profissionais e empreendedores em potencial a investidores e empresas parceiras interessadas em apoiar iniciativas criativas e promissoras. Mais do que apenas uma ideia para gerar reconhecimento e networking, a proposta é criar um ambiente verdadeiramente colaborativo, que mostre que qualquer pessoa pode ter uma ideia inovadora e compartilhá-la com o mundo. 
+
+Nosso cliente/parceiro neste projeto extensionista é a empresa Arquivar, organização consolidada no mercado de gestão de documentos e processos corporativos, que se torna pioneira em apoiar uma iniciativa acadêmica de inovação. 
 
 ## Cliente 
 Nesta seção, devem ser apresentadas informações essenciais sobre o cliente (parceiro) para garantir um entendimento mais preciso do projeto como uma iniciativa extensionista.  
@@ -21,12 +25,13 @@ O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permit
 
 ## Objetivos
 
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
-
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
+Propor e desenvolver uma plataforma que conecte mentes talentosas e investidores, permitindo a publicação de ideias de projetos e a busca por colaboradores, de forma que essas ideias possam se tornar projetos concretos.
  
-> **Links úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+> - Modelar os processos de cadastro e validação de ideias e talentos.
+> - Desenvolver protótipos navegáveis que representem a interação intuitiva entre fornecedores de ideias e investidores.
+> - Avaliar a usabilidade da plataforma por meio de testes com potenciais usuários.
+> - Comparar o diferencial da solução proposta em relação a plataformas existentes, como o LinkedIn, destacando sua ênfase em inovação e colaboração.
 
 ## Justificativa
 
