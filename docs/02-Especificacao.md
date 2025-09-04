@@ -19,6 +19,8 @@ No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação a
 ## Personas
 
 
+
+
 **PERSONA 1**
 
 Nome: Cecília Alves  
@@ -33,6 +35,7 @@ Dores:
 
 Objetivo:
  - Uma plataforma que servisse não apenas como divulgação de seus próprios protótipos, mas também um lugar em que ela pudesse se inspirar em novas ideias.
+
 
 
 
@@ -51,6 +54,7 @@ Dores:
 Objetivos:
 - Conhecer novos projetos inovadores;
 - Realizar networking com possíveis novos contratados para sua empresa.
+
 
 
 
@@ -73,6 +77,7 @@ Objetivos:
 
 
 
+
 **PERSONA 4**
 
 Nome: Ricardo Quintana  
@@ -91,6 +96,7 @@ Objetivos:
 
 
 
+
 **PERSONA 5**
 
 Nome: Francisco Gonçalves  
@@ -106,6 +112,7 @@ Dores:
 Objetivos:
 - Acompanhar novos projetos e soluções tecnológicas de forma acessível;
 - Se inspirar com ideias que tragam impacto social e melhorias para a vida coletiva.
+
 
 
 
