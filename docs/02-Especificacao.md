@@ -24,19 +24,108 @@ A seguir, apresenta-se um exemplo que deve ser adaptado pelo grupo de acordo com
 
 ## Personas
 
-Exemplo: _Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente por meio de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros._
+**PERSONA 1**
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Nome: Cecília Alves
+Idade: 17 anos
+Ocupação: Estudante do ensino médio
 
-> **Links úteis**:
-> - [Rock content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Cecília é estudante do ensino médio integrado com curso técnico de informática e, como trabalho final do ano letivo, ela desenvolveu um protótipo de aplicativo que exibisse apresentações e exposições artísticas em sua cidade. Devido ao seu caráter prestativo, juntamente com sua paixão pelas artes, Cecília gostaria de levar esse projeto adiante, mas encontra dificuldades de encontrar não apenas investidores, mas reconhecimento para com sua ideia.
+
+Dores:
+- Sua ideia não possui o reconhecimento que ela gostaria que tivesse;
+- Acredita que sua ideia “não é o bastante”, a ponto de ter investimentos de terceiros;
+
+Objetivo:
+ - Uma plataforma que servisse não apenas como divulgação de seus próprios protótipos, mas também um lugar em que ela pudesse se inspirar em novas ideias.
+
+
+**PERSONA 2**
+
+Nome: Cláudio Marques
+Idade: 48 anos
+Ocupação: Gerente de uma software house
+
+Cláudio, sendo gerente de uma empresa de tecnologia e entusiasta na área, está sempre antenado em maneiras de melhorar tanto as rotinas diárias de sua empresa, quanto ao desenvolvimento de seus produtos para seus clientes. Ele gostaria que tivesse algum site onde ele pudesse conhecer novos projetos e se conectar com novas pessoas, gerando novas contratações para sua empresa, por exemplo.
+
+Dores: 
+- Se sente “por fora” de projetos que surgem na área de TI;
+- Dificuldade em encontrar novos talentos qualificados para suas empresas;
+
+Objetivos:
+- Conhecer novos projetos inovadores;
+- Realizar networking com possíveis novos contratados para sua empresa.
+
+
+**PERSONA 3**
+
+Nome: Paulo Antônio
+Idade: 22 anos
+Ocupação: Estudante de Engenharia de Software, e sócio de uma startup 
+
+Paulo Antônio, enquanto estava no último período da faculdade, começou a desenvolver a ideia de uma aplicação voltada para o transporte urbano. Com a união de alguns colegas do curso, a ideia foi inicializada e desenvolvida em uma startup recém criada, e agora Paulo está buscando possíveis investidores no mercado de trabalho para seu projeto.
+
+Dores: 
+- Tentativas sem sucesso de encontrar investidores para seu projeto;
+- Inexperiência no mercado de trabalho;
+- Ausência de networking em ambientes corporativos;
+
+Objetivos: 
+- Encontrar pessoas dispostas a investir em sua startup;
+- Tornar sua startup relevante e sólida no mercado de trabalho.
+
+
+**PERSONA 4**
+
+Nome: Ricardo Quintana 
+Idade: 40 anos
+Ocupação: CEO e empresário
+
+Ricardo é CEO de uma empresa de investimentos e está sempre em constante busca de oportunidades de projetos para confiar a ponto de investir no mesmo. Além dos investimentos realizados em sua profissão, Ricardo também gosta de investir de forma particular em projetos com propostas variadas, desde que esses investimentos possam gerar retornos financeiros ou para ele ou para a comunidade ao seu redor. 
+
+Dores: 
+- Poucas oportunidades de projetos disponíveis para investir;
+- Sente falta de uma rede de “propagandas” de projetos;
+
+Objetivos:
+- Encontrar propostas de investimentos inovadores e diversificados;
+- Ter segurança e facilidade para investir em inúmeros projetos.
+
+
+**PERSONA 5**
+
+Nome: Francisco Gonçalves
+Idade: 27 anos
+Ocupação: Assistente de escritório
+
+Como entusiasta na área, Francisco gosta sempre de se perguntar em como as tecnologias poderiam ser aplicadas para resolver questões e problemas variados não apenas presentes em sua vida, mas em situações cotidianas coletivas. Por isso, Francisco se interessaria por uma plataforma que pudesse exibir soluções tecnológicas e suas aplicações para problemas diversos.
+
+Dores: 
+- Desconhecimento em muitas soluções criativas;
+- Falta de um espaço onde tenha soluções tecnológicas aplicadas em questões do cotidiano;
+
+Objetivos:
+- Acompanhar novos projetos e soluções tecnológicas de forma acessível;
+- Se inspirar com ideias que tragam impacto social e melhorias para a vida coletiva.
+
+
+**PERSONA 6**
+
+Nome: Karina Freitas
+Idade: 35 anos 
+Ocupação: Professora universitária 
+
+Karina é professora universitária na área de TI, e por isso, está familiarizada com processos de criação e desenvolvimento de soluções aplicadas no âmbito tecnológico. Por valorizar propostas interessantes, Karina gostaria que existisse uma espécie de “catálogo de projetos”, onde seus alunos pudessem divulgar e compartilhar suas ideias e protótipos a quem interessar possa, trazendo apenas reconhecimento ou investimentos sérios.
+
+Dores:
+- Ver ideias interessantes servirem apenas como trabalho acadêmico, sem serem levadas à sério ou para frente;
+- Divulgação fraca de ideias e projetos, ocorrendo apenas dentro do círculo da universidade;
+
+Objetivos:
+- Ajudar a estabelecer networking entre alunos e investidores;
+- Compartilhar projetos interessantes e inovadores para a sociedade.
+
+
 
 ## Histórias de usuários
 
