@@ -46,8 +46,29 @@ Diante desse cenário, o desenvolvimento da Webdealer se justifica como uma solu
 
 ## Público-alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo da plataforma é composto por dois grupos: 
+
+Fornecedores de Ideias: 
+
+Estudantes universitários, recém-formados e profissionais criativos. 
+
+Perfil geralmente conectado ao ambiente digital, com domínio intermediário de tecnologia. 
+
+Pessoas com forte motivação para transformar ideias em projetos, mas que não possuem visibilidade, apoio e parcerias. 
+
+Compradores/Investidores: 
+
+Empresas, gestores e profissionais de RH e inovação. 
+
+Perfil mais estratégico, em busca de talentos, soluções e startups promissoras. 
+
+Relação hierárquica geralmente ligada a cargos de decisão (diretores, gestores, líderes de inovação). 
+
+Conhecimento intermediário/avançado de plataformas digitais e grande interesse em competitividade de mercado. 
+
+Essa relação dual — fornecedor de ideias e comprador/investidor — é o núcleo do projeto. 
+
+ 
 
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
