@@ -14,20 +14,9 @@ No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação a
 
 A seguir, apresenta-se um exemplo que deve ser adaptado pelo grupo de acordo com as características do projeto.  
 
-![Quadro de modelo de negócios](images/bmc.png "Exemplo de BMC.")
+![Quadro de modelo de negócios]
+<img width="3833" height="2359" alt="Mapa_p" src="https://github.com/user-attachments/assets/75cc6f14-f781-478b-8b07-c175160f792a" />
 
-> - O texto a seguir é apenas para orientação e deve ser apagado pelo grupo após a leitura.
-
-O quadro é composto por nove blocos que representam as principais áreas de um modelo de negócio:
-1. **Parceiros-chave**: identifique os parceiros estratégicos e descreva qual o papel de cada um no projeto.  
-2. **Atividades-chave**: liste as atividades essenciais para a entrega da proposta de valor.  
-3. **Proposta de valor**: explique por que os clientes escolheriam o produto/serviço, descrevendo o problema que ele resolve.  
-4. **Relacionamento com clientes**: defina as estratégias para conquistar, manter e fidelizar clientes.  
-5. **Segmentos de clientes**: caracterize os grupos de clientes que serão atendidos pela proposta de valor.  
-6. **Recursos-chave**: descreva os recursos humanos, tecnológicos, físicos ou financeiros necessários para implementar a solução.  
-7. **Canais de distribuição**: determine como a solução será disponibilizada e por quais meios o público-alvo será alcançado.  
-8. **Estrutura de custos**: analise os custos envolvidos no desenvolvimento, operação e manutenção do negócio.  
-9. **Fontes de receita**: indique como o negócio gerará receita, incluindo o modelo de monetização e a política de preços.  
 
 > **Links úteis**:
 > - [Quadro de modelo de negócios](https://pt.wikipedia.org/wiki/Quadro_de_modelo_de_neg%C3%B3cios)
