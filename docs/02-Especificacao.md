@@ -22,100 +22,15 @@ No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação a
 
 
 
-**PERSONA 1**
+**PERSONA 1**: Cecília Alves, 17 anos, é estudante do ensino médio técnico em informática e desenvolveu um protótipo de aplicativo para divulgar exposições artísticas em sua cidade. Apaixonada por arte e tecnologia, ela deseja levar o projeto adiante, mas enfrenta falta de reconhecimento e dificuldade em atrair investidores. Busca uma plataforma que divulgue seus trabalhos e sirva de inspiração para novas ideias.
 
-Nome: Cecília Alves  
-Idade: 17 anos  
-Ocupação: Estudante do ensino médio  
+**PERSONA 2**: Cláudio Marques, 48 anos, é gerente de uma software house e entusiasta de tecnologia. Busca constantemente novas formas de otimizar sua empresa e conhecer projetos inovadores. Enfrenta dificuldade em acompanhar novidades da área de TI e encontrar talentos qualificados. Deseja uma plataforma que facilite o networking, a descoberta de projetos e a conexão com possíveis novos colaboradores.
 
-Cecília é estudante do ensino médio integrado com curso técnico de informática e, como trabalho final do ano letivo, ela desenvolveu um protótipo de aplicativo que exibisse apresentações e exposições artísticas em sua cidade. Devido ao seu caráter prestativo, juntamente com sua paixão pelas artes, Cecília gostaria de levar esse projeto adiante, mas encontra dificuldades de encontrar não apenas investidores, mas reconhecimento para com sua ideia.
+**PERSONA 3**: Paulo Antônio, 22 anos, é estudante de Engenharia de Software e sócio de uma startup focada em transporte urbano. Apesar de já ter um projeto em andamento, enfrenta dificuldade para encontrar investidores, tem pouca experiência no mercado e carece de networking. Seu objetivo é atrair investimentos e consolidar sua startup no mercado.
 
-Dores:
-- Sua ideia não possui o reconhecimento que ela gostaria que tivesse;
-- Acredita que sua ideia “não é o bastante”, a ponto de ter investimentos de terceiros;
+**PERSONA 4**: Ricardo Quintana, 40 anos, é CEO de uma empresa de investimentos e busca constantemente oportunidades inovadoras e seguras para investir. Além dos negócios, também se interessa em apoiar projetos que tragam retorno financeiro ou impacto positivo para a comunidade. Sente falta de uma rede acessível e diversificada de projetos para investir.
 
-Objetivo:
- - Uma plataforma que servisse não apenas como divulgação de seus próprios protótipos, mas também um lugar em que ela pudesse se inspirar em novas ideias.
-
-
-
-
-**PERSONA 2**
-
-Nome: Cláudio Marques  
-Idade: 48 anos  
-Ocupação: Gerente de uma software house  
-
-Cláudio, sendo gerente de uma empresa de tecnologia e entusiasta na área, está sempre antenado em maneiras de melhorar tanto as rotinas diárias de sua empresa, quanto ao desenvolvimento de seus produtos para seus clientes. Ele gostaria que tivesse algum site onde ele pudesse conhecer novos projetos e se conectar com novas pessoas, gerando novas contratações para sua empresa, por exemplo.
-
-Dores: 
-- Se sente “por fora” de projetos que surgem na área de TI;
-- Dificuldade em encontrar novos talentos qualificados para suas empresas;
-
-Objetivos:
-- Conhecer novos projetos inovadores;
-- Realizar networking com possíveis novos contratados para sua empresa.
-
-
-
-
-**PERSONA 3**
-
-Nome: Paulo Antônio  
-Idade: 22 anos  
-Ocupação: Estudante de Engenharia de Software, e sócio de uma startup  
-
-Paulo Antônio, enquanto estava no último período da faculdade, começou a desenvolver a ideia de uma aplicação voltada para o transporte urbano. Com a união de alguns colegas do curso, a ideia foi inicializada e desenvolvida em uma startup recém criada, e agora Paulo está buscando possíveis investidores no mercado de trabalho para seu projeto.
-
-Dores: 
-- Tentativas sem sucesso de encontrar investidores para seu projeto;
-- Inexperiência no mercado de trabalho;
-- Ausência de networking em ambientes corporativos;
-
-Objetivos: 
-- Encontrar pessoas dispostas a investir em sua startup;
-- Tornar sua startup relevante e sólida no mercado de trabalho.
-
-
-
-
-**PERSONA 4**
-
-Nome: Ricardo Quintana  
-Idade: 40 anos  
-Ocupação: CEO e empresário  
-
-Ricardo é CEO de uma empresa de investimentos e está sempre em constante busca de oportunidades de projetos para confiar a ponto de investir no mesmo. Além dos investimentos realizados em sua profissão, Ricardo também gosta de investir de forma particular em projetos com propostas variadas, desde que esses investimentos possam gerar retornos financeiros ou para ele ou para a comunidade ao seu redor. 
-
-Dores: 
-- Poucas oportunidades de projetos disponíveis para investir;
-- Sente falta de uma rede de “propagandas” de projetos;
-
-Objetivos:
-- Encontrar propostas de investimentos inovadores e diversificados;
-- Ter segurança e facilidade para investir em inúmeros projetos.
-
-
-
-
-**PERSONA 5**
-
-Nome: Francisco Gonçalves  
-Idade: 27 anos  
-Ocupação: Assistente de escritório  
-
-Como entusiasta na área, Francisco gosta sempre de se perguntar em como as tecnologias poderiam ser aplicadas para resolver questões e problemas variados não apenas presentes em sua vida, mas em situações cotidianas coletivas. Por isso, Francisco se interessaria por uma plataforma que pudesse exibir soluções tecnológicas e suas aplicações para problemas diversos.
-
-Dores: 
-- Desconhecimento em muitas soluções criativas;
-- Falta de um espaço onde tenha soluções tecnológicas aplicadas em questões do cotidiano;
-
-Objetivos:
-- Acompanhar novos projetos e soluções tecnológicas de forma acessível;
-- Se inspirar com ideias que tragam impacto social e melhorias para a vida coletiva.
-
-
-
+**PERSONA 5**: Francisco Gonçalves, 27 anos, é assistente de escritório e entusiasta de tecnologia. Gosta de explorar como soluções tecnológicas podem resolver problemas do dia a dia, mas sente falta de um espaço acessível para conhecer projetos criativos. Busca acompanhar novas ideias e se inspirar com soluções de impacto social e coletivo.
 
 **PERSONA 6**
 
