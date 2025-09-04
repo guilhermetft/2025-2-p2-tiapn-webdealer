@@ -32,23 +32,7 @@ No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação a
 
 **PERSONA 5**: Francisco Gonçalves, 27 anos, é assistente de escritório e entusiasta de tecnologia. Gosta de explorar como soluções tecnológicas podem resolver problemas do dia a dia, mas sente falta de um espaço acessível para conhecer projetos criativos. Busca acompanhar novas ideias e se inspirar com soluções de impacto social e coletivo.
 
-**PERSONA 6**
-
-Nome: Karina Freitas  
-Idade: 35 anos  
-Ocupação: Professora universitária   
-
-Karina é professora universitária na área de TI, e por isso, está familiarizada com processos de criação e desenvolvimento de soluções aplicadas no âmbito tecnológico. Por valorizar propostas interessantes, Karina gostaria que existisse uma espécie de “catálogo de projetos”, onde seus alunos pudessem divulgar e compartilhar suas ideias e protótipos a quem interessar possa, trazendo apenas reconhecimento ou investimentos sérios.
-
-Dores:
-- Ver ideias interessantes servirem apenas como trabalho acadêmico, sem serem levadas à sério ou para frente;
-- Divulgação fraca de ideias e projetos, ocorrendo apenas dentro do círculo da universidade;
-
-Objetivos:
-- Ajudar a estabelecer networking entre alunos e investidores;
-- Compartilhar projetos interessantes e inovadores para a sociedade.
-
-
+**PERSONA 6**: Karina Freitas, 35 anos, é professora universitária de TI e busca formas de dar visibilidade a ideias e protótipos de seus alunos. Sente que muitos projetos ficam restritos ao ambiente acadêmico e não recebem o devido reconhecimento. Deseja um espaço onde essas ideias possam ser divulgadas, gerando networking e atraindo investimentos sérios.
 
 ## Histórias de usuários
 
