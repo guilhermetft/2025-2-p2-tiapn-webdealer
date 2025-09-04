@@ -48,32 +48,10 @@ Diante desse cenário, o desenvolvimento da Webdealer se justifica como uma solu
 
 O público-alvo da plataforma é composto por dois grupos: 
 
-Fornecedores de Ideias: 
+- Fornecedores de Ideias: 
+Composto por estudantes universitários, recém-formados e profissionais criativos. Esse perfil é geralmente conectado ao ambiente digital, com domínio intermediário de tecnologia, e possui forte motivação para transformar ideias em projetos concretos. Contudo, muitas vezes carece de visibilidade, apoio e parcerias estratégicas para desenvolver suas propostas.
 
-Estudantes universitários, recém-formados e profissionais criativos. 
+- Compradores / Investidores: 
+Formado por empresas, gestores e profissionais das áreas de RH e inovação. Trata-se de um público com perfil estratégico, em busca de talentos, soluções inovadoras e startups promissoras. Normalmente ocupa cargos de decisão, como diretores, gestores e líderes de inovação, com conhecimento intermediário a avançado em plataformas digitais e grande interesse em competitividade de mercado.
 
-Perfil geralmente conectado ao ambiente digital, com domínio intermediário de tecnologia. 
-
-Pessoas com forte motivação para transformar ideias em projetos, mas que não possuem visibilidade, apoio e parcerias. 
-
-Compradores/Investidores: 
-
-Empresas, gestores e profissionais de RH e inovação. 
-
-Perfil mais estratégico, em busca de talentos, soluções e startups promissoras. 
-
-Relação hierárquica geralmente ligada a cargos de decisão (diretores, gestores, líderes de inovação). 
-
-Conhecimento intermediário/avançado de plataformas digitais e grande interesse em competitividade de mercado. 
-
-Essa relação dual — fornecedor de ideias e comprador/investidor — é o núcleo do projeto. 
-
- 
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público-alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Essa relação dual — fornecedores de ideias e compradores/investidores — constitui o núcleo da proposta da plataforma, promovendo conexões valiosas entre quem cria e quem investe.
