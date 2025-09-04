@@ -139,20 +139,14 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Estudante           |  Conhecer novas propostas de inovação aplicadas ao cotidiano         | Me inspirar e aplicá-las no meu dia a dia.              |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Estudante           |  Trazer mais reconhecimento para meu projeto         | Atrair possíveis investidores e divulgações, além de inspirar pessoas             |
+|Gerente de empresa      | Conhecer projetos inovadores e fazer networking com novas pessoas                 | Me inspirar em melhorias e gerar novos empregos |
+|Sócio de uma startup      | Buscar e conectar com possíveis investidores                 | Meu projeto evoluir e se consolidar no mercado de trabalho |
+|Investidor       | Reconhecer projetos passíveis de investimento com segurança                 | Poder gerar lucros |
+|Entusiasta de tecnologia       | Conhecer novas propostas de inovação aplicadas ao cotidiano                 | Me inspirar e aplicá-las no meu dia a dia |
+|Professora universitária       | Divulgar propostas de projetos inovadores e interessantes                 | Realizar networking e atrair reconhecimento e investidores para as ideias |
 
-Apresente aqui as histórias de usuários que são relevantes para o projeto da sua solução. As histórias de usuários consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuários por contexto, para facilitar consultas recorrentes a esta parte do documento.
 
-> **Links úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (user stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 common user story mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
