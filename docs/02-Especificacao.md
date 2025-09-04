@@ -12,15 +12,9 @@ O *Business Model Canvas* (BMC) é uma ferramenta de planejamento estratégico q
 
 No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação aos aspectos essenciais do negócio, servindo como base para decisões técnicas, de design e de priorização de funcionalidades.  
 
-A seguir, apresenta-se um exemplo que deve ser adaptado pelo grupo de acordo com as características do projeto.  
-
 ![Quadro de modelo de negócios]
 <img width="3833" height="2359" alt="Mapa_p" src="https://github.com/user-attachments/assets/75cc6f14-f781-478b-8b07-c175160f792a" />
 
-
-> **Links úteis**:
-> - [Quadro de modelo de negócios](https://pt.wikipedia.org/wiki/Quadro_de_modelo_de_neg%C3%B3cios)
-> - [Business Model Canvas: como construir seu modelo de negócio?](https://digital.sebraers.com.br/blog/estrategia/business-model-canvas-como-construir-seu-modelo-de-negocio/)
 
 ## Personas
 
@@ -184,3 +178,5 @@ O projeto está restrito aos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |001| O projeto deverá ser entregue até o final do semestre |
 |002| O custo total do projeto não deve exceder o orçamento definido |
+|003| O projeto ainda não possui um sistema anti plágio |
+|004| O Software é designado somente para a aréa tecnologica |
