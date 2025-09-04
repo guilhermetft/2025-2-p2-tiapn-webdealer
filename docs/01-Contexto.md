@@ -14,20 +14,18 @@ Recomenda-se incluir dados como missão, visão e valores da organização, alé
 
 ## Problema
 
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
+No cenário atual, muitas ideias inovadoras não chegam a se concretizar por falta de apoio financeiro ou de parceiros estratégicos. Inventores, estudantes e profissionais criativos frequentemente têm projetos promissores, mas enfrentam dificuldades para encontrar investidores ou colaboradores que possam transformar essas ideias em realidade. Isso cria uma lacuna significativa entre a criação da ideia e sua execução, fazendo com que oportunidades de inovação sejam perdidas.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
+A aplicação será utilizada em um ambiente digital, voltado para a conexão entre pessoas com ideias inovadoras e possíveis investidores ou parceiros. O objetivo é criar uma plataforma acessível onde os usuários possam apresentar seus projetos de maneira clara e atrativa, facilitando a identificação de interessados em apoiar financeiramente ou colaborar. Esse contexto permite que a aplicação atue como ponte entre criatividade e investimento, respondendo à necessidade de visibilidade e suporte para ideias que, de outra forma, permaneceriam inviáveis.
 
 ## Objetivos
 
 Propor e desenvolver uma plataforma que conecte mentes talentosas e investidores, permitindo a publicação de ideias de projetos e a busca por colaboradores, de forma que essas ideias possam se tornar projetos concretos.
  
-> - Modelar os processos de cadastro e validação de ideias e talentos.
-> - Desenvolver protótipos navegáveis que representem a interação intuitiva entre fornecedores de ideias e investidores.
-> - Avaliar a usabilidade da plataforma por meio de testes com potenciais usuários.
-> - Comparar o diferencial da solução proposta em relação a plataformas existentes, como o LinkedIn, destacando sua ênfase em inovação e colaboração.
+- Modelar os processos de cadastro e validação de ideias e talentos.
+- Desenvolver protótipos navegáveis que representem a interação intuitiva entre fornecedores de ideias e investidores.
+- Avaliar a usabilidade da plataforma por meio de testes com potenciais usuários.
+- Comparar o diferencial da solução proposta em relação a plataformas existentes, como o LinkedIn, destacando sua ênfase em inovação e colaboração.
 
 ## Justificativa
 
