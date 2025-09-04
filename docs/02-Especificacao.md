@@ -158,13 +158,15 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre projetos | ALTA | 
-|RF-002| Permitir que o projeto seja editável | MÉDIA |
-|RF-003| Pesquisa de projetos por nome | MÉDIA |
-|RF-004| Criação de categorias para filtrar pesquisas | BAIXA |                 
-|RF-005| Sistema de avaliação de projetos | BAIXA |                 
-|RF-006| Criação e modificação de perfil | ALTA |                 
-|RF-007| Exibição dos projetos | ALTA |                 
+|RF-001| Permitir que o usuário crie sua conta | ALTA | 
+|RF-002| Permitir que o usuário cadastre projetos | ALTA | 
+|RF-003| Permitir que o projeto seja editável | MÉDIA |
+|RF-004| Pesquisa de projetos por nome | MÉDIA |
+|RF-005| Criação de categorias para filtrar pesquisas | BAIXA |                 
+|RF-006| Sistema de avaliação de projetos | BAIXA |                 
+|RF-007| Criação e modificação de perfil | ALTA |                 
+|RF-008| Exibição dos projetos | ALTA |    
+|RF-006| Meio de comunicação entre investidor e inovador| ALTA |
 
 ### Requisitos não funcionais
 
@@ -175,6 +177,7 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RNF-003| O sistema deve estar no ar no minímo 90% do tempo | ALTA | 
 |RNF-004| O código deve estar relativamente comentado para fácil manutenção | ALTA | 
 |RNF-005| O sistema deve ser multiplataforma | ALTA | 
+|RNF-006| Banco de dados integrado | ALTA | 
 
 ## Restrições
 
