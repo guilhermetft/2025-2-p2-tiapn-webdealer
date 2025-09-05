@@ -8,9 +8,17 @@ Nosso cliente/parceiro neste projeto extensionista é a empresa Arquivar, organi
 
 ## Cliente 
 
-Nesta seção, devem ser apresentadas informações essenciais sobre o cliente (parceiro) para garantir um entendimento mais preciso do projeto como uma iniciativa extensionista.  
+Escolhemos como parceira do nosso projeto a empresa Arquivar, pioneira no ramo de gestão documental e localizada em Belo Horizonte, na região da Tancredo Neves. A empresa conta com 34 anos de experiência, mais de 4 mil clientes atendidos e satisfeitos, 5 bilhões de documentos e processos gerenciados e mais de 40 unidades espalhadas por todo o Brasil.
 
-Recomenda-se incluir dados como missão, visão e valores da organização, além de seu ramo de atuação, porte, nicho de mercado e principais desafios enfrentados. Também é relevante fornecer informações sobre sua localização, histórico, impacto social e possíveis demandas específicas. Quanto mais detalhadas forem essas informações, mais embasada será a análise do contexto, permitindo uma abordagem estratégica e alinhada às necessidades do cliente.
+Durante conversas com o fundador da Arquivar, foram identificadas dificuldades na captação de colaboradores qualificados e na geração de ideias inovadoras. Nesse contexto, acreditamos que a plataforma Webdealer pode atuar como uma referência estratégica, auxiliando nos processos internos e fomentando a inovação na empresa.
+
+A Arquivar atua com gestão documental, incluindo GED, BPM, digitalização, assinatura digital, auditoria, transformação digital e adequação à LGPD, atendendo diversos segmentos, como RH, agronegócio, hospitais, instituições de ensino, departamentos pessoal e financeiro, cooperativas, entre outros.
+
+A empresa possui certificações e reconhecimentos relevantes, sendo Microsoft Partner Gold e Silver, reconhecida como Great Place To Work e figurando como uma das melhores franquias do Brasil em diversos anos.
+
+Com presença em Minas Gerais (Belo Horizonte, Uberlândia, Montes Claros, entre outros estados), a Arquivar atua em todo o território nacional e também possui presença internacional, na Bolívia.
+
+O projeto Webdealer tem potencial para apoiar a Arquivar na identificação de ideias inovadoras, formação de novos talentos e fortalecimento de sua imagem junto ao meio acadêmico, contribuindo para o contínuo crescimento e desenvolvimento da empresa.
 
 ## Problema
 
