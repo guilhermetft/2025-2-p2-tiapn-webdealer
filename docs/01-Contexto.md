@@ -8,17 +8,13 @@ O cliente/parceiro vinculado a este projeto extensionista é a empresa Arquivar,
 
 ## Cliente 
 
-A empresa Arquivar foi escolhida como parceira do projeto. Pioneira no ramo de gestão documental e localizada em Belo Horizonte, na região da Tancredo Neves, a organização possui 34 anos de experiência, mais de 4 mil clientes atendidos e satisfeitos, 5 bilhões de documentos e processos gerenciados e mais de 40 unidades espalhadas por todo o Brasil.
+A Arquivar, pioneira em gestão documental, possui 34 anos de experiência, mais de 4 mil clientes atendidos, 5 bilhões de documentos gerenciados e mais de 40 unidades no Brasil, além de presença internacional na Bolívia.
 
-Durante conversas com o fundador da Arquivar, foram identificadas dificuldades na captação de colaboradores qualificados e na geração de ideias inovadoras. Nesse contexto, a plataforma Webdealer pode atuar como referência estratégica, auxiliando nos processos internos e fomentando a inovação na empresa.
+Durante conversas com seu fundador, foram identificados desafios na captação de talentos e na geração de ideias inovadoras. Nesse cenário, o Webdealer surge como apoio estratégico, auxiliando em processos internos e fomentando inovação.
 
-A Arquivar atua com gestão documental, incluindo GED, BPM, digitalização, assinatura digital, auditoria, transformação digital e adequação à LGPD, atendendo diversos segmentos, como RH, agronegócio, hospitais, instituições de ensino, departamentos pessoal e financeiro, cooperativas, entre outros.
+A Arquivar oferece soluções em GED, BPM, digitalização, assinatura digital, auditoria, transformação digital e adequação à LGPD, atendendo setores como RH, saúde, agronegócio, educação e cooperativas. Reconhecida como Microsoft Partner Gold e Silver, Great Place To Work e entre as melhores franquias do Brasil, destaca-se como referência no mercado.
 
-A empresa possui certificações e reconhecimentos relevantes, sendo Microsoft Partner Gold e Silver, reconhecida como Great Place To Work e figurando como uma das melhores franquias do Brasil em diversos anos.
-
-Com presença em Minas Gerais (Belo Horizonte, Uberlândia, Montes Claros, entre outros estados), a Arquivar atua em todo o território nacional e também possui presença internacional, na Bolívia.
-
-O projeto Webdealer apresenta potencial para apoiar a Arquivar na identificação de ideias inovadoras, formação de novos talentos e fortalecimento de sua imagem junto ao meio acadêmico, contribuindo para o contínuo crescimento e desenvolvimento da empresa.
+O projeto Webdealer tem potencial para apoiar a inovação, formar novos talentos e fortalecer a imagem da Arquivar junto ao meio acadêmico.
 
 ## Problema
 
