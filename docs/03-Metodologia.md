@@ -39,10 +39,10 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 > Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:
 
 #### Sprint 1
-- _Scrum master_: AlunaX
-- Protótipos: AlunoY
-- Testes: AlunoK
-- Documentação: AlunaZ
+- _Scrum master_: Lara Rhis
+- Protótipos: Gustavo Santiago
+- Testes: Daniel Bleme e João Vitor
+- Documentação: Guilherme Teixeira, Marcos Vinícius e Vinícius Muniz
 
 #### Sprint 2
 - _Scrum master_: AlunaY
@@ -60,10 +60,14 @@ Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2025 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2025 | ❌    |       |
+| Gustavo       | Protótipagem     | 15/08/2025     | 04/09/2025 | ✔️    | 04/09/2025       |
+| Daniel        |Documentação e slides       | 15/08/202 |04/09/2025 | ✔️              |   04/09/2025     |
+| Guilherme     | Gestão github |15/08/2025     | 07/01/2025 | ✔️  |    04/09/2025  |
+| Lara          | Networking com empresa e slides  |    15/08/2025     | 12/02/2025 | ✔️    |    04/09/2025    |
+| João          | Documentação  |    15/08/2025     | 12/02/2025 | ✔️    |    04/09/2025    |
+| Marcos        | Documentação  |    15/08/2025     | 12/02/2025 | ✔️    |    04/09/2025    |
+| Vinicius      | Documentação |    15/08/2025     | 12/02/2025 | ✔️    |    04/09/2025    |
+
 
 #### Sprint 2
 
