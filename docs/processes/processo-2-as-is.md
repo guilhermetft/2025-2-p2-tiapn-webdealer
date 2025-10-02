@@ -63,4 +63,31 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Salvar Planilha | Ánalise de duvida/problema  | default |
+| Salvar Planilha | Ánalise de duvida/problema  | default |
+
+
+**Nome da atividade 3- Análise do problema/dúvida**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  Registro da Análise  |  Área de texto  |  Nenhuma (atendente descreve os passos da investigação)   |                   |
+|  Solução Encontrada  |  Área de texto  |   Nenhuma (atendente descreve o texto da solução a ser enviada ao cliente)  |                   |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  Concluir Análise  |  Problema/dúvida solucionada  |   default  |
+
+
+**Nome da atividade 4- Retorno com o cliente**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  Destinatário do e-mail  |  Caixa de texto |  Deve ser o e-mail do cliente que abriu o chamado   |                   |
+|  Assunto do e-mail  |  Caixa de texto  |   Nenhuma (texto livre)  |                   |
+|  Corpo do e-mail  |  Área de texto  |   Nenhuma (texto da resposta escrito livremente)  |                   |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  Enviar Resposta  |  Fim  |   default  |
