@@ -13,7 +13,7 @@ Com o tema do projeto definido, escolham dois processos no contexto de negócios
 Atualmente, os processos críticos de interação com stakeholders externos, como o recrutamento de novos talentos e o suporte ao cliente, são executados de forma manual e descentralizada. A comunicação depende excessivamente de canais não estruturados, como e-mails e aplicativos de mensagem, o que leva à perda de informações e à falta de padronização. As solicitações, sejam elas a abertura de uma vaga ou o reporte de um problema, são tratadas caso a caso, sem um fluxo de trabalho definido, resultando em triagens manuais lentas, encaminhamentos incorretos entre setores e uma significativa ineficiência operacional que gera retrabalho e atrasos.
 
 AS IS - Captação de funcionários
- <img width="1495" height="1297" alt="Diagrama tiapn(weabdealer) Diagrama" src="https://github.com/user-attachments/assets/d7a90012-ef5e-48d2-9a88-db7049ac86dd" />
+ <img width="1495" height="1297" alt="AS IS – Captação de Funcionários (Diagrama elaborado na ferramenta BPMN)" src="https://github.com/user-attachments/assets/d7a90012-ef5e-48d2-9a88-db7049ac86dd" />
 
 
 ## Descrição geral da proposta (Modelagem TO BE)
@@ -35,7 +35,7 @@ Contudo, a tecnologia é uma ferramenta de suporte e seus limites residem na dep
 
 [PROCESSO 2 AS IS - Atendimento e Suporte ao Cliente](./processes/processo-2-as-is.md "Detalhamento do processo 2 AS IS.")
 
-[PROCESSO 2 TO BE -Atendimento e Suporte ao Cliente](./processes/processo-2-to-be.md "Detalhamento do processo 2 TO BE.")
+[PROCESSO 2 TO BE - Atendimento e Suporte ao Cliente](./processes/processo-2-to-be.md "Detalhamento do processo 2 TO BE.")
 
 ## Indicadores de desempenho
 
