@@ -37,31 +37,30 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
+**Nome da atividade 1- Cliente entra em contato a respeito do problema/dúvida**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| Destinatário do e-mail | Caixa de texto |  Deve ser o e-mail de suporte da empresa  |                   |
+| Assunto do e-mail  |       Caixa de texto           |  Nenhuma (texto livre)  |                   |
+| Corpo do e-mail           | Área de texto   | Nenhuma (cliente descreve o problema livremente) |                |
+| Anexos           | Arquivo | Opcional; Formato de arquivo. |           |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 2              | default           |
-| cadastrar            | Início do processo de cadastro  |                   |
+| Enviar | Empresa(Recebimento da dúvida) | default |
 
 
-**Nome da atividade 2**
+**Nome da atividade 2- Análise da Dúvida**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Cliente | Caixa de texto   |   Nenhuma (texto livre)   |                   |
+|  Assunto Resumido  | Caixa de texto   |   Nenhuma (atendente resume o problema)  |                   |
+|  Classificação  | Caixa de texto   |  Nenhuma (Classificação por Área)    |                   |
+|  Status   | Caixa de texto   |  Classificação formal de apresentação  |  Ativo  |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| [Salvar Planilha | Ánalise de duvida/problema  | default |
