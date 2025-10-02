@@ -60,33 +60,34 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RF-001| Permitir que o usuário crie sua conta | ALTA | 
 |RF-002| Permitir que o usuário cadastre projetos | ALTA | 
 |RF-003| Permitir que o projeto seja editável | MÉDIA |
-|RF-004| Pesquisa de projetos por nome | MÉDIA |
-|RF-005| Criação de categorias para filtrar pesquisas | BAIXA |                 
-|RF-006| Sistema de avaliação de projetos | BAIXA |                 
-|RF-007| Criação e modificação de perfil | ALTA |                 
-|RF-008| Exibição dos projetos | ALTA |    
-|RF-006| Meio de comunicação entre investidor e inovador| ALTA |
+|RF-004| Permitir pesquisa de projetos por nome | MÉDIA |
+|RF-005| Criar categorias para filtrar pesquisas | BAIXA |                 
+|RF-006| Criar sistema de avaliação de projetos | BAIXA |                 
+|RF-007| Criar e modificar perfil de usuário | ALTA |                 
+|RF-008| Exibir projetos cadastrados | ALTA |    
+|RF-009| Disponibilizar meio de comunicação entre investidor e inovador | ALTA |
 
+---
 ### Requisitos não funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
 |RNF-002| O sistema deve seguir boas práticas de acessibilidade | BAIXA | 
-|RNF-003| O sistema deve estar no ar no minímo 90% do tempo | ALTA | 
-|RNF-004| O código deve estar relativamente comentado para fácil manutenção | ALTA | 
+|RNF-003| O sistema deve estar disponível no mínimo 90% do tempo | ALTA | 
+|RNF-004| O código deve ser comentado para facilitar a manutenção | ALTA | 
 |RNF-005| O sistema deve ser multiplataforma | ALTA | 
-|RNF-006| Banco de dados integrado | ALTA | 
+|RNF-006| O sistema deve possuir banco de dados integrado | ALTA | 
 
+---
 ## Restrições
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+As restrições definem os limites e condições que devem ser respeitados no desenvolvimento do projeto. A tabela a seguir apresenta as principais restrições identificadas:
 
-O projeto está restrito aos itens apresentados na tabela a seguir.
+|ID  | Restrição                                                                 |
+|----|---------------------------------------------------------------------------|
+|001 | O projeto deverá ser concluído e entregue até o final do semestre letivo. |
+|002 | O custo total do projeto não poderá ultrapassar o orçamento previamente definido. |
+|003 | A primeira versão do projeto não contemplará um sistema antiplágio. |
+|004 | O software será destinado exclusivamente a aplicações voltadas para a área tecnológica. |
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre |
-|002| O custo total do projeto não deve exceder o orçamento definido |
-|003| O projeto ainda não possui um sistema anti plágio |
-|004| O Software é designado somente para a aréa tecnologica |
