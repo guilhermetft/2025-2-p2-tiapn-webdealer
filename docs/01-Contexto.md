@@ -4,23 +4,23 @@ Na era atual, é inegável que a sociedade vive um período marcado pela inovaç
 
 É justamente nesse ponto que surge a Webdealer, um projeto acadêmico e inovador que conecta estudantes, profissionais e empreendedores em potencial a investidores e empresas parceiras interessadas em apoiar iniciativas criativas e promissoras. Mais do que apenas uma proposta voltada ao reconhecimento e ao networking, o objetivo é estruturar um ambiente verdadeiramente colaborativo, que demonstre que qualquer pessoa pode desenvolver uma ideia inovadora e compartilhá-la com o mundo.
 
-O cliente/parceiro vinculado a este projeto extensionista é a empresa Arquivar, organização consolidada no mercado de gestão de documentos e processos corporativos, que se destaca como pioneira ao apoiar uma iniciativa acadêmica voltada à inovação.
+O cliente/parceiro vinculado ao projeto Webdealer é a Arquivar, uma empresa especializada em gestão de documentos físicos e digitais, consolidada no mercado há mais de 30 anos. Destaca-se como pioneira ao apoiar uma iniciativa acadêmica voltada à inovação.
 
 ## Cliente 
 
-A Arquivar, pioneira em gestão documental, possui 34 anos de experiência, mais de 4 mil clientes atendidos, 5 bilhões de documentos gerenciados e mais de 40 unidades no Brasil, além de presença internacional na Bolívia.
+A Arquivar, pioneira em gestão documental, conta com mais de 34 anos de experiência, mais de 4 mil clientes atendidos, 5 bilhões de documentos gerenciados e cerca de 40 unidades no Brasil, além de presença internacional na Bolívia.
 
-Durante conversas com seu fundador, foram identificados desafios na captação de talentos e na geração de ideias inovadoras. Nesse cenário, o Webdealer surge como apoio estratégico, auxiliando em processos internos e fomentando inovação.
+Durante uma conversa com seu fundador, Mário Pinho, foram identificados alguns desafios na captação de talentos e na geração de ideias inovadoras. Nesse contexto, o Webdealer surge como apoio estratégico, auxiliando nos processos internos e fomentando a inovação.
 
-A Arquivar oferece soluções em GED, BPM, digitalização, assinatura digital, auditoria, transformação digital e adequação à LGPD, atendendo setores como RH, saúde, agronegócio, educação e cooperativas. Reconhecida como Microsoft Partner Gold e Silver, Great Place To Work e entre as melhores franquias do Brasil, destaca-se como referência no mercado.
+A empresa oferece soluções em GED, BPM, digitalização, assinatura digital, auditoria, transformação digital e adequação à LGPD, atendendo setores como RH, saúde, agronegócio, educação e cooperativas. Reconhecida como Microsoft Partner Gold e Silver, Great Place To Work e uma das melhores franquias do Brasil, destaca-se como referência no mercado.
 
-O projeto Webdealer tem potencial para apoiar a inovação, formar novos talentos e fortalecer a imagem da Arquivar junto ao meio acadêmico.
+O projeto Webdealer tem potencial para impulsionar a inovação, formar novos talentos e fortalecer a imagem da Arquivar junto ao meio acadêmico.
 
 ## Problema
 
-No cenário atual, muitas ideias inovadoras não chegam a se concretizar por falta de apoio financeiro ou de parceiros estratégicos. Inventores, estudantes e profissionais criativos frequentemente têm projetos promissores, mas enfrentam dificuldades para encontrar investidores ou colaboradores que possam transformar essas ideias em realidade. Isso cria uma lacuna significativa entre a criação da ideia e sua execução, fazendo com que oportunidades de inovação sejam perdidas.
+No cenário atual, muitas ideias inovadoras deixam de se concretizar pela falta de apoio financeiro e de parceiros estratégicos. Inventores, estudantes e profissionais criativos frequentemente desenvolvem projetos promissores, mas enfrentam obstáculos para atrair investidores ou colaboradores capazes de transformá-los em realidade. Essa barreira gera uma lacuna entre a concepção da ideia e sua execução, resultando na perda de oportunidades de inovação.
 
-A aplicação proposta será utilizada em ambiente digital, voltado para a conexão entre pessoas com ideias inovadoras e possíveis investidores ou parceiros. O objetivo é disponibilizar uma plataforma acessível em que os usuários apresentem seus projetos de maneira clara e atrativa, facilitando a identificação de interessados em apoiar financeiramente ou colaborar. Esse contexto permite que a aplicação atue como ponte entre criatividade e investimento, respondendo à necessidade de visibilidade e suporte para ideias que, de outra forma, permaneceriam inviáveis.
+A aplicação proposta será um ambiente digital voltado a conectar pessoas com ideias inovadoras a potenciais investidores e parceiros. Seu objetivo é oferecer uma plataforma acessível, onde os usuários possam apresentar seus projetos de forma clara e atrativa, facilitando a identificação de interessados em apoiar financeiramente ou colaborar. Dessa forma, a solução atua como ponte entre criatividade e investimento, suprindo a necessidade de visibilidade e suporte para iniciativas que, de outra maneira, permaneceriam inviáveis.
 
 ## Objetivos
 
