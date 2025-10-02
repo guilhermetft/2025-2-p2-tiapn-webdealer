@@ -113,8 +113,8 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | [http://.... ](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-2-p2-tiapn-webdealer) |
+| Repositório de código fonte         | GitHub                             | [ GitHub WebDealer ](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-2-p2-tiapn-webdealer) |
 | Documentos do projeto               | GitHub                             | http://....                            |
 | Projeto de interface                | Figma                              | http://....                            |
-| Gerenciamento do projeto            | GitHub Projects                    | [http://....                           ](https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69) |
+| Gerenciamento do projeto            | GitHub Projects                    | [ GitHub Projects WebDealer ](https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69) |
 | Hospedagem                          | Vercel                             | http://....                            |
