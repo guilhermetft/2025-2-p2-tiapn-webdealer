@@ -40,12 +40,12 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Estudante           |  Trazer mais reconhecimento para meu projeto         | Atrair possíveis investidores e divulgações, além de inspirar pessoas             |
-|Gerente de empresa      | Conhecer projetos inovadores e fazer networking com novas pessoas                 | Me inspirar em melhorias e gerar novos empregos |
-|Sócio de uma startup      | Buscar e conectar com possíveis investidores                 | Meu projeto evoluir e se consolidar no mercado de trabalho |
-|Investidor       | Reconhecer projetos passíveis de investimento com segurança                 | Poder gerar lucros |
-|Entusiasta de tecnologia       | Conhecer novas propostas de inovação aplicadas ao cotidiano                 | Me inspirar e aplicá-las no meu dia a dia |
-|Professora universitária       | Divulgar propostas de projetos inovadores e interessantes                 | Realizar networking e atrair reconhecimento e investidores para as ideias |
+|Estudante           |  Obter maior reconhecimento para o projeto         | Atrair possíveis investidores e divulgações, além de inspirar pessoas             |
+|Gerente de empresa      | Conhecer projetos inovadores e fazer networking com novas pessoas                 | Inspirar-se em melhorias e gerar novos empregos |
+|Sócio de uma startup      | Buscar e conectar com possíveis investidores                 | Que o projeto evolua e se consolide no mercado de trabalho |
+|Investidor       | Reconhecer projetos passíveis de investimento com segurança                 | Gerar retorno financeiro |
+|Entusiasta de tecnologia       | Conhecer novas propostas de inovação aplicadas ao cotidiano                 | Inspirar-se e aplicá-las no cotidiano |
+|Professora universitária       | Divulgar propostas de projetos inovadores e interessantes                 | Promover networking e atrair reconhecimento e investidores para os projetos |
 
 
 
