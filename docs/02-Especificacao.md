@@ -22,17 +22,17 @@ No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação a
 
 
 
-**PERSONA 1**: Cecília Alves, 17 anos, é estudante do ensino médio técnico em informática e desenvolveu um protótipo de aplicativo para divulgar exposições artísticas em sua cidade. Apaixonada por arte e tecnologia, ela deseja levar o projeto adiante, mas enfrenta falta de reconhecimento e dificuldade em atrair investidores. Busca uma plataforma que divulgue seus trabalhos e sirva de inspiração para novas ideias.
+**PERSONA 1**: Cecília Alves, 17 anos, estudante do ensino médio técnico em Informática, criou um protótipo de aplicativo para divulgar exposições artísticas locais. Apaixonada por arte e tecnologia, deseja expandir o projeto, mas enfrenta falta de reconhecimento e dificuldade para atrair investidores. Busca uma plataforma que valorize seus trabalhos e inspire novas ideias.
 
-**PERSONA 2**: Cláudio Marques, 48 anos, é gerente de uma software house e entusiasta de tecnologia. Busca constantemente novas formas de otimizar sua empresa e conhecer projetos inovadores. Enfrenta dificuldade em acompanhar novidades da área de TI e encontrar talentos qualificados. Deseja uma plataforma que facilite o networking, a descoberta de projetos e a conexão com possíveis novos colaboradores.
+**PERSONA 2**: Cláudio Marques, 48 anos, gerente de uma software house e entusiasta de tecnologia, busca constantemente formas de otimizar sua empresa e conhecer projetos inovadores. Enfrenta dificuldade em acompanhar as novidades de TI e em encontrar talentos qualificados. Deseja uma plataforma que facilite o networking, a descoberta de projetos e a conexão com potenciais colaboradores.
 
-**PERSONA 3**: Paulo Antônio, 22 anos, é estudante de Engenharia de Software e sócio de uma startup focada em transporte urbano. Apesar de já ter um projeto em andamento, enfrenta dificuldade para encontrar investidores, tem pouca experiência no mercado e carece de networking. Seu objetivo é atrair investimentos e consolidar sua startup no mercado.
+**PERSONA 3**: Paulo Antônio, 22 anos, estudante de Engenharia de Software e sócio de uma startup de transporte urbano. Apesar de já ter um projeto em andamento, enfrenta dificuldade para encontrar investidores, possui pouca experiência de mercado e carece de networking. Busca atrair investimentos e consolidar sua startup.
 
-**PERSONA 4**: Ricardo Quintana, 40 anos, é CEO de uma empresa de investimentos e busca constantemente oportunidades inovadoras e seguras para investir. Além dos negócios, também se interessa em apoiar projetos que tragam retorno financeiro ou impacto positivo para a comunidade. Sente falta de uma rede acessível e diversificada de projetos para investir.
+**PERSONA 4**: Ricardo Quintana, 40 anos, CEO de uma empresa de investimentos, busca constantemente oportunidades inovadoras e seguras. Além do retorno financeiro, interessa-se por projetos com impacto positivo na comunidade. Sente falta de uma rede acessível e diversificada de opções para investir.
 
-**PERSONA 5**: Francisco Gonçalves, 27 anos, é assistente de escritório e entusiasta de tecnologia. Gosta de explorar como soluções tecnológicas podem resolver problemas do dia a dia, mas sente falta de um espaço acessível para conhecer projetos criativos. Busca acompanhar novas ideias e se inspirar com soluções de impacto social e coletivo.
+**PERSONA 5**: Francisco Gonçalves, 27 anos, assistente de escritório e entusiasta de tecnologia. Gosta de explorar como soluções tecnológicas podem resolver problemas do dia a dia, mas sente falta de um espaço acessível para conhecer projetos criativos. Busca acompanhar novas ideias e se inspirar em soluções de impacto social e coletivo.
 
-**PERSONA 6**: Karina Freitas, 35 anos, é professora universitária de TI e busca formas de dar visibilidade a ideias e protótipos de seus alunos. Sente que muitos projetos ficam restritos ao ambiente acadêmico e não recebem o devido reconhecimento. Deseja um espaço onde essas ideias possam ser divulgadas, gerando networking e atraindo investimentos sérios.
+**PERSONA 6**: Karina Freitas, 35 anos, professora universitária de TI, busca dar visibilidade às ideias e protótipos de seus alunos. Acredita que muitos projetos ficam restritos ao ambiente acadêmico e sem reconhecimento. Deseja um espaço para divulgar essas iniciativas, gerar networking e atrair investimentos.
 
 ## Histórias de usuários
 
