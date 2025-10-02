@@ -20,7 +20,8 @@ AS IS - Captação de funcionários
 
 A proposta consiste na implementação de uma plataforma digital integrada para centralizar e automatizar os processos de recrutamento e atendimento. A solução visa substituir os fluxos manuais por um sistema inteligente que organiza as solicitações desde sua origem, seja de um candidato ou de um cliente. Através de portais dedicados, o sistema realizará uma triagem e um direcionamento automático das demandas, garantindo que elas cheguem às equipes corretas de forma instantânea e estruturada. Com isso, busca-se eliminar gargalos, reduzir o tempo de resposta e otimizar a alocação de recursos, transformando a experiência tanto dos colaboradores quanto do público externo.
 
-(Cole aqui os modelos da solução proposta (modelo TO-BE), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina. Cada processo identificado deve ter seu modelo TO-BE específico. Descrevam as oportunidades de melhoria de cada processo da solução proposta.)
+TO BE - Captação de funcionários
+<img width="1111" height="1461" alt="Diagrama TIAPN(WeabDealer) P2 Diagrama" src="https://github.com/user-attachments/assets/9d88d882-d243-41a8-8562-d66a4b8e23c5" />
 
 #### Descrição de Proposta e Limites
 A introdução desta plataforma unificada é uma iniciativa estratégica para elevar a maturidade operacional da empresa. Ao automatizar tarefas repetitivas nos processos de recrutamento e suporte, a solução libera as equipes para se concentrarem em atividades de maior valor, como a análise estratégica de candidatos e a resolução de problemas complexos de clientes. Esta otimização está diretamente alinhada aos objetivos de negócio de aumentar a eficiência, fortalecer a marca (seja como empregadora ou prestadora de serviços) e promover um crescimento escalável.
