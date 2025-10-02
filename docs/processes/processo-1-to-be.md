@@ -1,7 +1,8 @@
-### Processo 1 TO BE – NOME DO PROCESSO
+### Processo 1 TO BE – Recrutamento e Seleção de Candidatos.
 
-_Apresente aqui o nome, as oportunidades de melhoria para o processo, seu fluxo e características. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
+A solução proposta centraliza todo o processo de recrutamento em uma plataforma digital. O gestor da área inicia a requisição preenchendo um formulário padronizado no sistema, que formaliza todas as especificações da vaga. 
+
+Os candidatos não enviam mais currículos por e-mail; eles se cadastram na plataforma, criando um perfil completo que pode incluir portfólio e projetos. O sistema, então, realiza uma triagem automática com base em filtros pré-definidos pelo RH (como competências técnicas, experiência, formação). Isso permite que a equipe de RH analise apenas um grupo qualificado de candidatos, otimizando seu tempo para uma análise mais estratégica e humana. As etapas seguintes, como agendamento de entrevistas e comunicação, são gerenciadas pela própria plataforma, garantindo agilidade e mantendo os candidatos informados sobre o status de sua aplicação em tempo real.
  
 ![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
 

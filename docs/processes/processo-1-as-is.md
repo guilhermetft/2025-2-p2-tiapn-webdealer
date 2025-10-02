@@ -1,7 +1,8 @@
-### Processo 1 AS IS – NOME DO PROCESSO
+### Processo 1 AS IS – Recrutamento e Seleção de Candidatos.
 
-_Apresente aqui o nome, a descrição do processo atual, seu fluxo e características. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
+Atualmente, o processo de recrutamento e seleção é iniciado quando um gestor de área comunica a necessidade de uma nova vaga, geralmente de maneira informal, via e-mail ou comunicação direta com o setor de Recursos Humanos (RH). O RH, por sua vez, realiza a divulgação da vaga manualmente em diferentes canais (sites de emprego, redes sociais, etc.), sem uma ferramenta unificada.
+
+Os currículos são recebidos de forma desestruturada, majoritariamente por e-mail, gerando um grande volume de dados não padronizados. A triagem desses currículos é uma tarefa inteiramente manual, baseada na leitura individual de cada documento, o que consome um tempo considerável e está sujeito a vieses inconscientes. Após essa triagem inicial, os candidatos selecionados são contatados para agendamento de entrevistas, um processo logístico complexo e com muitas trocas de mensagens. Por fim, após as rodadas de entrevistas, o candidato final é escolhido e os demais são informados (ou muitas vezes, não recebem retorno), encerrando o ciclo de forma pouco eficiente e com baixa qualidade na experiência do candidato.
  
 ![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
 

@@ -1,7 +1,8 @@
-### Processo 2 AS IS – NOME DO PROCESSO
+### Processo 2 AS IS – Atendimento e Suporte ao Cliente.
 
-_Apresente aqui o nome, a descrição do processo atual, seu fluxo e características. 
-Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN._
+O processo de suporte ao cliente começa quando o cliente identifica uma dúvida ou problema e entra em contato por canais descentralizados, como e-mail ou WhatsApp. Cada solicitação é registrada manualmente por um atendente em uma planilha ou sistema interno simples. A partir daí, o primeiro atendente precisa ler a mensagem, interpretar a necessidade e, muitas vezes, encaminhar manualmente para outro colega ou setor, que pode também não ser o destino final.
+
+Essa falta de um direcionamento claro gera retrabalho, com a mesma solicitação passando por várias pessoas até chegar à equipe correta. Para o cliente, isso se traduz em um tempo de espera longo e imprevisível, além da frustração de ter que repetir sua história para diferentes atendentes.
 
 ![Exemplo de um Modelo BPMN do PROCESSO 2](../images/process.png "Modelo BPMN do Processo 2.")
 

@@ -24,13 +24,13 @@ Apresente aqui uma descrição da sua proposta, abordando seus limites e suas li
 
 ## Modelagem dos processos
 
-[PROCESSO 1 AS IS - Nome do processo](./processes/processo-1-as-is.md "Detalhamento do processo 1 AS IS.")
+[PROCESSO 1 AS IS - Recrutamento e Seleção de Candidatos](./processes/processo-1-as-is.md "Detalhamento do processo 1 AS IS.")
 
-[PROCESSO 1 TO BE - Nome do processo](./processes/processo-1-to-be.md "Detalhamento do processo 1 TO BE.")
+[PROCESSO 1 TO BE - Recrutamento e Seleção de Candidatos](./processes/processo-1-to-be.md "Detalhamento do processo 1 TO BE.")
 
-[PROCESSO 2 AS IS - Nome do processo](./processes/processo-2-as-is.md "Detalhamento do processo 2 AS IS.")
+[PROCESSO 2 AS IS - Atendimento e Suporte ao Cliente](./processes/processo-2-as-is.md "Detalhamento do processo 2 AS IS.")
 
-[PROCESSO 2 TO BE - Nome do processo](./processes/processo-2-to-be.md "Detalhamento do processo 2 TO BE.")
+[PROCESSO 2 TO BE -Atendimento e Suporte ao Cliente](./processes/processo-2-to-be.md "Detalhamento do processo 2 TO BE.")
 
 ## Indicadores de desempenho
 
