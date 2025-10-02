@@ -1,16 +1,16 @@
 # Referências
 
-- BENYON, David. **Interação humano-computador**. 2. ed. São Paulo: Pearson Prentice Hall, 2011.
+BENYON, David. **Interação humano-computador**. 2. ed. São Paulo: Pearson Prentice Hall, 2011.  
 
-- CORMEN, Thomas H et al. **Algoritmos:** teoria e prática. 4. ed. Rio de Janeiro: GEN LTC, 2024.
- 
-- ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019.
+CORMEN, Thomas H. et al. **Algoritmos: teoria e prática**. 4. ed. Rio de Janeiro: GEN LTC, 2024.  
 
-- RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial:** uma abordagem moderna. 4. ed. Rio de Janeiro, RJ: LTC, 2022.
+ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019.  
 
-- SUTHERLAND, Jeffrey Victor; SUTHERLAND, J. J. **Scrum:** a arte de fazer o dobro do trabalho na metade do tempo. Rio de Janeiro, RJ: Sextante, 2019. 254 p.
-  
-- TI INSIDE. Como o Brasil se tornou o celeiro de startups da América Latina. Publicado em: 16 jan. 2025. Disponível em: https://tiinside.com.br/16/01/2025/como-o-brasil-se-tornou-o-celeiro-de-startups-da-america-latina
+RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial: uma abordagem moderna**. 4. ed. Rio de Janeiro: LTC, 2022.  
+
+SUTHERLAND, Jeffrey Victor; SUTHERLAND, J. J. **Scrum: a arte de fazer o dobro do trabalho na metade do tempo**. Rio de Janeiro: Sextante, 2019. 254 p.  
+
+TI INSIDE. **Como o Brasil se tornou o celeiro de startups da América Latina**. Publicado em: 16 jan. 2025. Disponível em: <https://tiinside.com.br/16/01/2025/como-o-brasil-se-tornou-o-celeiro-de-startups-da-america-latina>. Acesso em: 1 out. 2025.  
 
 > **Links úteis**:
 > - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
