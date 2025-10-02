@@ -10,8 +10,4 @@ RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial: uma abordagem mod
 
 SUTHERLAND, Jeffrey Victor; SUTHERLAND, J. J. **Scrum: a arte de fazer o dobro do trabalho na metade do tempo**. Rio de Janeiro: Sextante, 2019. 254 p.  
 
-TI INSIDE. **Como o Brasil se tornou o celeiro de startups da América Latina**. Publicado em: 16 jan. 2025. Disponível em: <https://tiinside.com.br/16/01/2025/como-o-brasil-se-tornou-o-celeiro-de-startups-da-america-latina>. Acesso em: 1 out. 2025.  
-
-> **Links úteis**:
-> - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
+TI INSIDE. Como o Brasil se tornou o celeiro de startups da América Latina. 16 jan. 2025.
