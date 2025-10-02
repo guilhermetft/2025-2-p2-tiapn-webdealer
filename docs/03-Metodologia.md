@@ -61,12 +61,12 @@ Atualizado em: 21/04/2024
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Gustavo       | Protótipagem     | 15/08/2025     | 04/09/2025 | ✔️    | 04/09/2025       |
-| Daniel        |Documentação e slides       | 15/08/202 |04/09/2025 | ✔️              |   04/09/2025     |
-| Guilherme     | Gestão github |15/08/2025     | 07/01/2025 | ✔️  |    04/09/2025  |
-| Lara          | Networking com empresa e slides  |    15/08/2025     | 12/02/2025 | ✔️    |    04/09/2025    |
-| João          | Documentação  |    15/08/2025     | 12/02/2025 | ✔️    |    04/09/2025    |
-| Marcos        | Documentação  |    15/08/2025     | 12/02/2025 | ✔️    |    04/09/2025    |
-| Vinicius      | Documentação |    15/08/2025     | 12/02/2025 | ✔️    |    04/09/2025    |
+| Daniel        |Documentação e slides       | 15/08/2025 |04/09/2025 | ✔️              |   04/09/2025     |
+| Guilherme     | Gestão github |15/08/2025     | 04/09/2025 | ✔️  |    04/09/2025  |
+| Lara          | Networking com empresa e slides  |    15/08/2025     | 04/09/2025 | ✔️    |    04/09/2025    |
+| João          | Documentação  |    15/08/2025     | 04/09/2025 | ✔️    |    04/09/2025    |
+| Marcus        | Documentação  |    15/08/2025     | 04/09/2025 | ✔️    |    04/09/2025    |
+| Vinicius      | Documentação |    15/08/2025     | 04/09/2025 | ✔️    |    04/09/2025    |
 
 
 #### Sprint 2
@@ -113,8 +113,8 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
+| Repositório de código fonte         | GitHub                             | [http://.... ](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-2-p2-tiapn-webdealer) |
 | Documentos do projeto               | GitHub                             | http://....                            |
 | Projeto de interface                | Figma                              | http://....                            |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....                            |
+| Gerenciamento do projeto            | GitHub Projects                    | [http://....                           ](https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69) |
 | Hospedagem                          | Vercel                             | http://....                            |
