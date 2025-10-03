@@ -22,17 +22,17 @@ No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação a
 
 
 
-**PERSONA 1**: Cecília Alves, 17 anos, é estudante do ensino médio técnico em informática e desenvolveu um protótipo de aplicativo para divulgar exposições artísticas em sua cidade. Apaixonada por arte e tecnologia, ela deseja levar o projeto adiante, mas enfrenta falta de reconhecimento e dificuldade em atrair investidores. Busca uma plataforma que divulgue seus trabalhos e sirva de inspiração para novas ideias.
+**PERSONA 1**: Cecília Alves, 17 anos, estudante do ensino médio técnico em Informática, criou um protótipo de aplicativo para divulgar exposições artísticas locais. Apaixonada por arte e tecnologia, deseja expandir o projeto, mas enfrenta falta de reconhecimento e dificuldade para atrair investidores. Busca uma plataforma que valorize seus trabalhos e inspire novas ideias.
 
-**PERSONA 2**: Cláudio Marques, 48 anos, é gerente de uma software house e entusiasta de tecnologia. Busca constantemente novas formas de otimizar sua empresa e conhecer projetos inovadores. Enfrenta dificuldade em acompanhar novidades da área de TI e encontrar talentos qualificados. Deseja uma plataforma que facilite o networking, a descoberta de projetos e a conexão com possíveis novos colaboradores.
+**PERSONA 2**: Cláudio Marques, 48 anos, gerente de uma software house e entusiasta de tecnologia, busca constantemente formas de otimizar sua empresa e conhecer projetos inovadores. Enfrenta dificuldade em acompanhar as novidades de TI e em encontrar talentos qualificados. Deseja uma plataforma que facilite o networking, a descoberta de projetos e a conexão com potenciais colaboradores.
 
-**PERSONA 3**: Paulo Antônio, 22 anos, é estudante de Engenharia de Software e sócio de uma startup focada em transporte urbano. Apesar de já ter um projeto em andamento, enfrenta dificuldade para encontrar investidores, tem pouca experiência no mercado e carece de networking. Seu objetivo é atrair investimentos e consolidar sua startup no mercado.
+**PERSONA 3**: Paulo Antônio, 22 anos, estudante de Engenharia de Software e sócio de uma startup de transporte urbano. Apesar de já ter um projeto em andamento, enfrenta dificuldade para encontrar investidores, possui pouca experiência de mercado e carece de networking. Busca atrair investimentos e consolidar sua startup.
 
-**PERSONA 4**: Ricardo Quintana, 40 anos, é CEO de uma empresa de investimentos e busca constantemente oportunidades inovadoras e seguras para investir. Além dos negócios, também se interessa em apoiar projetos que tragam retorno financeiro ou impacto positivo para a comunidade. Sente falta de uma rede acessível e diversificada de projetos para investir.
+**PERSONA 4**: Ricardo Quintana, 40 anos, CEO de uma empresa de investimentos, busca constantemente oportunidades inovadoras e seguras. Além do retorno financeiro, interessa-se por projetos com impacto positivo na comunidade. Sente falta de uma rede acessível e diversificada de opções para investir.
 
-**PERSONA 5**: Francisco Gonçalves, 27 anos, é assistente de escritório e entusiasta de tecnologia. Gosta de explorar como soluções tecnológicas podem resolver problemas do dia a dia, mas sente falta de um espaço acessível para conhecer projetos criativos. Busca acompanhar novas ideias e se inspirar com soluções de impacto social e coletivo.
+**PERSONA 5**: Francisco Gonçalves, 27 anos, assistente de escritório e entusiasta de tecnologia. Gosta de explorar como soluções tecnológicas podem resolver problemas do dia a dia, mas sente falta de um espaço acessível para conhecer projetos criativos. Busca acompanhar novas ideias e se inspirar em soluções de impacto social e coletivo.
 
-**PERSONA 6**: Karina Freitas, 35 anos, é professora universitária de TI e busca formas de dar visibilidade a ideias e protótipos de seus alunos. Sente que muitos projetos ficam restritos ao ambiente acadêmico e não recebem o devido reconhecimento. Deseja um espaço onde essas ideias possam ser divulgadas, gerando networking e atraindo investimentos sérios.
+**PERSONA 6**: Karina Freitas, 35 anos, professora universitária de TI, busca dar visibilidade às ideias e protótipos de seus alunos. Acredita que muitos projetos ficam restritos ao ambiente acadêmico e sem reconhecimento. Deseja um espaço para divulgar essas iniciativas, gerar networking e atrair investimentos.
 
 ## Histórias de usuários
 
@@ -40,12 +40,12 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Estudante           |  Trazer mais reconhecimento para meu projeto         | Atrair possíveis investidores e divulgações, além de inspirar pessoas             |
-|Gerente de empresa      | Conhecer projetos inovadores e fazer networking com novas pessoas                 | Me inspirar em melhorias e gerar novos empregos |
-|Sócio de uma startup      | Buscar e conectar com possíveis investidores                 | Meu projeto evoluir e se consolidar no mercado de trabalho |
-|Investidor       | Reconhecer projetos passíveis de investimento com segurança                 | Poder gerar lucros |
-|Entusiasta de tecnologia       | Conhecer novas propostas de inovação aplicadas ao cotidiano                 | Me inspirar e aplicá-las no meu dia a dia |
-|Professora universitária       | Divulgar propostas de projetos inovadores e interessantes                 | Realizar networking e atrair reconhecimento e investidores para as ideias |
+|Estudante           |  Obter maior reconhecimento para o projeto         | Atrair possíveis investidores e divulgações, além de inspirar pessoas             |
+|Gerente de empresa      | Conhecer projetos inovadores e fazer networking com novas pessoas                 | Inspirar-se em melhorias e gerar novos empregos |
+|Sócio de uma startup      | Buscar e conectar com possíveis investidores                 | Que o projeto evolua e se consolide no mercado de trabalho |
+|Investidor       | Reconhecer projetos passíveis de investimento com segurança                 | Gerar retorno financeiro |
+|Entusiasta de tecnologia       | Conhecer novas propostas de inovação aplicadas ao cotidiano                 | Inspirar-se e aplicá-las no cotidiano |
+|Professora universitária       | Divulgar propostas de projetos inovadores e interessantes                 | Promover networking e atrair reconhecimento e investidores para os projetos |
 
 
 
@@ -60,33 +60,34 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RF-001| Permitir que o usuário crie sua conta | ALTA | 
 |RF-002| Permitir que o usuário cadastre projetos | ALTA | 
 |RF-003| Permitir que o projeto seja editável | MÉDIA |
-|RF-004| Pesquisa de projetos por nome | MÉDIA |
-|RF-005| Criação de categorias para filtrar pesquisas | BAIXA |                 
-|RF-006| Sistema de avaliação de projetos | BAIXA |                 
-|RF-007| Criação e modificação de perfil | ALTA |                 
-|RF-008| Exibição dos projetos | ALTA |    
-|RF-006| Meio de comunicação entre investidor e inovador| ALTA |
+|RF-004| Permitir pesquisa de projetos por nome | MÉDIA |
+|RF-005| Criar categorias para filtrar pesquisas | BAIXA |                 
+|RF-006| Criar sistema de avaliação de projetos | BAIXA |                 
+|RF-007| Criar e modificar perfil de usuário | ALTA |                 
+|RF-008| Exibir projetos cadastrados | ALTA |    
+|RF-009| Disponibilizar meio de comunicação entre investidor e inovador | ALTA |
 
+---
 ### Requisitos não funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
 |RNF-002| O sistema deve seguir boas práticas de acessibilidade | BAIXA | 
-|RNF-003| O sistema deve estar no ar no minímo 90% do tempo | ALTA | 
-|RNF-004| O código deve estar relativamente comentado para fácil manutenção | ALTA | 
+|RNF-003| O sistema deve estar disponível no mínimo 90% do tempo | ALTA | 
+|RNF-004| O código deve ser comentado para facilitar a manutenção | ALTA | 
 |RNF-005| O sistema deve ser multiplataforma | ALTA | 
-|RNF-006| Banco de dados integrado | ALTA | 
+|RNF-006| O sistema deve possuir banco de dados integrado | ALTA | 
 
+---
 ## Restrições
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+As restrições definem os limites e condições que devem ser respeitados no desenvolvimento do projeto. A tabela a seguir apresenta as principais restrições identificadas:
 
-O projeto está restrito aos itens apresentados na tabela a seguir.
+|ID  | Restrição                                                                 |
+|----|---------------------------------------------------------------------------|
+|001 | O projeto deverá ser concluído e entregue até o final do semestre letivo. |
+|002 | O custo total do projeto não poderá ultrapassar o orçamento previamente definido. |
+|003 | A primeira versão do projeto não contemplará um sistema antiplágio. |
+|004 | O software será destinado exclusivamente a aplicações voltadas para a área tecnológica. |
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre |
-|002| O custo total do projeto não deve exceder o orçamento definido |
-|003| O projeto ainda não possui um sistema anti plágio |
-|004| O Software é designado somente para a aréa tecnologica |

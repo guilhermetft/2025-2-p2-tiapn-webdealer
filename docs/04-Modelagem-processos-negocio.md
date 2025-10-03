@@ -10,27 +10,39 @@ Com o tema do projeto definido, escolham dois processos no contexto de negócios
 
 ## Modelagem da situação atual (Modelagem AS IS)
 
-Apresente uma descrição textual de como os sistemas atuais resolvem o problema que seu projeto se propõe a resolver. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
+Atualmente, os processos críticos de interação com stakeholders externos, como o recrutamento de novos talentos e o suporte ao cliente, são executados de forma manual e descentralizada. A comunicação depende excessivamente de canais não estruturados, como e-mails e aplicativos de mensagem, o que leva à perda de informações e à falta de padronização. As solicitações, sejam elas a abertura de uma vaga ou o reporte de um problema, são tratadas caso a caso, sem um fluxo de trabalho definido, resultando em triagens manuais lentas, encaminhamentos incorretos entre setores e uma significativa ineficiência operacional que gera retrabalho e atrasos.
 
-Cole aqui os modelos dos processos atuais (modelo AS-IS), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina. Cada processo identificado deve ter seu modelo AS-IS específico. 
+AS IS - Captação de funcionários
+ <img width="1495" height="1297" alt="AS IS – Captação de Funcionários (Diagrama elaborado na ferramenta BPMN)" src="https://github.com/user-attachments/assets/d7a90012-ef5e-48d2-9a88-db7049ac86dd" />
+
+
+
+ AS IS - Abertura de chamados
+  <img width="1668" height="780" alt="Abertura de chamados (AS-IS) Diagrama" src="https://github.com/user-attachments/assets/b683a307-f2ac-49f3-ae42-f42be34ccb98" />
+
+
 
 ## Descrição geral da proposta (Modelagem TO BE)
 
-Tendo identificado os gargalos dos modelos AS-IS, apresentem uma descrição da proposta de solução, buscando maior eficiência com a introdução da tecnologia. Abordem também os limites dessa solução e seu alinhamento com as estratégias e objetivos do contexto de negócio escolhido.
+A proposta consiste na implementação de uma plataforma digital integrada para centralizar e automatizar os processos de recrutamento e atendimento. A solução visa substituir os fluxos manuais por um sistema inteligente que organiza as solicitações desde sua origem, seja de um candidato ou de um cliente. Através de portais dedicados, o sistema realizará uma triagem e um direcionamento automático das demandas, garantindo que elas cheguem às equipes corretas de forma instantânea e estruturada. Com isso, busca-se eliminar gargalos, reduzir o tempo de resposta e otimizar a alocação de recursos, transformando a experiência tanto dos colaboradores quanto do público externo.
 
-Cole aqui os modelos da solução proposta (modelo TO-BE), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina. Cada processo identificado deve ter seu modelo TO-BE específico. Descrevam as oportunidades de melhoria de cada processo da solução proposta.
+TO BE - Captação de funcionários
+<img width="1111" height="1461" alt="Diagrama TIAPN(WeabDealer) P2 Diagrama" src="https://github.com/user-attachments/assets/9d88d882-d243-41a8-8562-d66a4b8e23c5" />
 
-Apresente aqui uma descrição da sua proposta, abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente também as oportunidades de melhoria.
+#### Descrição de Proposta e Limites
+A introdução desta plataforma unificada é uma iniciativa estratégica para elevar a maturidade operacional da empresa. Ao automatizar tarefas repetitivas nos processos de recrutamento e suporte, a solução libera as equipes para se concentrarem em atividades de maior valor, como a análise estratégica de candidatos e a resolução de problemas complexos de clientes. Esta otimização está diretamente alinhada aos objetivos de negócio de aumentar a eficiência, fortalecer a marca (seja como empregadora ou prestadora de serviços) e promover um crescimento escalável.
+
+Contudo, a tecnologia é uma ferramenta de suporte e seus limites residem na dependência do fator humano para a configuração, adoção e extração de valor, além dos custos de implementação e manutenção. O sucesso da implementação está condicionado a uma boa gestão da mudança e ao entendimento de que a automação otimiza, mas não substitui, a necessidade de julgamento humano qualificado nas etapas decisivas dos processos.
 
 ## Modelagem dos processos
 
-[PROCESSO 1 AS IS - Nome do processo](./processes/processo-1-as-is.md "Detalhamento do processo 1 AS IS.")
+[PROCESSO 1 AS IS - Recrutamento e Seleção de Candidatos](./processes/processo-1-as-is.md "Detalhamento do processo 1 AS IS.")
 
-[PROCESSO 1 TO BE - Nome do processo](./processes/processo-1-to-be.md "Detalhamento do processo 1 TO BE.")
+[PROCESSO 1 TO BE - Recrutamento e Seleção de Candidatos](./processes/processo-1-to-be.md "Detalhamento do processo 1 TO BE.")
 
-[PROCESSO 2 AS IS - Nome do processo](./processes/processo-2-as-is.md "Detalhamento do processo 2 AS IS.")
+[PROCESSO 2 AS IS - Atendimento e Suporte ao Cliente](./processes/processo-2-as-is.md "Detalhamento do processo 2 AS IS.")
 
-[PROCESSO 2 TO BE - Nome do processo](./processes/processo-2-to-be.md "Detalhamento do processo 2 TO BE.")
+[PROCESSO 2 TO BE - Atendimento e Suporte ao Cliente](./processes/processo-2-to-be.md "Detalhamento do processo 2 TO BE.")
 
 ## Indicadores de desempenho
 

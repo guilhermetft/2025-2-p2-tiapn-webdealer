@@ -1,7 +1,8 @@
 ### Processo 2 TO BE – NOME DO PROCESSO
 
-_Apresente aqui o nome, as oportunidades de melhoria para o processo, seu fluxo e características. 
-Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN._
+A solução proposta é a implementação de um portal de atendimento único e centralizado. Ao acessar o portal para abrir uma nova solicitação, o cliente será apresentado a um menu simples onde deverá indicar o setor com o qual deseja falar.
+
+Com base na escolha do cliente, o sistema encaminha a demanda de forma automática para a fila de atendimento do setor correto. A equipe daquele setor recebe uma notificação em tempo real e já pode iniciar o atendimento, pois tem a certeza de que aquela solicitação pertence à sua área de responsabilidade. O cliente, por sua vez, recebe um número de protocolo e pode acompanhar o status do seu chamado diretamente pelo portal.
 
 ![Exemplo de um Modelo BPMN do PROCESSO 2](../images/process.png "Modelo BPMN do Processo 2.")
 
