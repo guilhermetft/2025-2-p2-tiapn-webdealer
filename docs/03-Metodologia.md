@@ -45,10 +45,10 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - Documentação: Guilherme Teixeira, Marcos Vinícius e Vinícius Muniz
 
 #### Sprint 2
-- _Scrum master_: AlunaY
-- Desenvolvedor _front-end_: AlunoX
-- Desenvolvedor _back-end_: AlunoK
-- Testes: AlunaZ
+- _Scrum master_: Lara Rossini
+- Desenvolvedor _front-end_: Vinicíus Muniz e Guilherme Teixeira
+- Desenvolvedor _back-end_: Daniel Bleme, Marcos Vinicíus e João Vitor
+- Testes: Gustavo Santiago
 
 ###  Quadro de tarefas
 
@@ -56,7 +56,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 #### Sprint 1
 
-Atualizado em: 21/04/2024
+Atualizado em: 04/09/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
@@ -71,11 +71,11 @@ Atualizado em: 21/04/2024
 
 #### Sprint 2
 
-Atualizado em: 21/04/2024
+Atualizado em: 02/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
+| Daniel Bleme   | Criação de quadro BPMN do problema 01   | 27/09/2025     | 02/10/2025 | ✔️    | 02/10/2025      |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
@@ -118,3 +118,5 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 | Projeto de interface                | Figma                              | http://....                            |
 | Gerenciamento do projeto            | GitHub Projects                    | [ GitHub Projects WebDealer ](https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69) |
 | Hospedagem                          | Vercel                             | http://....                            |
+| Criação quadros BPMN                | Heflo                              | [http://....   ](https://app.heflo.com/Process/Editor#&)                         |
+
