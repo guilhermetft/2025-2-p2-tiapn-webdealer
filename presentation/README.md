@@ -6,7 +6,8 @@
 ## Slides
 
 
-[Apresentação TIAPN.pdf](https://github.com/user-attachments/files/22163870/Apresentacao.TIAPN.pdf)
+[Apresentação TIAPN.pdf](https://github.com/user-attachments/files/22163870/Apresentacao.TIAPN.pdf)<br>
+[Apresentação Splint 02.pdf](https://github.com/user-attachments/files/22672822/Apresentacao.Splint.02.pdf)
 
 
 > **Links úteis**:
