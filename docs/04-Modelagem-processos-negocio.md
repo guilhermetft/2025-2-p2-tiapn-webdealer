@@ -16,6 +16,7 @@ AS IS - Captação de funcionários
  <img width="1495" height="1297" alt="AS IS – Captação de Funcionários (Diagrama elaborado na ferramenta BPMN)" src="https://github.com/user-attachments/assets/d7a90012-ef5e-48d2-9a88-db7049ac86dd" />
 
 
+
  AS IS - Abertura de chamados
   <img width="1668" height="780" alt="Abertura de chamados (AS-IS) Diagrama" src="https://github.com/user-attachments/assets/b683a307-f2ac-49f3-ae42-f42be34ccb98" />
 
