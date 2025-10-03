@@ -4,7 +4,7 @@ O processo de suporte ao cliente começa quando o cliente identifica uma dúvida
 
 Essa falta de um direcionamento claro gera retrabalho, com a mesma solicitação passando por várias pessoas até chegar à equipe correta. Para o cliente, isso se traduz em um tempo de espera longo e imprevisível, além da frustração de ter que repetir sua história para diferentes atendentes.
 
-![Exemplo de um Modelo BPMN do PROCESSO 2](../images/process.png "Modelo BPMN do Processo 2.")
+<img width="1668" height="780" alt="Abertura de chamados (AS-IS) Diagrama" src="https://github.com/user-attachments/assets/b683a307-f2ac-49f3-ae42-f42be34ccb98" />
 
 #### Detalhamento das atividades
 
