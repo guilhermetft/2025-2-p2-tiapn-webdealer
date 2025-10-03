@@ -29,6 +29,11 @@ A proposta consiste na implementação de uma plataforma digital integrada para 
 TO BE - Captação de funcionários
 <img width="1111" height="1461" alt="Diagrama TIAPN(WeabDealer) P2 Diagrama" src="https://github.com/user-attachments/assets/9d88d882-d243-41a8-8562-d66a4b8e23c5" />
 
+
+TO BE - Abertura de chamados
+ <img width="1569" height="723" alt="Abertura de chamados (TO-BE) Diagrama" src="https://github.com/user-attachments/assets/11fe457d-c2eb-4183-b535-f6290441caa9" />
+
+
 #### Descrição de Proposta e Limites
 A introdução desta plataforma unificada é uma iniciativa estratégica para elevar a maturidade operacional da empresa. Ao automatizar tarefas repetitivas nos processos de recrutamento e suporte, a solução libera as equipes para se concentrarem em atividades de maior valor, como a análise estratégica de candidatos e a resolução de problemas complexos de clientes. Esta otimização está diretamente alinhada aos objetivos de negócio de aumentar a eficiência, fortalecer a marca (seja como empregadora ou prestadora de serviços) e promover um crescimento escalável.
 
