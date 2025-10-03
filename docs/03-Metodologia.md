@@ -42,12 +42,12 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - _Scrum master_: Lara Rhis
 - Protótipos: Gustavo Santiago
 - Testes: Daniel Bleme e João Vitor
-- Documentação: Guilherme Teixeira, Marcos Vinícius e Vinícius Muniz
+- Documentação: Guilherme Teixeira, Marcus Vinícius e Vinícius Muniz
 
 #### Sprint 2
 - _Scrum master_: Lara Rossini
-- Desenvolvedor _front-end_: Vinicíus Muniz e Guilherme Teixeira
-- Desenvolvedor _back-end_: Daniel Bleme, Marcos Vinicíus e João Vitor
+- Desenvolvedor _front-end_: Vinícius Muniz e Guilherme Teixeira
+- Desenvolvedor _back-end_: Daniel Bleme, Marcus Vinícius e João Vitor
 - Testes: Gustavo Santiago
 
 ###  Quadro de tarefas
