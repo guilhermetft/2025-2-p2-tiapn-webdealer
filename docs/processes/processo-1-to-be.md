@@ -4,7 +4,7 @@ A solução proposta centraliza todo o processo de recrutamento em uma plataform
 
 Os candidatos não enviam mais currículos por e-mail; eles se cadastram na plataforma, criando um perfil completo que pode incluir portfólio e projetos. O sistema, então, realiza uma triagem automática com base em filtros pré-definidos pelo RH (como competências técnicas, experiência, formação). Isso permite que a equipe de RH analise apenas um grupo qualificado de candidatos, otimizando seu tempo para uma análise mais estratégica e humana. As etapas seguintes, como agendamento de entrevistas e comunicação, são gerenciadas pela própria plataforma, garantindo agilidade e mantendo os candidatos informados sobre o status de sua aplicação em tempo real.
  
-<img width="1111" height="1461" alt="Diagrama TIAPN(WeabDealer) P2 Diagrama" src="https://github.com/user-attachments/assets/0275a95d-74a5-4898-9279-f13dd4e05667" />
+![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
 
 #### Detalhamento das atividades
 
@@ -38,24 +38,51 @@ _* **Link** - campo que armazena uma URL_
 _* **Tabela** - campo formado por uma matriz de valores_
 
 
-**Nome da atividade 1**
+**Nome da atividade 1: Solicitação de processo realizada por dentro da plataforma**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Setor Solicitante  | Seleção única       |        Obrigatório; Lista de setores da empresa            |          |
+| Cargo da Vaga  |    Seleção única     |       Obrigatório; Lista de cargos pré-definidos         |                   |
+| Habilidades e Competências        | Seleção múltipla  | Obrigatório; Lista de habilidades cadastradas no sistema |                |
+| Descrição Detalhada da Vaga         | Área de texto  | Obrigatório; Editor de texto rico |           |
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+| Divulgar Vaga | Vaga é divulgada automaticamente no WebDealer  | default |
+| Salvar como Rascunho      |        (Permanece na mesma tela)           |                   |
+
+
+**Nome da atividade 2: Candidato preenche análise de perfil e competências**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Nome Completo | Caixa de texto  |    Obrigatório     |                   |
+|     Email        |    Caixa de texto      |    Formato de e-mail válido     |                   |
+| Telefone | Caixa de texto  |    Formato (XX) XXXXX-XXXX   |                   |
+|     Competências e Habilidades       |    Seleção múltipla     |   O candidato seleciona em uma lista as habilidades que possui      |                   |
+| Anexar Currículo | Arquivo  |   Formato PDF ou DOCX; Tamanho máx 5MB     |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| Enviar Candidatura | Leitura de candidatos automática | default  |
+
+
+**Nome da atividade 3: Portfólio e projetos do candidato são avaliados**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+|                 |                  |                |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
+| **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do processo de cadastro |                   |
+|                      |                                |                   |
 
 
-**Nome da atividade 2**
+
+**Nome da atividade 4**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
