@@ -1,4 +1,4 @@
-### Processo 2 TO BE – NOME DO PROCESSO
+### Processo 2 TO BE – ABERTURA DE PROTOCOLO
 
 A solução proposta é a implementação de um portal de atendimento único e centralizado. Ao acessar o portal para abrir uma nova solicitação, o cliente será apresentado a um menu simples onde deverá indicar o setor com o qual deseja falar.
 
@@ -37,16 +37,15 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Detecção de problema/dúvida**
+**Detecção de problema/dúvida do cliente**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-|       Descrever situação     | Área de Texto   |  |                |
+| |   |                |                   |
+|       Descrever situação     | Área de Texto   | Obrigatório |                |
 | Anexar arquivos           | Arquivos   | Mais de um campo para anexos |           |
-|       Selecionar setor    |  Seleção única  |  |           |
-|       Selecionar natureza    |  Seleção única  |  |           |
+|       Selecionar setor    |  Seleção única  | Obrigatório; Lista de setores da empresa |           |
+|       Selecionar natureza    |  Seleção única  | Obrigatório; Lista pré-estabelecida |           |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
@@ -54,14 +53,14 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | Enviar              |        Fim da abertura do protocolo       | default           |
 
 
-**Nome da atividade 2**
+**Abertura do protocolo na Arquivar**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Número do protocolo | Número  |                |                   |
+|         Status do protocolo        |         Caixa de texto         |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+|            Enviar resultados          |       Retorno ao cliente                   |         Default          |
