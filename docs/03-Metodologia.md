@@ -81,6 +81,8 @@ Atualizado em: 02/10/2025
 | Lara        | Assinaturas e preenchimento documentação, identificação AS IS e TO be e Apresentação  |  29/09/25    | 02/10/25 | ✔️    |  02/10/25     |
 | João          | Descrição de Modelos de Processos e Atividades descritivas de processos  |    29/09/2025     | 02/10/2025 | ✔️    |    02/10/2025    |
 | Marcus          | Inserções e modificações no GitHub, melhorias do GitHub Projects |  25/09/25    | 02/10/25 | ✔️    |  02/10/25     |
+| Gustavo         | Apoio na documentação |  02/09/25    | 02/10/25 | ✔️    |  02/10/25     |
+
 
 
 
