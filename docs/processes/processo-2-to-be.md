@@ -4,7 +4,7 @@ A solução proposta é a implementação de um portal de atendimento único e c
 
 Com base na escolha do cliente, o sistema encaminha a demanda de forma automática para a fila de atendimento do setor correto. A equipe daquele setor recebe uma notificação em tempo real e já pode iniciar o atendimento, pois tem a certeza de que aquela solicitação pertence à sua área de responsabilidade. O cliente, por sua vez, recebe um número de protocolo e pode acompanhar o status do seu chamado diretamente pelo portal.
 
-![Exemplo de um Modelo BPMN do PROCESSO 2](../images/process.png "Modelo BPMN do Processo 2.")
+<img width="1569" height="723" alt="Abertura de chamados (TO-BE) Diagrama" src="https://github.com/user-attachments/assets/11fe457d-c2eb-4183-b535-f6290441caa9" />
 
 #### Detalhamento das atividades
 
