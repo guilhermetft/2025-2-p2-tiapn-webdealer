@@ -72,24 +72,27 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Nome do Candidato | Caixa de texto  |  Apenas leitura   |                   |
+|   Portfólio e Currículo   |   Link      | Links para visualizar os arquivos e URLs enviados  |                   |
+|   Parecer do RH   |   Área de texto    |  Obrigatório se o candidato for movido de etapa   |                   |
+|  Decisão da Avaliação    |   Seleção única  |  Opções: 'Prosseguir com candidato', 'Não prosseguir'   |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| Salvar e Avançar | Agendamento da entrevista  | default|
+| Desqualificar    |   Encerramento do processo   |                   |
 
 
 
-**Nome da atividade 4**
+**Nome da atividade 4: Registrar Resultado da Entrevista Técnica e Avaliações**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Avaliação das Habilidades | Tabela  | Colunas: 'Habilidade', 'Nota (1-5)', 'Observações'   |                   |
+|  Parecer Final do Avaliador   | Área de texto  |   Obrigatório     |                   |
+|   Recomendação  |  Seleção única   | Obrigatório; Opções: 'Aprovar candidato', 'Desaprovar candidato'    |                   |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+|Finalizar Avaliação |Fim (Processo de contratação ou descarte)  | default |
