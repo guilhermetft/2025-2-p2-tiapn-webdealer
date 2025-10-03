@@ -4,7 +4,8 @@ Atualmente, o processo de recrutamento e seleção é iniciado quando um gestor 
 
 Os currículos são recebidos de forma desestruturada, majoritariamente por e-mail, gerando um grande volume de dados não padronizados. A triagem desses currículos é uma tarefa inteiramente manual, baseada na leitura individual de cada documento, o que consome um tempo considerável e está sujeito a vieses inconscientes. Após essa triagem inicial, os candidatos selecionados são contatados para agendamento de entrevistas, um processo logístico complexo e com muitas trocas de mensagens. Por fim, após as rodadas de entrevistas, o candidato final é escolhido e os demais são informados (ou muitas vezes, não recebem retorno), encerrando o ciclo de forma pouco eficiente e com baixa qualidade na experiência do candidato.
  
-![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
+<img width="1495" height="1297" alt="Diagrama tiapn(weabdealer) Diagrama" src="https://github.com/user-attachments/assets/9ab0dfe5-6513-417d-a1e9-08255f90e06e" />
+
 
 #### Detalhamento das atividades
 
