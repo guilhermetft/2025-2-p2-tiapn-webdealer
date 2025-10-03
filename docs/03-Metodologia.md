@@ -79,7 +79,7 @@ Atualizado em: 02/10/2025
 | Guilherme       | Documentação GitHub Projects   | 02/10/2025     | 02/10/2025 | ✔️    | 02/10/2025      |
 | Vinícius        | Criação de quadro BPMN do problema 02  | 29/09/2025     | 02/10/2025 |   ✔️  |      02/10/2025           |
 | Lara        | Assinaturas e preenchimento documentação, identificação AS IS e TO be e Apresentação  |  29/09/25    | 02/10/25 | ✔️    |  02/10/25     |
-| João          | Descrição de Modelos de Processos e Atividades descritivas de processos  |    02/10/2025     | 04/09/2025 | ✔️    |    02/10/2025    |
+| João          | Descrição de Modelos de Processos e Atividades descritivas de processos  |    29/09/2025     | 02/10/2025 | ✔️    |    02/10/2025    |
 
 
 
