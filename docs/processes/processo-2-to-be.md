@@ -37,21 +37,21 @@ _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
 
-**Nome da atividade 1**
+**Detecção de problema/dúvida**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
 | ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+|       Descrever situação     | Área de Texto   |  |                |
+| Anexar arquivos           | Arquivos   | Mais de um campo para anexos |           |
+|       Selecionar setor    |  Seleção única  |  |           |
+|       Selecionar natureza    |  Seleção única  |  |           |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 2              | default           |
-| cadastrar            | Início do processo de cadastro  |                   |
+| Enviar              |        Fim da abertura do protocolo       | default           |
 
 
 **Nome da atividade 2**
