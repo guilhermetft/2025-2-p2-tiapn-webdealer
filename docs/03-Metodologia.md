@@ -78,7 +78,7 @@ Atualizado em: 02/10/2025
 | Daniel Bleme   | Criação de quadro BPMN do problema 01   | 27/09/2025     | 02/10/2025 | ✔️    | 02/10/2025      |
 | Guilherme       | Documentação GitHub Projects   | 02/10/2025     | 02/10/2025 | ✔️    | 02/10/2025      |
 | Vinícius        | Criação de quadro BPMN do problema 02  | 29/09/2025     | 02/10/2025 |   ✔️  |      02/10/2025           |
-| Lara        | Assinaturas e preenchimento documentação, identificação AS IS e TO be e Apresentação  |  29/09/25    | 02/10/25 | ✔️    |       |
+| Lara        | Assinaturas e preenchimento documentação, identificação AS IS e TO be e Apresentação  |  29/09/25    | 02/10/25 | ✔️    |  02/10/25     |
 
 
 Legenda:
