@@ -4,7 +4,7 @@ A solução proposta centraliza todo o processo de recrutamento em uma plataform
 
 Os candidatos não enviam mais currículos por e-mail; eles se cadastram na plataforma, criando um perfil completo que pode incluir portfólio e projetos. O sistema, então, realiza uma triagem automática com base em filtros pré-definidos pelo RH (como competências técnicas, experiência, formação). Isso permite que a equipe de RH analise apenas um grupo qualificado de candidatos, otimizando seu tempo para uma análise mais estratégica e humana. As etapas seguintes, como agendamento de entrevistas e comunicação, são gerenciadas pela própria plataforma, garantindo agilidade e mantendo os candidatos informados sobre o status de sua aplicação em tempo real.
  
-![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
+<img width="1111" height="1461" alt="Diagrama TIAPN(WeabDealer) P2 Diagrama" src="https://github.com/user-attachments/assets/0275a95d-74a5-4898-9279-f13dd4e05667" />
 
 #### Detalhamento das atividades
 
