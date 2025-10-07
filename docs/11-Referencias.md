@@ -4,9 +4,13 @@ BENYON, David. **Interação humano-computador**. 2. ed. São Paulo: Pearson Pre
 
 CORMEN, Thomas H. et al. **Algoritmos: teoria e prática**. 4. ed. Rio de Janeiro: GEN LTC, 2024.  
 
+DELOITTE. CPO Survey 2023: pesquisa executiva sobre prioridades corporativas no Brasil. 2023.
+
 ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019.  
 
 PEREIRA, Francisco. **Como o Brasil se tornou o celeiro de startups da América Latina**. TI INSIDE, 16 jan. 2025.
+
+PWC BRASIL; FUNDAÇÃO DOM CABRAL. Índice Transformação Digital Brasil 2023: relatório sobre maturidade digital nas empresas brasileiras. 2023.
 
 RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial: uma abordagem moderna**. 4. ed. Rio de Janeiro: LTC, 2022.  
 
