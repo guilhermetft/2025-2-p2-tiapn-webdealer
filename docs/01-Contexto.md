@@ -1,57 +1,51 @@
 # Introdução
 
-Na era atual, é inegável que a sociedade vive um período marcado pela inovação, em que novas ideias, tecnológicas ou não, surgem diariamente, transformando empresas, comunidades e o cotidiano coletivo. Nesse cenário, muitos jovens talentosos, estudantes e profissionais com espírito empreendedor enfrentam o desafio crucial de transformar ideias inovadoras em projetos concretos. Na maioria das vezes, o que impede uma ideia de se tornar realidade é a falta de visibilidade, apoio e conexão com aqueles que possam auxiliá-la e impulsioná-la.
+Na era digital, a transformação tecnológica redefine continuamente a forma como as empresas gerenciam seus processos, buscando eficiência, agilidade e integração. Nesse contexto, surge a necessidade de soluções que unifiquem informações, otimizem fluxos de trabalho e fortaleçam a comunicação entre equipes.
 
-É justamente nesse ponto que surge a Webdealer, um projeto acadêmico e inovador que conecta estudantes, profissionais e empreendedores em potencial a investidores e empresas parceiras interessadas em apoiar iniciativas criativas e promissoras. Mais do que apenas uma proposta voltada ao reconhecimento e ao networking, o objetivo é estruturar um ambiente verdadeiramente colaborativo, que demonstre que qualquer pessoa pode desenvolver uma ideia inovadora e compartilhá-la com o mundo.
+Pensando nisso, o projeto Webdealer propõe o desenvolvimento de uma aplicação web para gestão de projetos corporativos, com o objetivo de centralizar dados, organizar tarefas e oferecer uma visão clara do andamento das atividades. O sistema permitirá o cadastro, acompanhamento e atualização de projetos, além da geração de dashboards e relatórios gerenciais que apoiam a tomada de decisão e o controle estratégico.
 
-O cliente/parceiro vinculado ao projeto Webdealer é a Arquivar, uma empresa especializada em gestão de documentos físicos e digitais, consolidada no mercado há mais de 30 anos. Destaca-se como pioneira ao apoiar uma iniciativa acadêmica voltada à inovação.
+Idealizado em parceria com a empresa Arquivar, o projeto reforça a importância da inovação e da transformação digital como meios de aumentar a eficiência, produtividade e transparência nas operações internas — valores essenciais para organizações que buscam aprimorar seus processos e resultados.
 
 ## Cliente 
 
-A Arquivar, pioneira em gestão documental, conta com mais de 34 anos de experiência, mais de 4 mil clientes atendidos, 5 bilhões de documentos gerenciados e cerca de 40 unidades no Brasil, além de presença internacional na Bolívia.
+A Arquivar é uma empresa referência em gestão documental e transformação digital, com mais de 34 anos de experiência e atuação nacional e internacional. Oferece soluções em GED, BPM, digitalização, assinatura digital, auditoria, adequação à LGPD e gestão eletrônica de documentos, atendendo diversos setores.
 
-Durante uma conversa com seu fundador, Mário Pinho, foram identificados alguns desafios na captação de talentos e na geração de ideias inovadoras. Nesse contexto, o Webdealer surge como apoio estratégico, auxiliando nos processos internos e fomentando a inovação.
+Durante a análise dos processos internos, foi identificada a necessidade de centralizar informações e otimizar o gerenciamento de projetos. Assim, o Webdealer foi desenvolvido como uma ferramenta estratégica para organizar tarefas, acompanhar o progresso das atividades e apoiar a tomada de decisões.
 
-A empresa oferece soluções em GED, BPM, digitalização, assinatura digital, auditoria, transformação digital e adequação à LGPD, atendendo setores como RH, saúde, agronegócio, educação e cooperativas. Reconhecida como Microsoft Partner Gold e Silver, Great Place To Work e uma das melhores franquias do Brasil, destaca-se como referência no mercado.
-
-O projeto Webdealer tem potencial para impulsionar a inovação, formar novos talentos e fortalecer a imagem da Arquivar junto ao meio acadêmico.
+Com esse projeto, a Arquivar reforça seu compromisso com a inovação, eficiência e melhoria contínua em suas operações.
 
 ## Problema
 
-No cenário atual, muitas ideias inovadoras deixam de se concretizar pela falta de apoio financeiro e de parceiros estratégicos. Inventores, estudantes e profissionais criativos frequentemente desenvolvem projetos promissores, mas enfrentam obstáculos para atrair investidores ou colaboradores capazes de transformá-los em realidade. Essa barreira gera uma lacuna entre a concepção da ideia e sua execução, resultando na perda de oportunidades de inovação.
+Em muitas organizações, a falta de centralização das informações e de padronização nos processos de gestão de projetos ainda é um grande desafio. Equipes de diferentes setores enfrentam dificuldades na comunicação, no acompanhamento das tarefas e no monitoramento do progresso das atividades, o que pode gerar atrasos, retrabalhos e perda de produtividade.
 
-A aplicação proposta será um ambiente digital voltado a conectar pessoas com ideias inovadoras a potenciais investidores e parceiros. Seu objetivo é oferecer uma plataforma acessível, onde os usuários possam apresentar seus projetos de forma clara e atrativa, facilitando a identificação de interessados em apoiar financeiramente ou colaborar. Dessa forma, a solução atua como ponte entre criatividade e investimento, suprindo a necessidade de visibilidade e suporte para iniciativas que, de outra maneira, permaneceriam inviáveis.
+Além disso, a ausência de ferramentas integradas que reúnam dados, indicadores e relatórios em um único ambiente dificulta a tomada de decisão estratégica e a visão global dos resultados. Nesse contexto, torna-se essencial o desenvolvimento de soluções digitais que permitam organizar projetos, distribuir responsabilidades e acompanhar o desempenho das equipes em tempo real, promovendo maior eficiência, transparência e alinhamento organizacional.
 
 ## Objetivos
 
-Propor e desenvolver uma plataforma que conecte mentes talentosas e investidores, permitindo a publicação de ideias de projetos e a busca por colaboradores, de forma que essas ideias possam se tornar projetos concretos.
+Desenvolver uma aplicação web voltada à gestão e acompanhamento dos projetos internos da empresa Arquivar, com foco na centralização das informações, otimização dos processos e aprimoramento da comunicação entre as equipes envolvidas. 
 
- - Modelar os processos de cadastro e validação de ideias e talentos.
-
- - Desenvolver protótipos navegáveis que representem a interação intuitiva entre fornecedores de ideias e investidores.
-
- - Avaliar a usabilidade da plataforma por meio de testes com potenciais usuários.
-
- - Comparar o diferencial da solução proposta em relação a plataformas existentes, como o LinkedIn, destacando sua ênfase em inovação e colaboração.
+- Implementar funcionalidades que permitam o cadastro, edição e exclusão de projetos de forma estruturada e segura.
+  
+- Desenvolver módulos para o registro e acompanhamento de tarefas, com definição de responsáveis, prazos e status de execução.
+  
+- Criar um painel interativo (dashboard) que apresente indicadores de desempenho e progresso dos projetos em tempo real.
+  
+- Estabelecer níveis de acesso diferenciados para administradores, gestores e colaboradores.
+  
+- Permitir a emissão de relatórios gerenciais para apoio na tomada de decisões estratégicas.
+  
+- Garantir usabilidade, responsividade e segurança na interface do sistema.
+  
+- Integrar o sistema com ferramentas e fluxos já utilizados pela empresa, quando possível, para facilitar sua adoção. 
 
 ## Justificativa
 
-A criação do projeto fundamenta-se na necessidade de estabelecer um elo mais sólido entre ideias inovadoras e investimentos. Em um mundo em constante evolução, em que o conhecimento se renova a cada instante, grandes empresas acabam se destacando significativamente, enquanto muitas ideias promissoras permanecem invisíveis. Para grande parte dos empreendedores iniciantes, estudantes e profissionais criativos, conquistar reconhecimento e recursos para desenvolver suas propostas tornou-se um desafio cada vez maior.
+A gestão eficiente de projetos é fundamental para o sucesso organizacional, especialmente em ambientes que exigem agilidade, colaboração e controle de resultados. No entanto, muitas empresas ainda enfrentam desafios significativos nesse aspecto. Estudos indicam que equipes sem um sistema estruturado desperdiçam até 30% do tempo com retrabalho, falta de alinhamento e dificuldade no acesso a informações essenciais. Além disso, 75% dos projetos falham por não seguirem um planejamento claro, conforme dados do Project Management Institute (PMI). No contexto brasileiro, a falta de planejamento é apontada como uma das principais causas da mortalidade empresarial, sendo que quase 60% das empresas fecham nos primeiros cinco anos, segundo o Sebrae.
 
-De acordo com dados da Associação Brasileira de Startups (Abstartups), existem mais de 13 mil startups ativas no Brasil (2024), sendo a maioria formada por equipes pequenas e com recursos limitados. Apesar do potencial, muitas dessas ideias não chegam ao mercado pela falta de visibilidade e apoio inicial. Ao mesmo tempo, empresas e investidores enfrentam dificuldades para identificar talentos e soluções inovadoras que possam impulsionar sua competitividade.
+Nesse cenário, o desenvolvimento de uma aplicação web para gestão de projetos surge como uma solução estratégica. Organizações que utilizam práticas consistentes de gerenciamento de projetos apresentam uma taxa de sucesso de 92% no cumprimento dos objetivos, e a implementação de tecnologias específicas pode aumentar a produtividade em até 50% e reduzir custos em até 20%. A aplicação web facilita a centralização de dados, automatiza processos e melhora a comunicação entre as equipes, contribuindo para maior transparência, redução de falhas operacionais e melhor desempenho geral das organizações.
 
-Nesse cenário, o desenvolvimento da Webdealer se justifica como uma solução de benefício mútuo:
-
-Para o fornecedor da ideia: oferece a oportunidade de divulgar projetos, obter apoio, ampliar a visibilidade e desenvolver habilidades empreendedoras.
-
-Para o investidor ou empresa: proporciona acesso a um banco exclusivo de talentos e projetos em estágio inicial, favorecendo parcerias estratégicas, redução de custos com inovação e fortalecimento da imagem institucional.
+Portanto, investir no desenvolvimento de uma aplicação web para gestão de projetos não é apenas uma necessidade tecnológica, mas uma estratégia essencial para alinhar-se às demandas atuais de transformação digital e inovação corporativa, garantindo que as empresas atinjam seus objetivos com eficiência e precisão.
 
 ## Público-alvo
 
-O público-alvo da plataforma é composto por dois grupos principais:
-
- - Fornecedores de Ideias: estudantes universitários, recém-formados e profissionais criativos. Esse perfil é geralmente conectado ao ambiente digital, com domínio intermediário de tecnologia, e possui forte motivação para transformar ideias em projetos concretos. Contudo, muitas vezes carece de visibilidade, apoio e parcerias estratégicas para desenvolver suas propostas.
-
- - Compradores / Investidores: empresas, gestores e profissionais das áreas de RH e inovação. Trata-se de um público com perfil estratégico, em busca de talentos, soluções inovadoras e startups promissoras. Normalmente ocupa cargos de decisão, como diretores, gestores e líderes de inovação, com conhecimento intermediário a avançado em plataformas digitais e grande interesse em competitividade de mercado.
-
-Essa relação dual — fornecedores de ideias e compradores/investidores — constitui o núcleo da proposta da plataforma, promovendo conexões valiosas entre quem cria e quem investe.
+O sistema é voltado para gestores, colaboradores e administradores que atuam em empresas de diferentes portes e segmentos e que buscam organizar e acompanhar seus projetos de forma mais eficiente. Também se destina a equipes de planejamento, controle e tecnologia da informação, que necessitam de uma ferramenta capaz de agregar informações, monitorar indicadores e apoiar a gestão estratégica das atividades internas.
