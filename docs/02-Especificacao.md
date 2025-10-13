@@ -37,14 +37,12 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Analista de Projetos | Quero acompanhar o progresso de múltiplos projetos em tempo real | Para garantir que minhas tarefas e as de minhas equipes sejam concluídas dentro do prazo e com qualidade             |
-|Gerente de TI      | Quero acessar dashboards e relatórios consolidados de projetos                 | Para identificar gargalos, monitorar indicadores de desempenho e tomar decisões estratégicas |
-|Sócio de uma startup      | Buscar e conectar com possíveis investidores                 | Que o projeto evolua e se consolide no mercado de trabalho |
-|Investidor       | Reconhecer projetos passíveis de investimento com segurança                 | Gerar retorno financeiro |
-|Entusiasta de tecnologia       | Conhecer novas propostas de inovação aplicadas ao cotidiano                 | Inspirar-se e aplicá-las no cotidiano |
-|Professora universitária       | Divulgar propostas de projetos inovadores e interessantes                 | Promover networking e atrair reconhecimento e investidores para os projetos |
-
-
+| Analista de Projetos | Acompanhar o progresso de múltiplos projetos em tempo real | Garantir que minhas tarefas e as de minhas equipes sejam concluídas dentro do prazo e com qualidade             |
+| Gerente de TI | Acessar dashboards e relatórios consolidados de projetos | Identificar gargalos, monitorar indicadores de desempenho e tomar decisões estratégicas |
+| Colaboradora | Interface intuitiva para consultar minhas tarefas e atualizar status de atividades | Me adaptar rapidamente aos processos internos e manter a comunicação com a equipe |
+| Diretor de operações | Visualizar o andamento de todos os projetos da empresa em um painel centralizado | Tomar decisões estratégicas com informações confiáveis e em tempo real |
+| Coordenadora de planejamento | Gerar relatórios e indicadores integrados dos projetos | Avaliar produtividade, eficiência e alinhar processos entre setores |
+| Administrador de processos | Centralizar tarefas e responsabilidades das equipes | Garantir que processos sejam seguidos corretamente, promovendo mais transparência e eficiência |
 
 ## Requisitos
 
