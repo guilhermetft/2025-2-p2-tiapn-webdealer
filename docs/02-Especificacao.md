@@ -12,27 +12,24 @@ O *Business Model Canvas* (BMC) é uma ferramenta de planejamento estratégico q
 
 No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação aos aspectos essenciais do negócio, servindo como base para decisões técnicas, de design e de priorização de funcionalidades.  
 
-![Quadro de modelo de negócios]
+**Quadro de modelo de negócios**
 <img width="3833" height="2359" alt="Untitled" src="https://github.com/user-attachments/assets/7998c70c-b79f-447a-ad71-5623034af7a0" />
 
 
 
 ## Personas
 
+**PERSONA 1**: Ana Beatriz, 28 anos, analista de projetos em uma empresa de médio porte. Ana precisa acompanhar múltiplos projetos simultaneamente e sente dificuldade em consolidar informações de diferentes equipes. Busca uma ferramenta que permita monitorar prazos, responsabilidades e progresso das tarefas em um único ambiente.
 
+**PERSONA 2**: Carlos Eduardo, 42 anos, gerente de TI em uma grande organização. Carlos precisa garantir que os projetos da empresa sejam executados dentro do prazo e do orçamento. Enfrenta dificuldades para visualizar indicadores de desempenho e identificar gargalos. Deseja uma plataforma que ofereça dashboards e relatórios gerenciais confiáveis.
 
+**PERSONA 3**: Mariana Lopes, 24 anos, colaboradora recém-contratada de uma empresa de tecnologia. Mariana precisa se adaptar rapidamente aos processos internos e acompanhar suas tarefas diárias. Busca uma aplicação que seja intuitiva, centralize informações importantes e facilite a comunicação com outros membros da equipe.
 
-**PERSONA 1**: Cecília Alves, 17 anos, estudante do ensino médio técnico em Informática, criou um protótipo de aplicativo para divulgar exposições artísticas locais. Apaixonada por arte e tecnologia, deseja expandir o projeto, mas enfrenta falta de reconhecimento e dificuldade para atrair investidores. Busca uma plataforma que valorize seus trabalhos e inspire novas ideias.
+**PERSONA 4**: Rafael Torres, 38 anos, diretor de operações de uma multinacional. Rafael precisa ter uma visão estratégica do andamento de todos os projetos da empresa para tomar decisões assertivas. Enfrenta desafios em obter informações consolidadas e atualizadas em tempo real.
 
-**PERSONA 2**: Cláudio Marques, 48 anos, gerente de uma software house e entusiasta de tecnologia, busca constantemente formas de otimizar sua empresa e conhecer projetos inovadores. Enfrenta dificuldade em acompanhar as novidades de TI e em encontrar talentos qualificados. Deseja uma plataforma que facilite o networking, a descoberta de projetos e a conexão com potenciais colaboradores.
+**PERSONA 5**: Juliana Martins, 30 anos, coordenadora de planejamento e controle de uma empresa de serviços. Juliana é responsável por monitorar indicadores de produtividade e eficiência, mas sente dificuldade em conectar dados de diferentes setores e gerar relatórios consistentes. Busca uma ferramenta que facilite o planejamento e a gestão integrada de projetos.
 
-**PERSONA 3**: Paulo Antônio, 22 anos, estudante de Engenharia de Software e sócio de uma startup de transporte urbano. Apesar de já ter um projeto em andamento, enfrenta dificuldade para encontrar investidores, possui pouca experiência de mercado e carece de networking. Busca atrair investimentos e consolidar sua startup.
-
-**PERSONA 4**: Ricardo Quintana, 40 anos, CEO de uma empresa de investimentos, busca constantemente oportunidades inovadoras e seguras. Além do retorno financeiro, interessa-se por projetos com impacto positivo na comunidade. Sente falta de uma rede acessível e diversificada de opções para investir.
-
-**PERSONA 5**: Francisco Gonçalves, 27 anos, assistente de escritório e entusiasta de tecnologia. Gosta de explorar como soluções tecnológicas podem resolver problemas do dia a dia, mas sente falta de um espaço acessível para conhecer projetos criativos. Busca acompanhar novas ideias e se inspirar em soluções de impacto social e coletivo.
-
-**PERSONA 6**: Karina Freitas, 35 anos, professora universitária de TI, busca dar visibilidade às ideias e protótipos de seus alunos. Acredita que muitos projetos ficam restritos ao ambiente acadêmico e sem reconhecimento. Deseja um espaço para divulgar essas iniciativas, gerar networking e atrair investimentos.
+**PERSONA 6**: Eduardo Silva, 35 anos, administrador de processos internos. Eduardo precisa garantir que equipes cumpram suas responsabilidades e que os processos sejam seguidos corretamente. Ele deseja uma aplicação que centralize informações, organize tarefas e facilite a comunicação entre departamentos, promovendo mais transparência e eficiência.
 
 ## Histórias de usuários
 
@@ -40,8 +37,8 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Estudante           |  Obter maior reconhecimento para o projeto         | Atrair possíveis investidores e divulgações, além de inspirar pessoas             |
-|Gerente de empresa      | Conhecer projetos inovadores e fazer networking com novas pessoas                 | Inspirar-se em melhorias e gerar novos empregos |
+|Analista de Projetos | Quero acompanhar o progresso de múltiplos projetos em tempo real | Para garantir que minhas tarefas e as de minhas equipes sejam concluídas dentro do prazo e com qualidade             |
+|Gerente de TI      | Quero acessar dashboards e relatórios consolidados de projetos                 | Para identificar gargalos, monitorar indicadores de desempenho e tomar decisões estratégicas |
 |Sócio de uma startup      | Buscar e conectar com possíveis investidores                 | Que o projeto evolua e se consolide no mercado de trabalho |
 |Investidor       | Reconhecer projetos passíveis de investimento com segurança                 | Gerar retorno financeiro |
 |Entusiasta de tecnologia       | Conhecer novas propostas de inovação aplicadas ao cotidiano                 | Inspirar-se e aplicá-las no cotidiano |
