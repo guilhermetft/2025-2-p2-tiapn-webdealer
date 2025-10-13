@@ -52,27 +52,27 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário crie sua conta | ALTA | 
-|RF-002| Permitir que o usuário cadastre projetos | ALTA | 
-|RF-003| Permitir que o projeto seja editável | MÉDIA |
-|RF-004| Permitir pesquisa de projetos por nome | MÉDIA |
-|RF-005| Criar categorias para filtrar pesquisas | BAIXA |                 
-|RF-006| Criar sistema de avaliação de projetos | BAIXA |                 
-|RF-007| Criar e modificar perfil de usuário | ALTA |                 
-|RF-008| Exibir projetos cadastrados | ALTA |    
-|RF-009| Disponibilizar meio de comunicação entre investidor e inovador | ALTA |
+|RF-001| Cadastro, edição e exclusão de projetos | ALTA | 
+|RF-002| Registro e acompanhamento de tarefas com responsáveis, prazos e status | ALTA | 
+|RF-003| Dashboards interativos com indicadores de desempenho e progresso | ALTA |
+|RF-004| Níveis de acesso diferenciados para administradores, gestores e colaboradores | ALTA |
+|RF-005| Emissão de relatórios gerenciais | MÉDIA |                 
+|RF-006| Busca e filtragem de projetos e tarefas | MÉDIA |                 
+|RF-007| Notificações automáticas sobre prazos, atualizações e mudanças de status | MÉDIA |                 
+|RF-008| Comentários e comunicação interna entre membros da equipe | BAIXA |    
+|RF-009| Exportação de dados em formatos padrão (PDF/Excel) | BAIXA |
 
 ---
 ### Requisitos não funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
-|RNF-002| O sistema deve seguir boas práticas de acessibilidade | BAIXA | 
-|RNF-003| O sistema deve estar disponível no mínimo 90% do tempo | ALTA | 
-|RNF-004| O código deve ser comentado para facilitar a manutenção | ALTA | 
-|RNF-005| O sistema deve ser multiplataforma | ALTA | 
-|RNF-006| O sistema deve possuir banco de dados integrado | ALTA | 
+|RNF-001| Responsividade (desktop, tablet e smartphone) | ALTA | 
+|RNF-002| Segurança de dados e autenticação por função | ALTA | 
+|RNF-003| Intuitivo e fácil de usar | ALTA | 
+|RNF-004| Tempo de resposta rápido (dashboards e relatórios) | MÉDIA | 
+|RNF-005| Alta disponibilidade (uptime ≥ 99%) e backup automático | MÉDIA | 
+|RNF-006| Escalabilidade para suportar aumento de usuários e projetos | MÉDIA | 
 
 ---
 ## Restrições
@@ -81,8 +81,8 @@ As restrições definem os limites e condições que devem ser respeitados no de
 
 |ID  | Restrição                                                                 |
 |----|---------------------------------------------------------------------------|
-|001 | O projeto deverá ser concluído e entregue até o final do semestre letivo. |
-|002 | O custo total do projeto não poderá ultrapassar o orçamento previamente definido. |
-|003 | A primeira versão do projeto não contemplará um sistema antiplágio. |
-|004 | O software será destinado exclusivamente a aplicações voltadas para a área tecnológica. |
+|001 | O projeto deverá ser concluído e entregue até o final do semestre letivo |
+|002 | Ser desenvolvido como aplicação web, acessível via navegador |
+|003 | Compatível com processos internos e fluxos existentes na empresa |
+|004 | Obedecer normas de segurança da informação e LGPD |
 
