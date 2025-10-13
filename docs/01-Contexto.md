@@ -48,4 +48,8 @@ Portanto, investir no desenvolvimento de uma aplicação web para gestão de pro
 
 ## Público-alvo
 
-O sistema é voltado para gestores, colaboradores e administradores que atuam em empresas de diferentes portes e segmentos e que buscam organizar e acompanhar seus projetos de forma mais eficiente. Também se destina a equipes de planejamento, controle e tecnologia da informação, que necessitam de uma ferramenta capaz de agregar informações, monitorar indicadores e apoiar a gestão estratégica das atividades internas.
+- Empresas que precisam otimizar a gestão de projetos internos: Organizações de diferentes portes e setores que buscam centralizar informações, organizar tarefas e acompanhar o progresso de projetos de forma eficiente.
+
+- Colaboradores que necessitam de acesso rápido a informações sobre projetos: Funcionários de diversas áreas que precisam consultar, atualizar ou acompanhar tarefas e responsabilidades. Esse público pode variar desde novos colaboradores, que precisam se adaptar aos processos, até profissionais experientes que buscam agilidade na execução das atividades.
+
+- Gestores que desejam monitorar o desempenho de equipes e projetos: Supervisores, coordenadores e diretores interessados em acompanhar indicadores, prazos e resultados dos projetos. Esse público busca dashboards e relatórios que auxiliem na tomada de decisão estratégica e na transparência das atividades internas.
