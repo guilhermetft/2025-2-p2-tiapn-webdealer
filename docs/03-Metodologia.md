@@ -34,16 +34,17 @@ Além das branches e etiquetas o grupo adotou a criação de branches individuai
 > Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:
 
 #### Sprint 1
-- _Scrum master_: Lara Rhis
-- Protótipos: Gustavo Santiago
-- Testes: Daniel Bleme e João Vitor
-- Documentação: Guilherme Teixeira, Marcus Vinícius e Vinícius Muniz
+- _Scrum master_: Lara Rossini
+- Introdução (Documentação): Guilherme Teixeira, Daniel Bleme
+- Participantes do processo de Negócio (Documentação): Lara Rossini, Gustavo Santiago
+- Especificações do projeto (Documentação): Marcus Vinícius, Vinícius Muniz e João Vitor
 
 #### Sprint 2
 - _Scrum master_: Lara Rossini
-- Desenvolvedor _front-end_: Vinícius Muniz e Guilherme Teixeira
-- Desenvolvedor _back-end_: Daniel Bleme, Marcus Vinícius e João Vitor
-- Testes: Gustavo Santiago
+- Apresentação e Design: Lara Rossini, Gustavo Santiago
+- Modelagem de Processos de Negócios: Daniel Bleme, Marcus Vinícius, Vinícius Muniz e João Vitor
+- Documentação: Guilherme Teixeira
+- Planejamento comercial: Guilherme, Daniel
 
 #### Sprint 3
 - _Scrum master_: 
