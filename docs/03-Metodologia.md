@@ -104,25 +104,11 @@ Legenda:
 - ⌛: atrasado
 - ❌: não iniciado
 
-
-> **Links úteis**:
-> - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
-
 ### Processo
 
 Coloque informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
 ![Captura do GitHub Projects](<images/Projects.png>)
  
-> **Links úteis**:
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
-
-
 ## Ferramentas
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Sempre que possível, inclua também frameworks, bibliotecas e demais tecnologias utilizadas, indicando seu uso em contextos específicos, como aplicações móveis, web ou outros.
@@ -137,4 +123,3 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 | Gerenciamento do projeto            | GitHub Projects                    | [ GitHub Projects WebDealer ](https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69) |
 | Hospedagem                          | Vercel                             | http://....                            |
 | Criação quadros BPMN                | Heflo                              | [http://....   ](https://app.heflo.com/Process/Editor#&)                         |
-
