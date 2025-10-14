@@ -25,7 +25,7 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
+Além das branches e etiquetas o grupo adotou a criação de branches individuais para o desenvolvimento dos artefatos do projeto separadamente, evitando assim conflitos e outros problemas.
 
 ## Planejamento do projeto
 
