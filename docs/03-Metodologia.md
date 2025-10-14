@@ -3,7 +3,9 @@
 
 <span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+A metodologia de trabalho adotada pelo grupo baseia-se em práticas ágeis, utilizando o framework Scrum para a organização das tarefas e o desenvolvimento iterativo do projeto. O trabalho foi dividido em Sprints, cada uma com um objetivo claro e entregas definidas, permitindo o acompanhamento contínuo do progresso e a adaptação a novas demandas.
+
+Para a gestão do projeto, foram utilizados os recursos do GitHub, como o controle de versionamento com Git, o gerenciamento de issues e o quadro Kanban do GitHub Projects. A comunicação da equipe foi realizada por meio de encontros síncronos e grupos de mensagens, garantindo o alinhamento constante entre todos os membros.
 
 ## Controle de versão
 
@@ -43,6 +45,11 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - Desenvolvedor _back-end_: Daniel Bleme, Marcus Vinícius e João Vitor
 - Testes: Gustavo Santiago
 
+#### Sprint 3
+- _Scrum master_: 
+- Apresentação, desenvolvimento de wireframes e diagramas:
+- Diagrama, modelos e scripts do banco de dados:
+
 ###  Quadro de tarefas
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
@@ -77,8 +84,19 @@ Atualizado em: 02/10/2025
 | Gustavo         | Apoio na documentação |  02/09/25    | 02/10/25 | ✔️    |  02/10/25     |
 
 
+#### Sprint 3
 
+Atualizado em: 14/10/2025
 
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+| Daniel |             |          |      |  |           |
+| Guilherme |             |          |      |  |           |
+| Gustavo |             |          |      |  |           |
+| João |             |          |      |  |           |
+| Lara |             |          |      |  |           |
+| Marcus |             |          |      |  |           |
+| Vinicius |             |          |      |  |           |
 
 Legenda:
 - ✔️: terminado
