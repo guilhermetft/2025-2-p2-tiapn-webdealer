@@ -76,13 +76,13 @@ Atualizado em: 02/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Daniel    | Criação de quadro BPMN do problema 01   | 27/09/2025     | 02/10/2025 | ✔️    | 02/10/2025      |
-| Guilherme       | Documentação GitHub Projects   | 02/10/2025     | 02/10/2025 | ✔️    | 02/10/2025      |
-| Vinícius        | Criação de quadro BPMN do problema 02  | 29/09/2025     | 02/10/2025 |   ✔️  |      02/10/2025           |
-| Lara        | Assinaturas e preenchimento documentação, identificação AS IS e TO be e Apresentação  |  29/09/25    | 02/10/25 | ✔️    |  02/10/25     |
-| João          | Descrição de Modelos de Processos e Atividades descritivas de processos  |    29/09/2025     | 02/10/2025 | ✔️    |    02/10/2025    |
-| Marcus          | Inserções e modificações no GitHub, melhorias do GitHub Projects |  25/09/25    | 02/10/25 | ✔️    |  02/10/25     |
-| Gustavo         | Apoio na documentação |  02/09/25    | 02/10/25 | ✔️    |  02/10/25     |
+| Daniel | Criação do BPMN 1, Quadro Business Model Canvas | 27/09/2025     | 02/10/2025 | ✔️    | 02/10/2025      |
+| Guilherme | Documentação do relatorio, GitHub Projects | 02/10/2025     | 02/10/2025 | ✔️    | 02/10/2025      |
+| Vinícius | Criação do BPMN 2  | 29/09/2025     | 02/10/2025 |   ✔️  |      02/10/2025           |
+| Lara | Assinaturas e preenchimento documentação, identificação AS-IS e TO-BE, apresentação  |  29/09/25    | 02/10/25 | ✔️    |  02/10/25     |
+| João | Descrição de Modelos de Processos e Atividades descritivas de processos |    29/09/2025     | 02/10/2025 | ✔️    |    02/10/2025    |
+| Marcus | Inserções e modificações no GitHub, melhorias do GitHub Projects |  25/09/25    | 02/10/25 | ✔️    |  02/10/25     |
+| Gustavo | Apoio na documentação |  02/09/25    | 02/10/25 | ✔️    |  02/10/25     |
 
 
 #### Sprint 3
@@ -108,7 +108,7 @@ Legenda:
 ### Processo
 
 Coloque informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
-![Captura do GitHub Projects](<images/Projects.png>)
+![Captura do GitHub Projects](<img width="1849" height="912" alt="image" src="https://github.com/user-attachments/assets/b91a3b05-6001-434e-bb47-c93c9cfcbdc8" />)
  
 ## Ferramentas
 
