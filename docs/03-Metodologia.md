@@ -108,7 +108,7 @@ Legenda:
 ### Processo
 
 Coloque informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
-![Captura do GitHub Projects](<img width="1849" height="912" alt="image" src="https://github.com/user-attachments/assets/b91a3b05-6001-434e-bb47-c93c9cfcbdc8" />)
+![Captura do GitHub Projects]
 <img width="1849" height="912" alt="image" src="https://github.com/user-attachments/assets/b91a3b05-6001-434e-bb47-c93c9cfcbdc8" />
  
 ## Ferramentas
