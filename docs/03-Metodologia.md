@@ -31,7 +31,7 @@ Além das branches e etiquetas o grupo adotou a criação de branches individuai
 
 ###  Divisão de papéis
 
-> Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:
+> Divisão de papéis entre os membros do grupo em cada Sprint. Em cada Sprint, os alunos assumiram diferentes papéis na equipe. 
 
 #### Sprint 1
 - _Scrum master_: Lara Rossini
@@ -53,7 +53,7 @@ Além das branches e etiquetas o grupo adotou a criação de branches individuai
 
 ###  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
+> Divisão de tarefas entre os membros do grupo e o acompanhamento da execução.
 
 #### Sprint 1
 
@@ -107,8 +107,7 @@ Legenda:
 
 ### Processo
 
-Coloque informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
-![Captura do GitHub Projects]
+O grupo adotou o Scrum como metodologia de gestão do projeto, estruturando o desenvolvimento em sprints mensais. Para o controle e acompanhamento das tarefas, utilizou-se o GitHub Projects, onde as atividades foram organizadas em colunas correspondentes a cada sprint. Ao final de cada sprint, uma reunião de review foi feita para apresentar os avanços e ajustes necessários foram definidos nas retrospectivas.
 <img width="1849" height="912" alt="image" src="https://github.com/user-attachments/assets/b91a3b05-6001-434e-bb47-c93c9cfcbdc8" />
  
 ## Ferramentas
