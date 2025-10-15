@@ -1,10 +1,12 @@
-### Processo 1 AS IS – Recrutamento e Seleção de Candidatos.
+### Processo 1 AS IS – Gestão de Projetos.
 
-Atualmente, o processo de recrutamento e seleção é iniciado quando um gestor de área comunica a necessidade de uma nova vaga, geralmente de maneira informal, via e-mail ou comunicação direta com o setor de Recursos Humanos (RH). O RH, por sua vez, realiza a divulgação da vaga manualmente em diferentes canais (sites de emprego, redes sociais, etc.), sem uma ferramenta unificada.
+Atualmente, o processo de gestão de projetos na empresa Arquivar é realizado de forma descentralizada e manual. Cada gestor de área utiliza planilhas próprias, documentos do Word ou ferramentas individuais para registrar o andamento das atividades. Não há um padrão único para o acompanhamento de projetos, o que gera divergências entre equipes e dificulta a consolidação das informações. 
 
-Os currículos são recebidos de forma desestruturada, majoritariamente por e-mail, gerando um grande volume de dados não padronizados. A triagem desses currículos é uma tarefa inteiramente manual, baseada na leitura individual de cada documento, o que consome um tempo considerável e está sujeito a vieses inconscientes. Após essa triagem inicial, os candidatos selecionados são contatados para agendamento de entrevistas, um processo logístico complexo e com muitas trocas de mensagens. Por fim, após as rodadas de entrevistas, o candidato final é escolhido e os demais são informados (ou muitas vezes, não recebem retorno), encerrando o ciclo de forma pouco eficiente e com baixa qualidade na experiência do candidato.
+As atualizações de status e o compartilhamento de dados ocorrem, na maioria das vezes, por e-mails ou mensagens em aplicativos de comunicação, tornando o controle das informações fragmentado e sujeito a falhas. A ausência de um histórico centralizado faz com que gestores precisem solicitar constantemente relatórios manuais aos colaboradores, o que resulta em retrabalho e atrasos na obtenção de dados atualizados. 
+
+Além disso, o acompanhamento de prazos e a priorização de tarefas são feitos de forma subjetiva, sem indicadores ou alertas automáticos que sinalizem gargalos. A geração de relatórios gerenciais também é feita de forma manual, consumindo tempo e aumentando o risco de inconsistências nas informações apresentadas à diretoria. 
  
-<img width="1495" height="1297" alt="Diagrama tiapn(weabdealer) Diagrama" src="https://github.com/user-attachments/assets/9ab0dfe5-6513-417d-a1e9-08255f90e06e" />
+<img width="1463" height="677" alt="Gestão de Projetos - AS IS Diagrama" src="https://github.com/user-attachments/assets/f43a88d8-c706-4058-ada7-aed7cd3aa69b" />
 
 
 #### Detalhamento das atividades
