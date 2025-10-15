@@ -1,13 +1,5 @@
 # Modelagem dos processos de negócio
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
-
-> **Links úteis**:
-> - [Modelagem de processos AS-IS x TO-BE](https://dheka.com.br/modelagem-as-is-to-be/)
-> - [20 dicas práticas de modelagem de processos](https://dheka.com.br/20-dicas-praticas-de-modelagem-de-processos/)
-
-Com o tema do projeto definido, escolham dois processos no contexto de negócios do cliente. Para ilustrar os potenciais ganhos com a automatização, imaginem processos manuais, ineficientes e/ou com muitas idas e vindas, gerando, assim, retrabalho. 
-
 ## Modelagem da situação atual (Modelagem AS IS)
 
 Atualmente, os processos críticos de interação com stakeholders externos, como o recrutamento de novos talentos e o suporte ao cliente, são executados de forma manual e descentralizada. A comunicação depende excessivamente de canais não estruturados, como e-mails e aplicativos de mensagem, o que leva à perda de informações e à falta de padronização. As solicitações, sejam elas a abertura de uma vaga ou o reporte de um problema, são tratadas caso a caso, sem um fluxo de trabalho definido, resultando em triagens manuais lentas, encaminhamentos incorretos entre setores e uma significativa ineficiência operacional que gera retrabalho e atrasos.
