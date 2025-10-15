@@ -31,13 +31,13 @@ Contudo, a tecnologia é uma ferramenta de suporte e seus limites residem na dep
 
 ## Modelagem dos processos
 
-[PROCESSO 1 AS IS - Recrutamento e Seleção de Candidatos](./processes/processo-1-as-is.md "Detalhamento do processo 1 AS IS.")
+[PROCESSO 1 AS IS - Gestão de Projetos](./processes/processo-1-as-is.md "Detalhamento do processo 1 AS IS.")
 
-[PROCESSO 1 TO BE - Recrutamento e Seleção de Candidatos](./processes/processo-1-to-be.md "Detalhamento do processo 1 TO BE.")
+[PROCESSO 1 TO BE - Gestão de Projetos](./processes/processo-1-to-be.md "Detalhamento do processo 1 TO BE.")
 
-[PROCESSO 2 AS IS - Atendimento e Suporte ao Cliente](./processes/processo-2-as-is.md "Detalhamento do processo 2 AS IS.")
+[PROCESSO 2 AS IS - Acompanhamento de Tarefas](./processes/processo-2-as-is.md "Detalhamento do processo 2 AS IS.")
 
-[PROCESSO 2 TO BE - Atendimento e Suporte ao Cliente](./processes/processo-2-to-be.md "Detalhamento do processo 2 TO BE.")
+[PROCESSO 2 TO BE - Acompanhamento de Tarefas](./processes/processo-2-to-be.md "Detalhamento do processo 2 TO BE.")
 
 ## Indicadores de desempenho
 
