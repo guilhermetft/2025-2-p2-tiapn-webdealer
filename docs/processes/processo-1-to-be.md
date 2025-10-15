@@ -1,10 +1,10 @@
-### Processo 1 TO BE – Recrutamento e Seleção de Candidatos.
+### Processo 1 TO BE – Gestão de Projetos.
 
-A solução proposta centraliza todo o processo de recrutamento em uma plataforma digital. O gestor da área inicia a requisição preenchendo um formulário padronizado no sistema, que formaliza todas as especificações da vaga. 
+A solução proposta centraliza todo o processo de gestão de projetos em uma plataforma web integrada, permitindo o acompanhamento completo desde a criação até a avaliação final. O gestor inicia o processo com a validação e cadastro do projeto, incluindo suas especificações e a equipe responsável. A partir desse momento, o andamento das atividades é registrado automaticamente no sistema, permitindo que colaboradores atualizem o progresso em tempo real. 
 
-Os candidatos não enviam mais currículos por e-mail; eles se cadastram na plataforma, criando um perfil completo que pode incluir portfólio e projetos. O sistema, então, realiza uma triagem automática com base em filtros pré-definidos pelo RH (como competências técnicas, experiência, formação). Isso permite que a equipe de RH analise apenas um grupo qualificado de candidatos, otimizando seu tempo para uma análise mais estratégica e humana. As etapas seguintes, como agendamento de entrevistas e comunicação, são gerenciadas pela própria plataforma, garantindo agilidade e mantendo os candidatos informados sobre o status de sua aplicação em tempo real.
+O acompanhamento é feito diretamente pela plataforma, eliminando a necessidade de planilhas e comunicações dispersas. A geração automática de dashboards e relatórios oferece uma visão consolidada do desempenho dos projetos, facilitando o monitoramento de prazos, custos e resultados. Ao final, o gestor realiza a avaliação do projeto pela própria interface, podendo solicitar revisões ou aprovar sua conclusão de forma estruturada e rastreável.
  
-<img width="1111" height="1461" alt="Diagrama TIAPN(WeabDealer) P2 Diagrama" src="https://github.com/user-attachments/assets/9d88d882-d243-41a8-8562-d66a4b8e23c5" />
+<img width="1457" height="625" alt="Gestão de Projetos - TO BE Diagrama" src="https://github.com/user-attachments/assets/c5f907f3-7c05-42a7-b0e1-d4e39217081a" />
 
 #### Detalhamento das atividades
 
