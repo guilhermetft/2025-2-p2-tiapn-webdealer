@@ -4,7 +4,7 @@
 
 Atualmente, os processos de gestão de projetos e acompanhamento de tarefas na empresa Arquivar são executados de forma manual, descentralizada e sem padronização, com uso de planilhas e comunicação informal por e-mails ou mensagens. Essa falta de integração gera retrabalho, dificuldade de controle sobre prazos e responsabilidades, além de tornar a consolidação das informações lenta e suscetível a erros. A ausência de um sistema unificado compromete a visibilidade do andamento das atividades, dificulta a colaboração entre equipes e impede a geração de métricas confiáveis para análise de desempenho e apoio à tomada de decisão.
 
-AS IS - Captação de funcionários
+AS IS - Gestão de Projetos
 <img width="1463" height="677" alt="Gestão de Projetos - AS IS Diagrama" src="https://github.com/user-attachments/assets/8b87ae0a-4157-4f3d-a076-fa89fd8f6b6d" />
 
 
@@ -14,14 +14,14 @@ AS IS - Captação de funcionários
 
 ## Descrição geral da proposta (Modelagem TO BE)
 
-A proposta consiste na implementação de uma plataforma digital integrada para centralizar e automatizar os processos de recrutamento e atendimento. A solução visa substituir os fluxos manuais por um sistema inteligente que organiza as solicitações desde sua origem, seja de um candidato ou de um cliente. Através de portais dedicados, o sistema realizará uma triagem e um direcionamento automático das demandas, garantindo que elas cheguem às equipes corretas de forma instantânea e estruturada. Com isso, busca-se eliminar gargalos, reduzir o tempo de resposta e otimizar a alocação de recursos, transformando a experiência tanto dos colaboradores quanto do público externo.
+A proposta consiste na centralização e padronização da gestão de projetos e o acompanhamento de tarefas por meio de plataformas integradas, permitindo que gestores e colaboradores acompanhem atividades em tempo real, reduzam retrabalho e falhas de comunicação, e tenham visibilidade completa sobre prazos, responsabilidades e desempenho. Com notificações automáticas, dashboards e relatórios consolidados, o sistema oferece métricas confiáveis que suportam a tomada de decisão estratégica, promovendo maior eficiência, transparência e colaboração entre equipes, ao mesmo tempo em que facilita o controle e a organização de projetos e tarefas.
 
-TO BE - Captação de funcionários
-<img width="1111" height="1461" alt="Diagrama TIAPN(WeabDealer) P2 Diagrama" src="https://github.com/user-attachments/assets/9d88d882-d243-41a8-8562-d66a4b8e23c5" />
+TO BE - Gestão de Projetos
+<img width="1457" height="625" alt="Gestão de Projetos - TO BE Diagrama" src="https://github.com/user-attachments/assets/9cfc4fca-c237-4a75-8e98-27cd216db640" />
 
 
-TO BE - Abertura de chamados
- <img width="1569" height="723" alt="Abertura de chamados (TO-BE) Diagrama" src="https://github.com/user-attachments/assets/11fe457d-c2eb-4183-b535-f6290441caa9" />
+TO BE - Acompanhamento de Tarefas
+<img width="1670" height="1358" alt="Acompanhamento de Tarefas - TO BE Diagrama" src="https://github.com/user-attachments/assets/aef8c2c3-3166-4429-bac5-8f95ee9f6154" />
 
 
 #### Descrição de Proposta e Limites
