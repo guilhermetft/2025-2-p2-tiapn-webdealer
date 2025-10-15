@@ -25,9 +25,9 @@ TO BE - Acompanhamento de Tarefas
 
 
 #### Descrição de Proposta e Limites
-A introdução desta plataforma unificada é uma iniciativa estratégica para elevar a maturidade operacional da empresa. Ao automatizar tarefas repetitivas nos processos de recrutamento e suporte, a solução libera as equipes para se concentrarem em atividades de maior valor, como a análise estratégica de candidatos e a resolução de problemas complexos de clientes. Esta otimização está diretamente alinhada aos objetivos de negócio de aumentar a eficiência, fortalecer a marca (seja como empregadora ou prestadora de serviços) e promover um crescimento escalável.
+A introdução desta plataforma integrada de gestão de projetos e acompanhamento de tarefas é uma iniciativa estratégica para elevar a eficiência operacional da empresa. Ao centralizar informações, automatizar notificações e gerar dashboards e relatórios consolidados, a solução libera gestores e colaboradores para se concentrarem em atividades de maior valor, como tomada de decisão estratégica, análise de desempenho e otimização de processos. Esta otimização está diretamente alinhada aos objetivos de negócio de aumentar a produtividade, melhorar a comunicação entre equipes, garantir transparência nos fluxos internos e promover uma gestão de projetos escalável e confiável.
 
-Contudo, a tecnologia é uma ferramenta de suporte e seus limites residem na dependência do fator humano para a configuração, adoção e extração de valor, além dos custos de implementação e manutenção. O sucesso da implementação está condicionado a uma boa gestão da mudança e ao entendimento de que a automação otimiza, mas não substitui, a necessidade de julgamento humano qualificado nas etapas decisivas dos processos.
+Contudo, a tecnologia é uma ferramenta de suporte e seus limites residem na dependência do fator humano para a adesão, atualização e uso correto do sistema, além da necessidade de infraestrutura tecnológica adequada e capacitação dos usuários. O sucesso da implementação depende de uma boa gestão da mudança e do entendimento de que a plataforma otimiza processos, mas não substitui a análise e o julgamento estratégico que só podem ser realizados por profissionais qualificados.
 
 ## Modelagem dos processos
 
