@@ -1,10 +1,8 @@
-### Processo 2 TO BE – ABERTURA DE PROTOCOLO
+### Processo 2 TO BE – Acompanhamento de Tarefas.
 
-A solução proposta é a implementação de um portal de atendimento único e centralizado. Ao acessar o portal para abrir uma nova solicitação, o cliente será apresentado a um menu simples onde deverá indicar o setor com o qual deseja falar.
+A solução proposta consiste na implantação de um sistema de acompanhamento de tarefas totalmente integrado, onde gestores e colaboradores podem interagir dentro de um ambiente centralizado. O gestor acessa o sistema para criar tarefas, definindo prazos, prioridades e responsáveis. Automaticamente, o colaborador recebe uma notificação do sistema com as informações da tarefa atribuída e pode acompanhar o andamento em tempo real. Conforme o progresso das atividades, o colaborador atualiza o status (em andamento ou concluída), e o sistema registra o histórico automaticamente. Caso haja atraso, são emitidos alertas automáticos para o gestor e o responsável. Ao final, o gestor visualiza métricas e relatórios de desempenho consolidados, otimizando o controle e a tomada de decisão. 
 
-Com base na escolha do cliente, o sistema encaminha a demanda de forma automática para a fila de atendimento do setor correto. A equipe daquele setor recebe uma notificação em tempo real e já pode iniciar o atendimento, pois tem a certeza de que aquela solicitação pertence à sua área de responsabilidade. O cliente, por sua vez, recebe um número de protocolo e pode acompanhar o status do seu chamado diretamente pelo portal.
-
-<img width="1569" height="723" alt="Abertura de chamados (TO-BE) Diagrama" src="https://github.com/user-attachments/assets/11fe457d-c2eb-4183-b535-f6290441caa9" />
+<img width="1670" height="1358" alt="Acompanhamento de Tarefas - TO BE Diagrama" src="https://github.com/user-attachments/assets/4e2f1e08-204e-498e-b595-b27ee317bdb5" />
 
 #### Detalhamento das atividades
 
