@@ -2,16 +2,14 @@
 
 ## Modelagem da situação atual (Modelagem AS IS)
 
-Atualmente, os processos críticos de interação com stakeholders externos, como o recrutamento de novos talentos e o suporte ao cliente, são executados de forma manual e descentralizada. A comunicação depende excessivamente de canais não estruturados, como e-mails e aplicativos de mensagem, o que leva à perda de informações e à falta de padronização. As solicitações, sejam elas a abertura de uma vaga ou o reporte de um problema, são tratadas caso a caso, sem um fluxo de trabalho definido, resultando em triagens manuais lentas, encaminhamentos incorretos entre setores e uma significativa ineficiência operacional que gera retrabalho e atrasos.
+Atualmente, os processos de gestão de projetos e acompanhamento de tarefas na empresa Arquivar são executados de forma manual, descentralizada e sem padronização, com uso de planilhas e comunicação informal por e-mails ou mensagens. Essa falta de integração gera retrabalho, dificuldade de controle sobre prazos e responsabilidades, além de tornar a consolidação das informações lenta e suscetível a erros. A ausência de um sistema unificado compromete a visibilidade do andamento das atividades, dificulta a colaboração entre equipes e impede a geração de métricas confiáveis para análise de desempenho e apoio à tomada de decisão.
 
 AS IS - Captação de funcionários
- <img width="1495" height="1297" alt="AS IS – Captação de Funcionários (Diagrama elaborado na ferramenta BPMN)" src="https://github.com/user-attachments/assets/d7a90012-ef5e-48d2-9a88-db7049ac86dd" />
+<img width="1463" height="677" alt="Gestão de Projetos - AS IS Diagrama" src="https://github.com/user-attachments/assets/8b87ae0a-4157-4f3d-a076-fa89fd8f6b6d" />
 
 
-
- AS IS - Abertura de chamados
-  <img width="1668" height="780" alt="Abertura de chamados (AS-IS) Diagrama" src="https://github.com/user-attachments/assets/b683a307-f2ac-49f3-ae42-f42be34ccb98" />
-
+ AS IS - Acompanhamento de Tarefas
+<img width="1942" height="733" alt="Acompanhamento de Tarefas - AS IS Diagrama" src="https://github.com/user-attachments/assets/7f588c0f-24c9-491e-b625-807997e11413" />
 
 
 ## Descrição geral da proposta (Modelagem TO BE)
