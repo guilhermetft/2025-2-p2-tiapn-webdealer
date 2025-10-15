@@ -47,9 +47,10 @@ Use o seguinte modelo:
 
 | **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
 | ---           | ---           | ---           | ---             | ---             |
-| Percentual de reclamações | Avaliar quantitativamente as reclamações | Percentual de reclamações em relação ao total de atendimentos | Tabela Reclamações | número total de reclamações / número total de atendimentos |
-| Taxa de requisições atendidas | Melhorar a prestação de serviços medindo a porcentagem de requisições atendidas| Mede a % de requisições atendidas na semana | Tabela Solicitações | (número de requisições atendidas / número total de requisições) * 100 |
-| Taxa de entrega de material | Manter controle sobre os materiais que estão sendo entregues | Mede % de material entregue dentro do mês | Tabela Pedidos | (número de pedidos entregues / número total de pedidos) * 100 |
-
+| Taxa de Conclusão de Projetos no Prazo | Medir a eficiência do time na entrega dos projetos dentro dos prazos estabelecidos. | Calcula a proporção de projetos finalizados até a data limite definida. | Data de início e término dos projetos. | (Projetos concluídos no prazo ÷ Total de projetos concluídos) × 100 |
+| Cumprimento de Prazos de Tarefas | Avaliar a pontualidade dos colaboradores no cumprimento das tarefas. | Mede a porcentagem de tarefas concluídas dentro do prazo planejado. | Data de criação e data de conclusão das tarefas. | (Tarefas concluídas no prazo ÷ Total de tarefas concluídas) × 100 |
+| Tempo Médio de Execução de Tarefas | Identificar gargalos no fluxo operacional e otimizar a produtividade. | Calcula o tempo médio gasto entre a criação e a conclusão de cada tarefa. | Histórico de tarefas (datas de início e conclusão). | (Data de conclusão - Data de início) ÷ Total de tarefas |
+| Taxa de Retrabalho | Monitorar a qualidade das entregas e a clareza das instruções. | Mede quantas tarefas precisam ser reabertas ou corrigidas após concluídas. | Status das tarefas e histórico de alterações. | (Tarefas reabertas ÷ Total de tarefas concluídas) × 100 |
+| Índice de Atrasos | Controlar a frequência de atrasos nas entregas de tarefas e projetos. | Mostra o percentual de tarefas ou projetos entregues após o prazo final. | Registro de prazos e conclusões. | (Tarefas/projetos atrasados ÷ Total de tarefas/projetos) × 100 |
 
 Obs.: todas as informações necessárias para gerar os indicadores devem estar no diagrama de classe a ser apresentado posteriormente.
