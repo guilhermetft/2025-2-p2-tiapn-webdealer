@@ -1,10 +1,12 @@
-### Processo 2 AS IS – Atendimento e Suporte ao Cliente.
+### Processo 2 AS IS – Acompanhamento de Tarefas.
 
-O processo de suporte ao cliente começa quando o cliente identifica uma dúvida ou problema e entra em contato por canais descentralizados, como e-mail ou WhatsApp. Cada solicitação é registrada manualmente por um atendente em uma planilha ou sistema interno simples. A partir daí, o primeiro atendente precisa ler a mensagem, interpretar a necessidade e, muitas vezes, encaminhar manualmente para outro colega ou setor, que pode também não ser o destino final.
+Atualmente, o acompanhamento das tarefas internas na empresa Arquivar é realizado de forma pouco estruturada e com grande dependência de comunicação informal entre gestores e colaboradores. As atividades são atribuídas verbalmente, por e-mail ou por mensagens instantâneas, sem um registro centralizado que permita o monitoramento do progresso das ações. 
 
-Essa falta de um direcionamento claro gera retrabalho, com a mesma solicitação passando por várias pessoas até chegar à equipe correta. Para o cliente, isso se traduz em um tempo de espera longo e imprevisível, além da frustração de ter que repetir sua história para diferentes atendentes.
+Essa falta de controle faz com que informações sobre prazos, responsáveis e status das tarefas se percam com frequência, dificultando a identificação de prioridades e o acompanhamento do andamento geral dos projetos. Em muitos casos, o gestor precisa solicitar manualmente atualizações sobre o que foi concluído, o que gera atrasos e retrabalho. 
 
-<img width="1668" height="780" alt="Abertura de chamados (AS-IS) Diagrama" src="https://github.com/user-attachments/assets/b683a307-f2ac-49f3-ae42-f42be34ccb98" />
+A ausência de uma plataforma integrada também compromete a colaboração entre as equipes. As trocas de informações sobre tarefas são dispersas, dificultando a continuidade do trabalho quando há substituições ou mudanças de responsáveis. Além disso, não há métricas confiáveis para avaliar o desempenho das equipes, o que limita a tomada de decisões estratégicas e o reconhecimento de esforços individuais.
+
+<img width="1942" height="733" alt="Acompanhamento de Tarefas - AS IS Diagrama" src="https://github.com/user-attachments/assets/1d00d81b-ab0c-436f-98ca-e703d1e9644f" />
 
 #### Detalhamento das atividades
 
