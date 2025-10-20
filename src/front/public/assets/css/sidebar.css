@@ -6,14 +6,15 @@
 
   .sidebar {
       width: 60px;
-      background-color: #893ba7;
-      border-right: 1px solid #e5e7eb;
+      background-color: rgba(0, 0, 0, 0.680);
+      border-right: 1px solid rgba(0, 0, 0, 0.680);
       height: 100vh;
       transition: width 0.3s;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       position: fixed;
+      justify-content: space-between;
   }
 
   .sidebar.expanded {
@@ -65,4 +66,14 @@
 
   .sidebar.expanded~.main {
       margin-left: 220px;
+  }
+
+  .sidebar-links {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .sidebar-bottom {
+      margin-bottom: 10px;
   }

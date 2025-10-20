@@ -1,10 +1,17 @@
 const sidebarHTML = `
 <div class="sidebar" id="sidebar">
   <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
-  <a href="index.html"><span class="icon">🏠</span><span class="text">Home</span></a>
-  <a href="calendar.html"><span class="icon">📅</span><span class="text">Calendar</span></a>
-  <a href="projetos.html"><span class="icon">📂</span><span class="text">Projects</span></a>
-  <a href="contato.html"><span class="icon">✉️</span><span class="text">Contact</span></a>
+
+  <div class="sidebar-links">
+    <a href="index.html"><span class="icon">🏠</span><span class="text">Home</span></a>
+    <a href="calendar.html"><span class="icon">📅</span><span class="text">Calendário</span></a>
+    <a href="projects.html"><span class="icon">📂</span><span class="text">Projetos</span></a>
+    <a href="contato.html"><span class="icon">✉️</span><span class="text">Contato</span></a>
+  </div>
+
+  <div class="sidebar-bottom">
+    <a href="logout.html"><span class="icon">➜]</span><span class="text">Sair</span></a>
+  </div>
 </div>
 `;
 
@@ -12,10 +19,6 @@ const sidebarHTML = `
 document.getElementById('sidebar-container').innerHTML = sidebarHTML;
 
 // Função toggle
-function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('expanded');
-}
-
 function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   const main = document.querySelector('.main');

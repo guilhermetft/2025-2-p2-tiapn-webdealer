@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webdealer</title>
+    <title>Projetos</title>
 </head>
 
 <body>
@@ -19,24 +19,18 @@
         <div id="sidebar-container"></div>
 
         <div class="main">
-            <div class="top-projects">
-                <div id="lastProjects"></div>
-                <div class="create-project-card" id="createProjectCard">
-                    <span>Criar Novo Projeto</span>
-                </div>
-            </div>
-
-
-            <div id="kanbansContainer"></div>
+            <div id="projectSelection" class="project-selection"></div>
+            <h1 id="kanbanTitle"></h1>
+            <button id="backBtn">Voltar</button>
+            <div id="kanbanContainer" class="kanban-container"></div>
         </div>
     </main>
-
 
     <footer class="footer">
 
     </footer>
 
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/projects.js"></script>
     <script src="assets/js/sidebar.js"></script>
 
 </body>
