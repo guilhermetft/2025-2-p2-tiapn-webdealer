@@ -4,7 +4,8 @@ A solução proposta centraliza todo o processo de gestão de projetos em uma pl
 
 O acompanhamento é feito diretamente pela plataforma, eliminando a necessidade de planilhas e comunicações dispersas. A geração automática de dashboards e relatórios oferece uma visão consolidada do desempenho dos projetos, facilitando o monitoramento de prazos, custos e resultados. Ao final, o gestor realiza a avaliação do projeto pela própria interface, podendo solicitar revisões ou aprovar sua conclusão de forma estruturada e rastreável.
  
-<img width="1457" height="625" alt="Gestão de Projetos - TO BE Diagrama" src="https://github.com/user-attachments/assets/c5f907f3-7c05-42a7-b0e1-d4e39217081a" />
+<img width="1423" height="653" alt="Gestão de Projetos - TO BE Diagrama" src="https://github.com/user-attachments/assets/9ee69236-0672-4ac5-bd30-55251c587711" />
+
 
 #### Detalhamento das atividades
 
