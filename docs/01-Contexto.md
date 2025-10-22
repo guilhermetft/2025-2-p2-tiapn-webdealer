@@ -22,7 +22,9 @@ Além disso, a ausência de ferramentas integradas que reúnam dados, indicadore
 
 ## Objetivos
 
-Desenvolver uma aplicação web voltada à gestão e acompanhamento dos projetos internos da empresa Arquivar, com foco na centralização das informações, otimização dos processos e aprimoramento da comunicação entre as equipes envolvidas. 
+O trabalho tem como objetivo geral desenvolver uma aplicação web voltada à gestão e acompanhamento dos projetos internos da empresa Arquivar, com foco na centralização das informações, otimização dos processos e aprimoramento da comunicação entre as equipes envolvidas.
+
+Objetivos específicos:
 
 - Implementar funcionalidades que permitam o cadastro, edição e exclusão de projetos de forma estruturada e segura.
   
