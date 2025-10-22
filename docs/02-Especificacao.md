@@ -41,6 +41,10 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | Diretor de operações | Visualizar o andamento de todos os projetos da empresa em um painel centralizado | Tomar decisões estratégicas com informações confiáveis e em tempo real |
 | Coordenadora de planejamento | Gerar relatórios e indicadores integrados dos projetos | Avaliar produtividade, eficiência e alinhar processos entre setores |
 | Administrador de processos | Centralizar tarefas e responsabilidades das equipes | Garantir que processos sejam seguidos corretamente, promovendo mais transparência e eficiência |
+| Designer Freelancer | Organizar tarefas e prazos de diferentes clientes em um só ambiente | Manter controle sobre entregas e melhorar a comunicação com os contratantes |
+| Cliente Corporativa | Acompanhar o progresso das entregas de projetos contratados | Ter mais transparência, confiança e controle sobre prazos e resultados |
+| Desenvolvedor Júnior | Visualizar minhas tarefas em um sistema organizado (como um quadro Kanban) | Compreender prioridades e aprender o fluxo de trabalho da equipe |
+| Gerente de Produto | Integrar dados de diferentes equipes em um painel de métricas unificado | Alinhar as entregas às metas estratégicas e acompanhar indicadores de progresso |
 
 ## Requisitos
 
@@ -54,11 +58,15 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RF-002| Registro e acompanhamento de tarefas com responsáveis, prazos e status | ALTA | 
 |RF-003| Dashboards interativos com indicadores de desempenho e progresso | ALTA |
 |RF-004| Níveis de acesso diferenciados para administradores, gestores e colaboradores | ALTA |
-|RF-005| Emissão de relatórios gerenciais | MÉDIA |                 
-|RF-006| Busca e filtragem de projetos e tarefas | MÉDIA |                 
-|RF-007| Notificações automáticas sobre prazos, atualizações e mudanças de status | MÉDIA |                 
-|RF-008| Comentários e comunicação interna entre membros da equipe | BAIXA |    
-|RF-009| Exportação de dados em formatos padrão (PDF/Excel) | BAIXA |
+|RF-005| Disponibilizar uma visualização em Kanban para gerenciar o fluxo de tarefas por status. | ALTA |
+|RF-006| Implementar autenticação de usuários com login e senha, garantindo acesso seguro | ALTA |
+|RF-007| Permitir o anexo de arquivos (documentos, imagens ou planilhas) às tarefas e projetos. | MÉDIA |
+|RF-008| Exibir um histórico de alterações em projetos e tarefas, indicando quem fez cada modificação. | MÉDIA |
+|RF-009| Emissão de relatórios gerenciais | MÉDIA |                 
+|RF-010| Busca e filtragem de projetos e tarefas | MÉDIA |                 
+|RF-011| Notificações automáticas sobre prazos, atualizações e mudanças de status | MÉDIA |                 
+|RF-012| Comentários e comunicação interna entre membros da equipe | BAIXA |    
+|RF-013| Exportação de dados em formatos padrão (PDF/Excel) | BAIXA |
 
 ---
 ### Requisitos não funcionais
@@ -82,5 +90,3 @@ As restrições definem os limites e condições que devem ser respeitados no de
 |001 | O projeto deverá ser concluído e entregue até o final do semestre letivo |
 |002 | Ser desenvolvido como aplicação web, acessível via navegador |
 |003 | Compatível com processos internos e fluxos existentes na empresa |
-|004 | Obedecer normas de segurança da informação e LGPD |
-
