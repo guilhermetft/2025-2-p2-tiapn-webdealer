@@ -134,10 +134,11 @@ Apresente também um diagrama ou figura que ilustre a visão operacional, mostra
 
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
-| Front-end      | HTML + CSS + JS + React |
-| Back-end       | Node.js         |
-| SGBD           | MySQL           |
-| Deploy         | Vercel          |
+| Front-end | HTML5 + CSS + JS |
+| Back-end | Node.js |
+| Frameworks e Bibliotecas | React + Tailwind + jQuery |
+| SGBD | MySQL |
+| Hospedagem / Deploy | Vercel |
 
 
 ## Hospedagem
