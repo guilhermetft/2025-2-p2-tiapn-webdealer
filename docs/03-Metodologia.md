@@ -87,7 +87,22 @@ Atualizado em: 02/10/2025
 
 #### Sprint 3
 
-Atualizado em: 14/10/2025
+Atualizado em: 22/10/2025
+
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+| Daniel |  |  |  |  |  |
+| Guilherme | Diagrama banco de dados, Relatorio / Github, Correções Sprint | 20/10/25 | 23/10/25 | 📝 |  |
+| Gustavo |  |  |  |  |  |
+| João |  |  |  |  |  |
+| Lara |  |  |  |  |  |
+| Marcus |  |  |  |  |  |
+| Vinicius |  |  |  |  |  |
+
+
+#### Sprint 4
+
+Atualizado em: 22/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
