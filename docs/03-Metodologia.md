@@ -123,7 +123,8 @@ Legenda:
 ### Processo
 
 O grupo adotou o Scrum como metodologia de gestão do projeto, estruturando o desenvolvimento em sprints mensais. Para o controle e acompanhamento das tarefas, utilizou-se o GitHub Projects, onde as atividades foram organizadas em colunas correspondentes a cada sprint. Ao final de cada sprint, uma reunião de review foi feita para apresentar os avanços e ajustes necessários foram definidos nas retrospectivas.
-<img width="1849" height="912" alt="image" src="https://github.com/user-attachments/assets/b91a3b05-6001-434e-bb47-c93c9cfcbdc8" />
+<img width="1860" height="1013" alt="image" src="https://github.com/user-attachments/assets/a4ca1c0c-aedb-4db6-accb-eba08e25763c" />
+
  
 ## Ferramentas
 
