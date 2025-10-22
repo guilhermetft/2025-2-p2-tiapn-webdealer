@@ -91,13 +91,13 @@ Atualizado em: 14/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Daniel |             |          |      |  |           |
-| Guilherme |             |          |      |  |           |
-| Gustavo |             |          |      |  |           |
-| João |             |          |      |  |           |
-| Lara |             |          |      |  |           |
-| Marcus |             |          |      |  |           |
-| Vinicius |             |          |      |  |           |
+| Daniel |  |  |  |  |  |
+| Guilherme |  |  |  |  |  |
+| Gustavo |  |  |  |  |  |
+| João |  |  |  |  |  |
+| Lara |  |  |  |  |  |
+| Marcus |  |  |  |  |  |
+| Vinicius |  |  |  |  |  |
 
 Legenda:
 - ✔️: terminado
