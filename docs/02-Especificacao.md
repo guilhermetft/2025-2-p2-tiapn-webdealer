@@ -58,10 +58,10 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 |RF-002| Registro e acompanhamento de tarefas com responsáveis, prazos e status | ALTA | 
 |RF-003| Dashboards interativos com indicadores de desempenho e progresso | ALTA |
 |RF-004| Níveis de acesso diferenciados para administradores, gestores e colaboradores | ALTA |
-|RF-005| Disponibilizar uma visualização em Kanban para gerenciar o fluxo de tarefas por status. | ALTA |
+|RF-005| Disponibilizar uma visualização em Kanban para gerenciar o fluxo de tarefas por status | ALTA |
 |RF-006| Implementar autenticação de usuários com login e senha, garantindo acesso seguro | ALTA |
-|RF-007| Permitir o anexo de arquivos (documentos, imagens ou planilhas) às tarefas e projetos. | MÉDIA |
-|RF-008| Exibir um histórico de alterações em projetos e tarefas, indicando quem fez cada modificação. | MÉDIA |
+|RF-007| Permitir o anexo de arquivos (documentos, imagens ou planilhas) às tarefas e projetos | MÉDIA |
+|RF-008| Exibir um histórico de alterações em projetos e tarefas, indicando quem fez cada modificação | MÉDIA |
 |RF-009| Emissão de relatórios gerenciais | MÉDIA |                 
 |RF-010| Busca e filtragem de projetos e tarefas | MÉDIA |                 
 |RF-011| Notificações automáticas sobre prazos, atualizações e mudanças de status | MÉDIA |                 
