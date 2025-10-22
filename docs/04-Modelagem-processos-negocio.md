@@ -17,7 +17,8 @@ AS IS - Gestão de Projetos
 A proposta consiste na centralização e padronização da gestão de projetos e o acompanhamento de tarefas por meio de plataformas integradas, permitindo que gestores e colaboradores acompanhem atividades em tempo real, reduzam retrabalho e falhas de comunicação, e tenham visibilidade completa sobre prazos, responsabilidades e desempenho. Com notificações automáticas, dashboards e relatórios consolidados, o sistema oferece métricas confiáveis que suportam a tomada de decisão estratégica, promovendo maior eficiência, transparência e colaboração entre equipes, ao mesmo tempo em que facilita o controle e a organização de projetos e tarefas.
 
 TO BE - Gestão de Projetos
-<img width="1457" height="625" alt="Gestão de Projetos - TO BE Diagrama" src="https://github.com/user-attachments/assets/9cfc4fca-c237-4a75-8e98-27cd216db640" />
+<img width="1423" height="653" alt="Gestão de Projetos - TO BE Diagrama" src="https://github.com/user-attachments/assets/e9d926bc-17da-4818-927c-cc4f296e1ce7" />
+
 
 
 TO BE - Acompanhamento de Tarefas
