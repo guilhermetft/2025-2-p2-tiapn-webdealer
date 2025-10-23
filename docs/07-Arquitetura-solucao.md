@@ -138,7 +138,10 @@ Apresente também um diagrama ou figura que ilustre a visão operacional, mostra
 | Back-end | Node.js |
 | Frameworks e Bibliotecas | React + Tailwind + jQuery |
 | SGBD | MySQL |
+| Autenticação |  |
 | Hospedagem / Deploy | Vercel |
+| Versionamento | Git + GitHub |
+| IDE | Visual Studio Code |
 
 
 ## Hospedagem
