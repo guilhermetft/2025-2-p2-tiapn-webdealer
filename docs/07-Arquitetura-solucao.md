@@ -36,10 +36,6 @@ Elabore o modelo utilizando uma ferramenta de modelagem apropriada.
 
 ### Modelo físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
-
-Veja um exemplo:
-
 ```sql
 CREATE TABLE usuario (
   id_usuario UUID PRIMARY KEY,
