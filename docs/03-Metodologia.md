@@ -97,7 +97,7 @@ Atualizado em: 22/10/2025
 | João |  |  |  |  |  |
 | Lara |  |  |  |  |  |
 | Marcus |  |  |  |  |  |
-| Vinicius |  |  |  |  |  |
+| Vinicius |Diagrama banco de dados  | 15/10/2025 | 23/10/2025 | ✔️ | 23/10/2025 |
 
 
 #### Sprint 4
