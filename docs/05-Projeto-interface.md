@@ -60,25 +60,54 @@ https://www.figma.com/make/WD2rlAIzSZIrzUfVSAnEW3/WebDealer---TIAPN?t=OPfhF10590
 
 ## Jornada do usuário
 
-A jornada do usuário descreve, em alto nível de detalhes, as etapas que diferentes perfis de usuários realizam para concluir uma tarefa específica na aplicação. Essa técnica ajuda a identificar pontos fortes e oportunidades de melhoria na experiência.  
+# 🧭 Mapa da Jornada do Usuário – Projeto Webdealer
 
-O mapa da jornada do usuário deve contemplar:  
-- Etapas: desde a descoberta até a finalização da tarefa.  
-- Ações do usuário: o que o usuário faz em cada etapa.  
-- Pontos de contato: onde a interação acontece (site, app, suporte).  
-- Emoções e percepções: como o usuário se sente em cada momento.  
+## 📌 Introdução
+O mapa da jornada do usuário descreve as etapas percorridas pelos diferentes perfis de usuários durante o uso do sistema **Webdealer**, desde o primeiro contato até a utilização efetiva.  
+Essa técnica permite identificar pontos fortes, oportunidades de melhoria e aspectos emocionais que influenciam a experiência do usuário.
 
-**Fases baseadas no modelo AIDA**:  
-1. Conscientização: despertar conhecimento sobre o produto (inspiração)  
-2. Interesse: aumentar o interesse e engajamento (favoritismo)  
-3. Desejo: estimular a intenção de uso/compra (desejo)  
-4. Ação: execução da ação esperada (implementação)  
+O Webdealer é uma aplicação web desenvolvida para a empresa **Arquivar**, com o objetivo de otimizar a **gestão de projetos corporativos**, centralizando informações, organizando tarefas e fornecendo indicadores para a tomada de decisão estratégica.
 
-> **Importante:** insira a figura do mapa da jornada do usuário para ilustrar visualmente o fluxo e as etapas descritas.
+---
 
-> **Links úteis**:
-> - [Dicas sobre como mapear uma jornada do usuário](https://www.userinterviews.com/blog/best-customer-journey-map-templates-examples)
-> - [Jornada do usuário versus user flow](https://www.nngroup.com/articles/user-journeys-vs-user-flows/)
+## 🎯 Fases do Modelo AIDA
+
+| **Fase (AIDA)** | **Etapa** | **Ações do Usuário** | **Pontos de Contato** | **Emoções / Percepções** |
+|------------------|-----------|----------------------|------------------------|---------------------------|
+| **Conscientização** | Descoberta do sistema | O gestor conhece o Webdealer através de uma apresentação da Arquivar ou durante uma reunião sobre melhorias internas. | Apresentação comercial, site institucional, demonstração técnica. | 🤔 Curiosidade e expectativa sobre como a ferramenta pode otimizar o controle de projetos. |
+| **Interesse** | Exploração e cadastro inicial | O gestor acessa o sistema pela primeira vez, realiza o cadastro e navega entre as telas para entender suas funções. | Interface web (login, menus, formulários). | 🙂 Interesse crescente, percepção de facilidade de uso e design intuitivo. |
+| **Desejo** | Avaliação das funcionalidades | O gestor cadastra um projeto e tarefas, testa o dashboard e observa os relatórios de progresso. | Módulo de projetos, dashboard, relatórios automáticos. | 😃 Confiança e motivação ao perceber a centralização das informações e praticidade. |
+| **Ação** | Uso efetivo na rotina | A equipe adota o sistema no dia a dia, registrando atividades, prazos e status de execução. | Sistema Webdealer, notificações internas, suporte técnico. | 😍 Satisfação e sensação de produtividade e controle. |
+| **Fidelização (pós-AIDA)** | Melhoria contínua | A empresa integra o Webdealer aos fluxos de trabalho e sugere novas funcionalidades. | Reuniões de feedback, suporte técnico, atualizações do sistema. | 💪 Engajamento, confiança e valorização da ferramenta. |
+
+---
+
+## 💬 Interpretação Técnica
+
+- **Conscientização:** representa o primeiro contato do usuário com o sistema, normalmente motivado pela busca por eficiência.  
+- **Interesse:** é a fase de aprendizado e exploração, onde a usabilidade e a clareza da interface são fundamentais.  
+- **Desejo:** o momento em que o usuário percebe o valor do Webdealer para seu trabalho.  
+- **Ação:** simboliza o uso efetivo e a realização das tarefas dentro do sistema.  
+- **Fidelização:** mostra o impacto positivo contínuo, reforçando a adoção e o engajamento da empresa.
+
+---
+
+## 🖼️ Figura – Mapa da Jornada do Usuário
+
+*(Inserir aqui a imagem do mapa visual da jornada, com as fases AIDA representadas graficamente.)*
+
+> Exemplo de estrutura visual:  
+> 
+> Conscientização → Interesse → Desejo → Ação → Fidelização  
+> 
+> Cada fase pode conter ícones de emoção e descrições resumidas das ações e percepções.
+
+---
+
+## ✅ Conclusão
+O mapa da jornada do usuário do **Webdealer** evidencia o papel central da aplicação na transformação digital da empresa **Arquivar**.  
+Ao alinhar tecnologia, gestão e experiência do usuário, o sistema se consolida como uma ferramenta estratégica para aumentar a eficiência, a transparência e a colaboração entre equipes.
+
 
 
 ## Interface do sistema
