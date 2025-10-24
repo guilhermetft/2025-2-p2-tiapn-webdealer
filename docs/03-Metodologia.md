@@ -91,7 +91,7 @@ Atualizado em: 22/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Daniel |  |  |  |  |  |
+| Daniel | Protótipo interativo, WireFrames, Diagrama de Fluxo | 20/10/2025 | 23/10/2025 | ✔️ | 23/10/2025 |
 | Guilherme | Diagrama banco de dados, Relatorio / Github, Correções Sprint | 20/10/25 | 23/10/2025 | ✔️ |  |
 | Gustavo |  |  |  |  |  |
 | João |  |  |  |  |  |
