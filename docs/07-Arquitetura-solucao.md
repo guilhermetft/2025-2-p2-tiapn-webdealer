@@ -13,9 +13,6 @@ O diagrama de classes ilustra graficamente a estrutura do software e como cada u
 Elabore o diagrama de classes utilizando uma ferramenta de modelagem apropriada.
 
 ##  Modelo de dados
-
-O desenvolvimento da solução proposta requer a existência de bases de dados que permitam realizar o cadastro de dados e os controles associados aos processos identificados, assim como suas recuperações.
-
 ### Modelo conceitual 
 
 O Modelo Entidade-Relacionamento do Webdealer apresenta uma representação conceitual da estrutura de dados do sistema. Ele define as entidades principais, bem como seus respectivos atributos e relacionamentos. O MER abstrai detalhes técnicos e foca na lógica do negócio, sendo fundamental para garantir uma base sólida e coerente na construção do banco de dados, promovendo uma visão clara e estruturada das informações que o sistema irá manipular.
