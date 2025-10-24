@@ -6,7 +6,7 @@ Layout padrão da aplicação que será utilizado em todas as páginas, definind
 
 > **Template de cores**:
 
-![Template de cores](images/template.png)
+![Template de cores](./images/template.png)
 
 > **Especificações**:
 
