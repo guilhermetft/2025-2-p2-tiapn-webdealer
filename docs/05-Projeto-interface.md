@@ -46,7 +46,7 @@ São protótipos usados no design de interface para sugerir a estrutura de um si
 
 Apresente o protótipo interativo das telas da aplicação, permitindo a navegação simulada pelo sistema. Esse protótipo deve refletir as funcionalidades e interações planejadas, e servir como base para validação com usuários e equipe.  
 
-> **Exemplo:** inserir link para o protótipo no Figma, MarvelApp, InvisionApp, etc.
+https://www.figma.com/make/WD2rlAIzSZIrzUfVSAnEW3/WebDealer---TIAPN?t=OPfhF10590WUiQTv-1
 
 
 ## Jornada do usuário
