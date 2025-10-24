@@ -19,12 +19,12 @@ Layout padrão da aplicação que será utilizado em todas as páginas, definind
 
 > **Tipografias**:
 
-Fonte principal: Roboto, sans-serif
-Hierarquia de títulos:
+|Fonte principal: Roboto, sans-serif
+|Hierarquia de títulos:
 H1: 32px, Bold
 H2: 28px, Semi-bold
 H3: 24px, Medium
-Texto padrão: 16px, Regular
+|Texto padrão: 16px, Regular
 Links e botões: 14-16px, Medium
 
 > **Links úteis**:
