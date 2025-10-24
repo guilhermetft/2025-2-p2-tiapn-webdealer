@@ -17,6 +17,16 @@ Layout padrão da aplicação que será utilizado em todas as páginas, definind
 | Off-white          | #FEFCFD             | Background principal, seções claras |
 | Preto transparente | rgba(0, 0, 0, 0.68) | Textos secundários, sombras         |
 
+> **Tipografias**:
+
+Fonte principal: Roboto, sans-serif
+Hierarquia de títulos:
+H1: 32px, Bold
+H2: 28px, Semi-bold
+H3: 24px, Medium
+Texto padrão: 16px, Regular
+Links e botões: 14-16px, Medium
+
 > **Links úteis**:
 >
 > - [CSS website layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
