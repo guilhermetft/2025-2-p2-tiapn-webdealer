@@ -47,9 +47,9 @@ Além das branches e etiquetas o grupo adotou a criação de branches individuai
 - Planejamento comercial: Guilherme, Daniel
 
 #### Sprint 3
-- _Scrum master_: 
-- Apresentação, desenvolvimento de wireframes e diagramas:
-- Diagrama, modelos e scripts do banco de dados:
+- _Scrum master_: Guilherme Teixeira
+- Apresentação, desenvolvimento de wireframes e diagramas: Daniel Bleme, Marcus Vinícius, João Vitor, 
+- Diagrama, modelos e scripts do banco de dados: Vinícius Muniz, Lara Rossini, Gustavo Santiago
 
 ###  Quadro de tarefas
 
