@@ -4,6 +4,8 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas, definindo a identidade visual, aspectos de responsividade e iconografia. Inclui também o manual da marca, com orientações sobre paleta de cores, tipografia, elementos gráficos e uso correto do logotipo, além da explicação do processo de criação e do significado do logo, evidenciando sua relação com a proposta visual e os valores da aplicação. Deve ser apresentada apenas uma tela de exemplo para demonstrar a aplicação do template e das diretrizes visuais.
 
+> **Template de cores**:
+(images/template.png)
 > **Links úteis**:
 >
 > - [CSS website layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
