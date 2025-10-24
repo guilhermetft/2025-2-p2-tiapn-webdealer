@@ -32,7 +32,7 @@ O modelo relacional corresponde à representação dos dados, organizando as inf
 
 Elabore o modelo utilizando uma ferramenta de modelagem apropriada.
 
-![Exemplo de um modelo relacional](images/modelo_relacional.PNG "Exemplo de modelo relacional.")
+<img width="1030" height="853" alt="modelo_relacional PNG" src="https://github.com/user-attachments/assets/fd6e0869-c8ba-489b-b931-47974bdfbec7" />
 
 ### Modelo físico
 
