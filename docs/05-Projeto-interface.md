@@ -94,13 +94,7 @@ O Webdealer é uma aplicação web desenvolvida para a empresa **Arquivar**, com
 
 ## 🖼️ Figura – Mapa da Jornada do Usuário
 
-*(Inserir aqui a imagem do mapa visual da jornada, com as fases AIDA representadas graficamente.)*
-
-> Exemplo de estrutura visual:  
-> 
-> Conscientização → Interesse → Desejo → Ação → Fidelização  
-> 
-> Cada fase pode conter ícones de emoção e descrições resumidas das ações e percepções.
+![Mapa Jornada](images/mapa_jornada.png)
 
 ---
 
