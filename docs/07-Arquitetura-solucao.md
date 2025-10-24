@@ -12,10 +12,6 @@ O diagrama de classes ilustra graficamente a estrutura do software e como cada u
 
 Elabore o diagrama de classes utilizando uma ferramenta de modelagem apropriada.
 
-> **Links úteis**:
-> - [Diagramas de classes - documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.7.0?topic=diagrams-class)
-> - [O que é um diagrama de classe UML?](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
-
 ##  Modelo de dados
 
 O desenvolvimento da solução proposta requer a existência de bases de dados que permitam realizar o cadastro de dados e os controles associados aos processos identificados, assim como suas recuperações.
