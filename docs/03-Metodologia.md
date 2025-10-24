@@ -93,7 +93,7 @@ Atualizado em: 22/10/2025
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Daniel | Protótipo interativo, WireFrames, Diagrama de Fluxo | 20/10/2025 | 23/10/2025 | ✔️ | 23/10/2025 |
 | Guilherme | Diagrama banco de dados, Relatorio / Github, Correções Sprint | 20/10/25 | 23/10/2025 | ✔️ |  |
-| Gustavo |  |  |  |  |  |
+| Gustavo | Relatorio, Apoio Jornada de usúario  | 20/10/2025 | 23/10/2025 | ✔️ | 23/10/2025 |
 | João |  |  |  |  |  |
 | Lara | Apresentação / Template Padrão  | 20/10/25 | 23/10/2025 | ✔️ | 23/10/2025 |
 | Marcus | User Flow, GitHub, Jornada de usúario, Correções Sprint  | 19/10/25 | 23/10/25 | ✔️ | 23/10/2025 |
