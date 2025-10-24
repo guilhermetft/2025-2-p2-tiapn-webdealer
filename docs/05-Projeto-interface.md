@@ -30,17 +30,26 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem, intername
 
 São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
 
-![Exemplo de wireframe](images/wireframe.png)
- 
-> **Links úteis**:
-> - [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135)
-> - [Protótipos vs wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+<img width="1365" height="718" alt="Captura de tela 2025-10-22 162027" src="https://github.com/user-attachments/assets/00864886-3fe7-4919-a43e-6684e887cdeb" />
+
+<img width="1365" height="717" alt="Captura de tela 2025-10-22 162048" src="https://github.com/user-attachments/assets/8b792537-d463-428b-85ec-d8296e636cd9" />
+
+<img width="1364" height="718" alt="Captura de tela 2025-10-22 162104" src="https://github.com/user-attachments/assets/3d59f579-8894-4cd1-824d-85313d216c33" />
+
+<img width="1365" height="718" alt="Captura de tela 2025-10-22 162119" src="https://github.com/user-attachments/assets/43012e4c-563b-492e-99c1-1f852c80f3ed" />
+
+<img width="1365" height="719" alt="Captura de tela 2025-10-22 162130" src="https://github.com/user-attachments/assets/9358f6e0-8234-4610-9f92-b95e5a35c331" />
+
+<img width="1365" height="718" alt="Captura de tela 2025-10-22 162143" src="https://github.com/user-attachments/assets/6e4ce96c-72dd-41df-8c95-391184cca4e7" />
+
+<img width="1365" height="718" alt="Captura de tela 2025-10-22 162215" src="https://github.com/user-attachments/assets/a40dd820-7ca7-4feb-954f-5f946e7a6f8d" />
+
+<img width="1365" height="718" alt="Captura de tela 2025-10-22 162241" src="https://github.com/user-attachments/assets/801a06b0-0ed3-419a-8cff-dfeeeb47288d" />
+
+<img width="1364" height="717" alt="Captura de tela 2025-10-22 162259" src="https://github.com/user-attachments/assets/17ff56af-8b56-4b86-8cd5-56f2327525a6" />
+
+<img width="1365" height="718" alt="Captura de tela 2025-10-22 162312" src="https://github.com/user-attachments/assets/2678ee76-7e7e-4e5f-9f53-2a36328798d9" />
+
 
 ## Protótipo interativo
 
