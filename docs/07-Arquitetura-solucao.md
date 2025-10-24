@@ -33,12 +33,6 @@ O modelo relacional corresponde à representação dos dados, organizando as inf
 Elabore o modelo utilizando uma ferramenta de modelagem apropriada.
 
 ![Exemplo de um modelo relacional](images/modelo_relacional.PNG "Exemplo de modelo relacional.")
----
-
-> **Links úteis**:
-> - [Criando um modelo relacional - documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/12.0.0?topic=designer-creating-relational-model)
-> - [Como fazer um modelo relacional](https://www.youtube.com/watch?v=DWWIREUkxOI)
-
 
 ### Modelo físico
 
