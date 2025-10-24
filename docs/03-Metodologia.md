@@ -95,7 +95,7 @@ Atualizado em: 22/10/2025
 | Guilherme | Diagrama banco de dados, Relatorio / Github, Correções Sprint | 20/10/25 | 23/10/2025 | ✔️ |  |
 | Gustavo |  |  |  |  |  |
 | João |  |  |  |  |  |
-| Lara |  |  |  |  |  |
+| Lara |  | Apresentação / Template Padrão | 20/10/25 | ✔️ | 23/10/2025 |
 | Marcus | User Flow, GitHub, Jornada de usúario, Correções Sprint  | 19/10/25 | 23/10/25 | ✔️ | 23/10/2025 |
 | Vinicius |Diagrama banco de dados  | 15/10/2025 | 23/10/2025 | ✔️ | 23/10/2025 |
 
