@@ -8,6 +8,15 @@ Layout padrão da aplicação que será utilizado em todas as páginas, definind
 
 ![Template de cores](images/template.png)
 
+> **Especificações**:
+
+| Cor                | Código Hex          | Uso                                 |
+| ------------------ | ------------------- | ----------------------------------- |
+| Roxo suave         | #BA9DCD             | Background, destaques               |
+| Roxo escuro        | #58355B             | Cabeçalhos, botões principais       |
+| Off-white          | #FEFCFD             | Background principal, seções claras |
+| Preto transparente | rgba(0, 0, 0, 0.68) | Textos secundários, sombras         |
+
 > **Links úteis**:
 >
 > - [CSS website layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
