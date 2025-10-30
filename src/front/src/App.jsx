@@ -1,38 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Sidebar } from "./components/sidebar";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [currentView, setCurrentView] = useState("home");
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <p>
-        Teste React
-      </p>
-    </>
-  )
-}
+    <div className="flex">
+      <Sidebar currentView={currentView} setCurrentView={setCurrentView} />
 
-export default App
+      <main className="flex-1 p-6">
+        {currentView === "home" && <h1>Página Inicial</h1>}
+        {currentView === "dashboard" && <h1>Painel de Controle</h1>}
+        {currentView === "tasks" && <h1>Tarefas</h1>}
+        {currentView === "projects" && <h1>Projetos</h1>}
+        {currentView === "team" && <h1>Equipes</h1>}
+        {currentView === "goals" && <h1>Metas</h1>}
+        {currentView === "chat" && <h1>Chat</h1>}
+        {currentView === "calendar" && <h1>Calendario</h1>}
+        {currentView === "requests" && <h1>Solicitações</h1>}
+        {currentView === "settings" && <h1>Configurações</h1>}
+      </main>
+    </div>
+  );
+}
