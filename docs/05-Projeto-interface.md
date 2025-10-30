@@ -3,9 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados na <a href="02-Especificacao.md"> Especificação do projeto</a></span>.
+A interface foi projetada para oferecer uma experiência intuitiva e fluida, permitindo que o usuário gerencie processos e projetos de forma simples e eficiente. O sistema coloca o usuário no controle, possibilitando a criação, organização e acompanhamento de atividades de maneira prática, visual e amigável.
 
  ## User flow
 
