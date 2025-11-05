@@ -11,16 +11,14 @@ import Configuracao from "./pages/Configuracao";
 
 import { LuLayoutDashboard } from "react-icons/lu";
 import { FaHome } from "react-icons/fa";
-import { FiCheckSquare } from "react-icons/fi";
-import { LuFolderKanban } from "react-icons/lu";
 
-function App() {
-  return (
+function sidebar() {
+    return (
     <BrowserRouter>
       <nav>
         <Link to="/"><FaHome/>Início</Link> |{" "}
         <Link to="/painel"><LuLayoutDashboard/>Painel</Link> |{" "}
-        <Link to="/tarefas"><FiCheckSquare />Tarefas</Link> |{" "}
+        <Link to="/tarefas">Tarefas</Link> |{" "}
         <Link to="/projetos">Projetos</Link> |{" "}
         <Link to="/equipe">Equipe</Link> |{" "}
         <Link to="/chat">Chat</Link> |{" "}
@@ -41,7 +39,7 @@ function App() {
         <Route path="/configuracao" element={<Configuracao />} />
       </Routes>
     </BrowserRouter>
-  )
+    )
 }
 
-export default App
+export default sidebar;
