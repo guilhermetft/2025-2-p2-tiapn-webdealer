@@ -18,7 +18,7 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: purple;
+   border-right: 1px solid #ccc;
 }
 
 .sidebar ul{
