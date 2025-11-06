@@ -1,0 +1,73 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh; 
+  width: 100vw;  
+  overflow: hidden; 
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #f5f6fa;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+   border-right: 1px solid #ccc;
+}
+
+.sidebar ul{
+  color: black
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #2e2e42;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.sidebar a.active {
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.sidebar a {
+  transition: background-color 0.3s, color 0.3s, padding-left 0.3s;
+}
+
+nav h3{
+  color: black;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f5f6fa;
+  padding: 20px;
+}
+
+h1{
+  color: black;
+}
