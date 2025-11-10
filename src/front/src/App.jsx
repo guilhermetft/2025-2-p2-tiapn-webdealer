@@ -12,18 +12,17 @@ import Configuracao from "./pages/Configuracao";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
-import "./css/App.css";
+import "./App.css";
+import "./Cadastro.css";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* 🟢 ROTAS PÚBLICAS*/}
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
 
-        {/* 🔵 ROTAS INTERNAS*/}
         <Route
           path="/*"
           element={

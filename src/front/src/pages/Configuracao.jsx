@@ -4,7 +4,7 @@ function Configuracao() {
   const navigate = useNavigate();
 
   function handleSair() {
-    navigate("/cadastro"); // 👉 redireciona para a página de cadastro
+    navigate("/cadastro"); 
   }
 
   return (
