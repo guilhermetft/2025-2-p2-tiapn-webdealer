@@ -44,6 +44,12 @@
   color: #333;
 }
 
+.infos{
+  border: 2px solid rgba(227, 226, 245, 0.597);
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .cadastro-img {
   width: 90%;
   border-radius: 10px;
@@ -141,3 +147,4 @@ input:focus {
   font-weight: bold;
   cursor: pointer;
 }
+
