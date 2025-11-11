@@ -13,7 +13,7 @@ export const buttonVariants = cva(
                 secondary:
                     "bg-gray-100 text-gray-900 hover:bg-gray-200",
                 ghost:
-                    "!bg-transparent text-[#4b49ac] hover:!bg-[#e4e4ff] hover:!text-[#2d2d6d] dark:!bg-transparent",
+                    "!bg-transparent text-[#333] dark:!bg-transparent",
                 link:
                     "text-[#4b49ac] underline-offset-4 hover:underline",
             },
@@ -30,5 +30,3 @@ export const buttonVariants = cva(
         },
     }
 );
-
-console.log("buttonVariants carregado ✅");
