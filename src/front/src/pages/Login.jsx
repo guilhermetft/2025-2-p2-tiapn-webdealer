@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
@@ -8,7 +9,8 @@ import { ArrowLeft, Mail, Lock, AlertCircle } from "lucide-react";
 import logo from "../assets/webdealerlogo.jpeg";
 import { Alert, AlertDescription } from "../components/ui/alert";
 
-export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
+export default function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
@@ -32,15 +34,17 @@ export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
       return;
     }
 
+    // Simula login e redireciona após 1 segundo
     setTimeout(() => {
       setIsLoading(false);
-      onLogin();
+      navigate("/painel"); // 🟢 substitui onLogin()
     }, 1000);
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-indigo-50 flex items-center justify-center p-6">
       <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-8 items-center">
+        {/* Lado esquerdo */}
         <div className="space-y-8">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -50,12 +54,9 @@ export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
                 <p className="text-sm text-muted-foreground">by Arquivar</p>
               </div>
             </div>
-            <h2 className="text-4xl">
-              Bem-vindo de volta à sua plataforma de gestão
-            </h2>
+            <h2 className="text-4xl">Bem-vindo de volta à sua plataforma de gestão</h2>
             <p className="text-lg text-muted-foreground">
-              Acesse sua conta e continue gerenciando tarefas, projetos e equipes
-              da Arquivar com eficiência.
+              Acesse sua conta e continue gerenciando tarefas, projetos e equipes da Arquivar com eficiência.
             </p>
           </div>
 
@@ -88,18 +89,12 @@ export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
         {/* Lado direito - Formulário de Login */}
         <Card className="shadow-2xl">
           <CardHeader className="space-y-3">
-            <Button
-              variant="ghost"
-              className="w-fit -ml-2"
-              onClick={onBackToLanding}
-            >
+            <Button variant="ghost" className="w-fit -ml-2" onClick={() => navigate("/")}>
               <ArrowLeft className="h-4 w-4 mr-2" />
               Voltar
             </Button>
             <CardTitle className="text-2xl">Entrar na sua conta</CardTitle>
-            <CardDescription>
-              Digite suas credenciais para acessar o sistema
-            </CardDescription>
+            <CardDescription>Digite suas credenciais para acessar o sistema</CardDescription>
           </CardHeader>
 
           <CardContent>
@@ -112,7 +107,9 @@ export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
               )}
 
               <div className="space-y-2">
-                <Label htmlFor="email" className="mb-1">E-mail</Label>
+                <Label htmlFor="email" className="mb-1">
+                  E-mail
+                </Label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                   <Input
@@ -121,7 +118,7 @@ export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
                     placeholder="seu@email.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="pl-10"
+                    className="pl-10 bg-[#f3f3f5]"
                     disabled={isLoading}
                   />
                 </div>
@@ -130,7 +127,12 @@ export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <Label htmlFor="password">Senha</Label>
-                  <Button variant="ghost">Esqueceu a senha?</Button>
+                  <Button
+                    variant="ghost"
+                    className="text-xs h-auto p-0 hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+                  >
+                    Esqueceu a senha?
+                  </Button>
                 </div>
                 <div className="relative">
                   <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -140,22 +142,10 @@ export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
                     placeholder="••••••••"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="pl-10"
+                    className="pl-10 bg-[#f3f3f5]"
                     disabled={isLoading}
                   />
                 </div>
-              </div>
-
-              <div className="flex items-center space-x-2">
-                <Checkbox
-                  id="remember"
-                  checked={rememberMe}
-                  onCheckedChange={(checked) => setRememberMe(!!checked)}
-                  disabled={isLoading}
-                />
-                <label htmlFor="remember" className="text-sm cursor-pointer">
-                  Lembrar de mim
-                </label>
               </div>
 
               <Button type="submit" className="w-full" disabled={isLoading}>
@@ -167,21 +157,13 @@ export default function Login({ onLogin, onBackToLanding, onGoToRegister }) {
                   <div className="w-full border-t border-border" />
                 </div>
                 <div className="relative flex justify-center text-xs uppercase">
-                  <span className="bg-card px-2 text-muted-foreground">
-                    Ou
-                  </span>
+                  <span className="bg-card px-2 text-muted-foreground">Ou</span>
                 </div>
               </div>
 
               <div className="text-center text-sm">
-                <span className="text-muted-foreground">
-                  Não tem uma conta?{" "}
-                </span>
-                <Button
-                  variant="ghost"
-                  type="button"
-                  onClick={onGoToRegister}
-                >
+                <span className="text-muted-foreground">Não tem uma conta? </span>
+                <Button variant="ghost" type="button" onClick={() => navigate("/cadastro")}>
                   Criar conta grátis
                 </Button>
               </div>

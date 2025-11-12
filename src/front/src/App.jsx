@@ -13,8 +13,6 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import "./App.css";
-import "./styles/Cadastro.css";
-import "./styles/Login.css"
 
 export default function App() {
   return (

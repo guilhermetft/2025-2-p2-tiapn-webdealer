@@ -1,131 +1,300 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card";
+import { Checkbox } from "../components/ui/checkbox";
+import {
+  ArrowLeft,
+  Mail,
+  Lock,
+  User,
+  Building2,
+  AlertCircle,
+  CheckCircle2,
+} from "lucide-react";
+import logo from "../assets/webdealerlogo.jpeg";
+import { Alert, AlertDescription } from "../components/ui/alert";
+import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 
+export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLogin }) {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    password: "",
+    confirmPassword: "",
+  });
+  const [acceptTerms, setAcceptTerms] = useState(false);
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-export default function Cadastro() {
-    const [formData, setFormData] = useState({
-        nome: "",
-        email: "",
-        empresa: "",
-        senha: "",
-        confirmarSenha: "",
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
     });
+  };
 
-    const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setError("");
+    setIsLoading(true);
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.company ||
+      !formData.password ||
+      !formData.confirmPassword
+    ) {
+      setError("Por favor, preencha todos os campos");
+      setIsLoading(false);
+      return;
+    }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (formData.senha !== formData.confirmarSenha) {
-            alert("As senhas não coincidem!");
-            return;
-        }
-        console.log("Dados:", formData);
-        alert("Conta criada com sucesso!");
-        navigate("/login");
-    };
+    if (!formData.email.includes("@")) {
+      setError("Por favor, insira um e-mail válido");
+      setIsLoading(false);
+      return;
+    }
 
-    return (
-        <div className="cadastro-container">
-            {/* Lado esquerdo */}
-            <div className="cadastro-info">
-                <h1 className="logo">WebDealer</h1>
-                <p className="subtitulo">by Arquivar</p>
+    if (formData.password.length < 6) {
+      setError("A senha deve ter no mínimo 6 caracteres");
+      setIsLoading(false);
+      return;
+    }
 
-                <h2>Junte-se a centenas de empresas</h2>
-                <p>
-                    Comece a gerenciar sua empresa de forma mais eficiente hoje mesmo.
-                    Configure sua conta em minutos.
-                </p>
+    if (formData.password !== formData.confirmPassword) {
+      setError("As senhas não coincidem");
+      setIsLoading(false);
+      return;
+    }
 
-                <div className="infos">
-                    <ul>
-                        <li>✔ Acesso completo a todas as funcionalidades</li>
-                        <li>✔ Gestão ilimitada de tarefas e projetos</li>
-                        <li>✔ Colaboração em tempo real com sua equipe</li>
-                        <li>✔ Relatórios e análises detalhadas</li>
-                        <li>✔ Suporte técnico em português</li>
-                        <li>✔ Atualizações automáticas e gratuitas</li>
-                    </ul>
-                </div>
+    if (!acceptTerms) {
+      setError("Você precisa aceitar os termos de uso");
+      setIsLoading(false);
+      return;
+    }
 
+    setTimeout(() => {
+      setIsLoading(false);
+      onRegisterSuccess();
+    }, 1500);
+  };
 
-                <img
-                    src="https://unsplash.com/pt-br/fotografias/uma-pessoa-esta-escrevendo-em-um-laptop-em-uma-mesa-Mx-u0nHMxjs"
-                    alt="Exemplo do sistema"
-                    className="cadastro-img"
-                />
+  const benefits = [
+    "Acesso completo a todas as funcionalidades",
+    "Gestão ilimitada de tarefas e projetos",
+    "Colaboração em tempo real com sua equipe",
+    "Relatórios e análises detalhadas",
+    "Suporte técnico em português",
+    "Atualizações automáticas e gratuitas",
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 flex items-center justify-center p-6">
+      <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-8 items-center">
+        {/* Lado esquerdo - Benefícios */}
+        <div className="hidden lg:block space-y-8">
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="WebDealer Logo" className="h-12 w-12" />
+              <div>
+                <h1 className="text-3xl">WebDealer</h1>
+                <p className="text-sm text-muted-foreground">by Arquivar</p>
+              </div>
             </div>
+            <h2 className="text-4xl">Junte-se a centenas de empresas</h2>
+            <p className="text-lg text-muted-foreground">
+              Comece a gerenciar sua empresa de forma mais eficiente hoje mesmo.
+              Configure sua conta em minutos.
+            </p>
+          </div>
 
-            {/* Lado direito */}
-            <div className="cadastro-form">
-                <button onClick={() => navigate("/")} className="voltar-btn">
-                    ← Voltar
-                </button>
+          <Card className="border-2 border-primary/20">
+            <CardContent className="pt-6">
+              <div className="space-y-3">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <p className="text-sm">{benefit}</p>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
 
-                <h2>Criar sua conta</h2>
-                <p>Preencha os dados abaixo para começar gratuitamente</p>
-
-                <form onSubmit={handleSubmit}>
-                    <input
-                        type="text"
-                        name="nome"
-                        placeholder="Nome completo"
-                        value={formData.nome}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="E-mail corporativo"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        type="text"
-                        name="empresa"
-                        placeholder="Nome da empresa"
-                        value={formData.empresa}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        type="password"
-                        name="senha"
-                        placeholder="Senha (mínimo 6 caracteres)"
-                        value={formData.senha}
-                        onChange={handleChange}
-                        required
-                    />
-                    <input
-                        type="password"
-                        name="confirmarSenha"
-                        placeholder="Confirmar senha"
-                        value={formData.confirmarSenha}
-                        onChange={handleChange}
-                        required
-                    />
-
-                    <label className="termos">
-                        <input type="checkbox" required /> Eu aceito os termos de uso e a
-                        política de privacidade
-                    </label>
-
-                    <button type="submit" className="criar-conta">
-                        Criar conta grátis
-                    </button>
-                </form>
-
-                <p className="login-link">
-                    Já tem uma conta?{" "}
-                    <span onClick={() => navigate("/login")}>Fazer login</span>
-                </p>
-            </div>
+          <div className="relative rounded-lg overflow-hidden">
+            <ImageWithFallback
+              src="https://images.unsplash.com/photo-1616861771635-49063a4636ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZmlsZXMlMjBkb2N1bWVudHN8ZW58MXx8fHwxNzYxODMyOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Digital Files"
+              className="w-full h-48 object-cover rounded-lg opacity-80"
+            />
+          </div>
         </div>
-    );
+
+        {/* Lado direito - Formulário */}
+        <Card className="shadow-2xl">
+          <CardHeader className="space-y-3">
+            <Button variant="ghost" className="w-fit -ml-2" onClick={onBackToLanding}>
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Voltar
+            </Button>
+            <div className="lg:hidden flex items-center gap-3 justify-center">
+              <img src={logo} alt="WebDealer Logo" className="h-10 w-10" />
+              <div>
+                <h2 className="text-xl">WebDealer</h2>
+                <p className="text-xs text-muted-foreground">by Arquivar</p>
+              </div>
+            </div>
+            <CardTitle className="text-2xl">Criar sua conta</CardTitle>
+            <CardDescription>
+              Preencha os dados abaixo para começar gratuitamente
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              {error && (
+                <Alert variant="destructive">
+                  <AlertCircle className="h-4 w-4" />
+                  <AlertDescription>{error}</AlertDescription>
+                </Alert>
+              )}
+
+              <div className="space-y-2">
+                <Label htmlFor="name">Nome completo</Label>
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    id="name"
+                    type="text"
+                    placeholder="João Silva"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="pl-10"
+                    disabled={isLoading}
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="email">E-mail corporativo</Label>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="joao@arquivar.com.br"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="pl-10"
+                    disabled={isLoading}
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="company">Nome da empresa</Label>
+                <div className="relative">
+                  <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    id="company"
+                    type="text"
+                    placeholder="Arquivar"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="pl-10"
+                    disabled={isLoading}
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="password">Senha</Label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    id="password"
+                    type="password"
+                    placeholder="Mínimo 6 caracteres"
+                    value={formData.password}
+                    onChange={handleChange}
+                    className="pl-10"
+                    disabled={isLoading}
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="confirmPassword">Confirmar senha</Label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    id="confirmPassword"
+                    type="password"
+                    placeholder="Digite a senha novamente"
+                    value={formData.confirmPassword}
+                    onChange={handleChange}
+                    className="pl-10"
+                    disabled={isLoading}
+                  />
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-2">
+                <Checkbox
+                  id="terms"
+                  checked={acceptTerms}
+                  onCheckedChange={(checked) => setAcceptTerms(!!checked)}
+                  disabled={isLoading}
+                  className="mt-1"
+                />
+                <label htmlFor="terms" className="text-sm cursor-pointer">
+                  Eu aceito os{" "}
+                  <button type="button" className="text-primary hover:underline">
+                    termos de uso
+                  </button>{" "}
+                  e a{" "}
+                  <button type="button" className="text-primary hover:underline">
+                    política de privacidade
+                  </button>
+                </label>
+              </div>
+
+              <Button type="submit" className="w-full" disabled={isLoading}>
+                {isLoading ? "Criando conta..." : "Criar conta grátis"}
+              </Button>
+
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <div className="w-full border-t border-border" />
+                </div>
+                <div className="relative flex justify-center text-xs uppercase">
+                  <span className="bg-card px-2 text-muted-foreground">Ou</span>
+                </div>
+              </div>
+
+              <div className="text-center text-sm">
+                <span className="text-muted-foreground">Já tem uma conta? </span>
+                <button
+                  type="button"
+                  onClick={onGoToLogin}
+                  className="text-primary hover:underline"
+                >
+                  Fazer login
+                </button>
+              </div>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  );
 }
