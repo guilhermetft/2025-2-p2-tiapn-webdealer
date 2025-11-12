@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
@@ -23,7 +24,9 @@ import logo from "../assets/webdealerlogo.jpeg";
 import { Alert, AlertDescription } from "../components/ui/alert";
 import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 
-export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLogin }) {
+export default function Cadastro() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -83,9 +86,10 @@ export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLog
       return;
     }
 
+    // ✅ Simula criação de conta e redireciona para login
     setTimeout(() => {
       setIsLoading(false);
-      onRegisterSuccess();
+      navigate("/login");
     }, 1500);
   };
 
@@ -143,10 +147,16 @@ export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLog
         {/* Lado direito - Formulário */}
         <Card className="shadow-2xl">
           <CardHeader className="space-y-3">
-            <Button variant="ghost" className="w-fit -ml-2" onClick={onBackToLanding}>
+            {/* ✅ Voltar para Landing */}
+            <Button
+              variant="ghost"
+              className="w-fit -ml-2"
+              onClick={() => navigate("/")}
+            >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Voltar
             </Button>
+
             <div className="lg:hidden flex items-center gap-3 justify-center">
               <img src={logo} alt="WebDealer Logo" className="h-10 w-10" />
               <div>
@@ -159,6 +169,7 @@ export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLog
               Preencha os dados abaixo para começar gratuitamente
             </CardDescription>
           </CardHeader>
+
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
               {error && (
@@ -168,6 +179,7 @@ export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLog
                 </Alert>
               )}
 
+              {/* Campos */}
               <div className="space-y-2">
                 <Label htmlFor="name">Nome completo</Label>
                 <div className="relative">
@@ -248,6 +260,7 @@ export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLog
                 </div>
               </div>
 
+              {/* Termos */}
               <div className="flex items-start space-x-2">
                 <Checkbox
                   id="terms"
@@ -268,10 +281,12 @@ export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLog
                 </label>
               </div>
 
+              {/* ✅ Criar conta */}
               <Button type="submit" className="w-full" disabled={isLoading}>
                 {isLoading ? "Criando conta..." : "Criar conta grátis"}
               </Button>
 
+              {/* Separador */}
               <div className="relative">
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-border" />
@@ -281,11 +296,12 @@ export default function Cadastro({ onRegisterSuccess, onBackToLanding, onGoToLog
                 </div>
               </div>
 
+              {/* ✅ Botão Fazer Login */}
               <div className="text-center text-sm">
                 <span className="text-muted-foreground">Já tem uma conta? </span>
                 <button
                   type="button"
-                  onClick={onGoToLogin}
+                  onClick={() => navigate("/login")}
                   className="text-primary hover:underline"
                 >
                   Fazer login

@@ -11,6 +11,7 @@ import { Alert, AlertDescription } from "../components/ui/alert";
 
 export default function Login() {
   const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
@@ -34,21 +35,20 @@ export default function Login() {
       return;
     }
 
-    // Simula login e redireciona após 1 segundo
     setTimeout(() => {
       setIsLoading(false);
-      navigate("/painel"); // 🟢 substitui onLogin()
+      navigate("/home"); // ✅ vai para o painel após login
     }, 1000);
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-indigo-50 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 flex items-center justify-center p-6">
       <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-8 items-center">
         {/* Lado esquerdo */}
-        <div className="space-y-8">
+        <div className="hidden lg:block space-y-8">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="WebDealer Logo" className="h-12 w-12 object-cover rounded-lg" />
+              <img src={logo} alt="WebDealer Logo" className="h-12 w-12" />
               <div>
                 <h1 className="text-3xl">WebDealer</h1>
                 <p className="text-sm text-muted-foreground">by Arquivar</p>
@@ -72,6 +72,7 @@ export default function Login() {
                 </p>
               </div>
             </div>
+
             <div className="flex items-start gap-3 p-4 bg-card rounded-lg border border-border">
               <div className="bg-primary/10 p-2 rounded-lg">
                 <Mail className="h-5 w-5 text-primary" />
@@ -86,13 +87,27 @@ export default function Login() {
           </div>
         </div>
 
-        {/* Lado direito - Formulário de Login */}
+        {/* Lado direito */}
         <Card className="shadow-2xl">
           <CardHeader className="space-y-3">
-            <Button variant="ghost" className="w-fit -ml-2" onClick={() => navigate("/")}>
+            {/* ✅ Botão Voltar para Landing */}
+            <Button
+              variant="ghost"
+              className="w-fit -ml-2"
+              onClick={() => navigate("/")}
+            >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Voltar
             </Button>
+
+            <div className="lg:hidden flex items-center gap-3 justify-center">
+              <img src={logo} alt="WebDealer Logo" className="h-10 w-10" />
+              <div>
+                <h2 className="text-xl">WebDealer</h2>
+                <p className="text-xs text-muted-foreground">by Arquivar</p>
+              </div>
+            </div>
+
             <CardTitle className="text-2xl">Entrar na sua conta</CardTitle>
             <CardDescription>Digite suas credenciais para acessar o sistema</CardDescription>
           </CardHeader>
@@ -106,10 +121,9 @@ export default function Login() {
                 </Alert>
               )}
 
+              {/* Campo e-mail */}
               <div className="space-y-2">
-                <Label htmlFor="email" className="mb-1">
-                  E-mail
-                </Label>
+                <Label htmlFor="email">E-mail</Label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                   <Input
@@ -118,22 +132,24 @@ export default function Login() {
                     placeholder="seu@email.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="pl-10 bg-[#f3f3f5]"
+                    className="pl-10"
                     disabled={isLoading}
                   />
                 </div>
               </div>
 
+              {/* Campo senha */}
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <Label htmlFor="password">Senha</Label>
-                  <Button
-                    variant="ghost"
-                    className="text-xs h-auto p-0 hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+                  <button
+                    type="button"
+                    className="text-sm text-primary hover:underline"
                   >
                     Esqueceu a senha?
-                  </Button>
+                  </button>
                 </div>
+
                 <div className="relative">
                   <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                   <Input
@@ -142,16 +158,31 @@ export default function Login() {
                     placeholder="••••••••"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="pl-10 bg-[#f3f3f5]"
+                    className="pl-10"
                     disabled={isLoading}
                   />
                 </div>
               </div>
 
+              {/* Lembrar de mim */}
+              <div className="flex items-center space-x-2">
+                <Checkbox
+                  id="remember"
+                  checked={rememberMe}
+                  onCheckedChange={(checked) => setRememberMe(checked)}
+                  disabled={isLoading}
+                />
+                <label htmlFor="remember" className="text-sm cursor-pointer">
+                  Lembrar de mim
+                </label>
+              </div>
+
+              {/* ✅ Botão Entrar */}
               <Button type="submit" className="w-full" disabled={isLoading}>
                 {isLoading ? "Entrando..." : "Entrar"}
               </Button>
 
+              {/* Separador */}
               <div className="relative">
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-border" />
@@ -161,11 +192,16 @@ export default function Login() {
                 </div>
               </div>
 
+              {/* ✅ Botão Ir para Cadastro */}
               <div className="text-center text-sm">
                 <span className="text-muted-foreground">Não tem uma conta? </span>
-                <Button variant="ghost" type="button" onClick={() => navigate("/cadastro")}>
+                <button
+                  type="button"
+                  onClick={() => navigate("/cadastro")}
+                  className="text-primary hover:underline"
+                >
                   Criar conta grátis
-                </Button>
+                </button>
               </div>
             </form>
           </CardContent>
