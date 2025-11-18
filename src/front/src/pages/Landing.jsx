@@ -25,7 +25,6 @@ export default function Landing() {
         onClick={() => navigate("/cadastro")}>Cadastrar-se</Button>
       </div>
 
-
       <div className="bg-white p-8">
         <Button variant="ghost">Teste Ghost</Button>
       </div>

@@ -16,7 +16,6 @@ import {
   Mail,
   Lock,
   User,
-  Building2,
   AlertCircle,
   CheckCircle2,
 } from "lucide-react";
@@ -30,7 +29,6 @@ export default function Cadastro() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    company: "",
     password: "",
     confirmPassword: "",
   });
@@ -45,7 +43,7 @@ export default function Cadastro() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     setError("");
     setIsLoading(true);
@@ -53,7 +51,6 @@ export default function Cadastro() {
     if (
       !formData.name ||
       !formData.email ||
-      !formData.company ||
       !formData.password ||
       !formData.confirmPassword
     ) {
@@ -86,11 +83,31 @@ export default function Cadastro() {
       return;
     }
 
-    // ✅ Simula criação de conta e redireciona para login
-    setTimeout(() => {
-      setIsLoading(false);
+    try {
+      const response = await fetch("http://localhost:5000/usuarios", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nome_usuario: formData.name,
+          email_usuario: formData.email,
+          senha_usuario: formData.password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Erro ao criar conta");
+      }
+
+      console.log("✅ Usuário criado:", data);
       navigate("/login");
-    }, 1500);
+    } catch (err) {
+      console.error("Erro:", err.message);
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const benefits = [
@@ -115,10 +132,9 @@ export default function Cadastro() {
                 <p className="text-sm text-muted-foreground">by Arquivar</p>
               </div>
             </div>
-            <h2 className="text-4xl">Junte-se a centenas de empresas</h2>
+            <h2 className="text-4xl">Crie sua conta gratuita</h2>
             <p className="text-lg text-muted-foreground">
-              Comece a gerenciar sua empresa de forma mais eficiente hoje mesmo.
-              Configure sua conta em minutos.
+              Comece a gerenciar seus projetos e tarefas de forma mais eficiente.
             </p>
           </div>
 
@@ -137,7 +153,7 @@ export default function Cadastro() {
 
           <div className="relative rounded-lg overflow-hidden">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1616861771635-49063a4636ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZmlsZXMlMjBkb2N1bWVudHN8ZW58MXx8fHwxNzYxODMyOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1616861771635-49063a4636ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
               alt="Digital Files"
               className="w-full h-48 object-cover rounded-lg opacity-80"
             />
@@ -147,7 +163,6 @@ export default function Cadastro() {
         {/* Lado direito - Formulário */}
         <Card className="shadow-2xl">
           <CardHeader className="space-y-3">
-            {/* ✅ Voltar para Landing */}
             <Button
               variant="ghost"
               className="w-fit -ml-2"
@@ -179,7 +194,7 @@ export default function Cadastro() {
                 </Alert>
               )}
 
-              {/* Campos */}
+              {/* Nome */}
               <div className="space-y-2">
                 <Label htmlFor="name">Nome completo</Label>
                 <div className="relative">
@@ -196,14 +211,15 @@ export default function Cadastro() {
                 </div>
               </div>
 
+              {/* E-mail */}
               <div className="space-y-2">
-                <Label htmlFor="email">E-mail corporativo</Label>
+                <Label htmlFor="email">E-mail</Label>
                 <div className="relative">
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                   <Input
                     id="email"
                     type="email"
-                    placeholder="joao@arquivar.com.br"
+                    placeholder="seu@email.com"
                     value={formData.email}
                     onChange={handleChange}
                     className="pl-10"
@@ -212,22 +228,7 @@ export default function Cadastro() {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="company">Nome da empresa</Label>
-                <div className="relative">
-                  <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                  <Input
-                    id="company"
-                    type="text"
-                    placeholder="Arquivar"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="pl-10"
-                    disabled={isLoading}
-                  />
-                </div>
-              </div>
-
+              {/* Senha */}
               <div className="space-y-2">
                 <Label htmlFor="password">Senha</Label>
                 <div className="relative">
@@ -244,6 +245,7 @@ export default function Cadastro() {
                 </div>
               </div>
 
+              {/* Confirmar senha */}
               <div className="space-y-2">
                 <Label htmlFor="confirmPassword">Confirmar senha</Label>
                 <div className="relative">
@@ -281,12 +283,11 @@ export default function Cadastro() {
                 </label>
               </div>
 
-              {/* ✅ Criar conta */}
+              {/* Botão */}
               <Button type="submit" className="w-full" disabled={isLoading}>
                 {isLoading ? "Criando conta..." : "Criar conta grátis"}
               </Button>
 
-              {/* Separador */}
               <div className="relative">
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-border" />
@@ -296,7 +297,6 @@ export default function Cadastro() {
                 </div>
               </div>
 
-              {/* ✅ Botão Fazer Login */}
               <div className="text-center text-sm">
                 <span className="text-muted-foreground">Já tem uma conta? </span>
                 <button
