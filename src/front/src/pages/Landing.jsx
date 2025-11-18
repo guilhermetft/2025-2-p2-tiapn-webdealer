@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
-import { Ghost } from "lucide-react";
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -24,11 +23,6 @@ export default function Landing() {
         variant="ghost"
         onClick={() => navigate("/cadastro")}>Cadastrar-se</Button>
       </div>
-
-      <div className="bg-white p-8">
-        <Button variant="ghost">Teste Ghost</Button>
-      </div>
-
     </div>
   );
 }
