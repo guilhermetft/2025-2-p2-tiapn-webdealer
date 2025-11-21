@@ -20,6 +20,8 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isLoading) return;
+
     setError("");
     setIsLoading(true);
 
@@ -29,7 +31,8 @@ export default function Login() {
       return;
     }
 
-    if (!email.includes("@")) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
       setError("Por favor, insira um e-mail válido");
       setIsLoading(false);
       return;
@@ -51,11 +54,21 @@ export default function Login() {
         throw new Error(data.error || "Erro ao fazer login");
       }
 
+      if (!data.token) {
+        throw new Error("Token de autenticação não recebido.");
+      }
+
       localStorage.setItem("token", data.token);
+
       navigate("/home");
     } catch (err) {
-      console.error("Erro:", err.message);
-      setError(err.message);
+      console.error("Erro:", err);
+
+      if (err.message && err.message.includes("Failed to fetch")) {
+        setError("Servidor indisponível no momento. Tente novamente mais tarde.");
+      } else {
+        setError(err.message || "Erro ao fazer login");
+      }
     } finally {
       setIsLoading(false);
     }
@@ -188,7 +201,7 @@ export default function Login() {
                 <Checkbox
                   id="remember"
                   checked={rememberMe}
-                  onCheckedChange={(checked) => setRememberMe(checked)}
+                  onCheckedChange={(checked) => setRememberMe(checked === true)}
                   disabled={isLoading}
                 />
                 <label htmlFor="remember" className="text-sm cursor-pointer">
