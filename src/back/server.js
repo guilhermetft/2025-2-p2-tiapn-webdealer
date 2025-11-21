@@ -8,10 +8,16 @@ import jwt from "jsonwebtoken";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+
+app.use(
+  cors({
+    origin: ["http://localhost:5173"],
+    methods: "GET,POST,PUT,DELETE",
+  })
+);
 app.use(express.json());
 
-const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
 
 // 🔹 MIDDLEWARE PARA PROTEGER ROTAS
 function autenticar(req, res, next) {
@@ -25,7 +31,7 @@ function autenticar(req, res, next) {
 
   try {
     const usuario = jwt.verify(token, process.env.JWT_SECRET);
-    req.usuario = usuario; 
+    req.usuario = usuario;
     next();
   } catch (error) {
     return res.status(401).json({ error: "Token inválido ou expirado." });
@@ -48,6 +54,11 @@ app.post("/usuarios", async (req, res) => {
     return res.status(400).json({ error: "Todos os campos são obrigatórios." });
   }
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email_usuario)) {
+    return res.status(400).json({ error: "E-mail inválido." });
+  }
+
   const senhaHash = await bcrypt.hash(senha_usuario, 10);
 
   const { data, error } = await supabase
@@ -56,6 +67,9 @@ app.post("/usuarios", async (req, res) => {
     .select();
 
   if (error) {
+    if (error.message.includes("duplicate")) {
+      return res.status(400).json({ error: "E-mail já cadastrado." });
+    }
     return res.status(500).json({ error: error.message });
   }
 
@@ -104,6 +118,7 @@ app.post("/login", async (req, res) => {
 
   res.status(200).json({
     message: "Login realizado com sucesso!",
+    token,
     usuario,
   });
 });

@@ -4,7 +4,7 @@ function Configuracao() {
   const navigate = useNavigate();
 
   function handleSair() {
-    navigate("/cadastro"); 
+    navigate("/"); 
   }
 
   return (

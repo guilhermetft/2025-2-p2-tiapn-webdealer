@@ -100,7 +100,6 @@ export default function Cadastro() {
         throw new Error(data.error || "Erro ao criar conta");
       }
 
-      console.log("✅ Usuário criado:", data);
       navigate("/login");
     } catch (err) {
       console.error("Erro:", err.message);
@@ -194,7 +193,6 @@ export default function Cadastro() {
                 </Alert>
               )}
 
-              {/* Nome */}
               <div className="space-y-2">
                 <Label htmlFor="name">Nome completo</Label>
                 <div className="relative">
@@ -211,7 +209,6 @@ export default function Cadastro() {
                 </div>
               </div>
 
-              {/* E-mail */}
               <div className="space-y-2">
                 <Label htmlFor="email">E-mail</Label>
                 <div className="relative">
@@ -228,7 +225,6 @@ export default function Cadastro() {
                 </div>
               </div>
 
-              {/* Senha */}
               <div className="space-y-2">
                 <Label htmlFor="password">Senha</Label>
                 <div className="relative">
@@ -245,7 +241,6 @@ export default function Cadastro() {
                 </div>
               </div>
 
-              {/* Confirmar senha */}
               <div className="space-y-2">
                 <Label htmlFor="confirmPassword">Confirmar senha</Label>
                 <div className="relative">
@@ -262,7 +257,6 @@ export default function Cadastro() {
                 </div>
               </div>
 
-              {/* Termos */}
               <div className="flex items-start space-x-2">
                 <Checkbox
                   id="terms"
@@ -283,7 +277,6 @@ export default function Cadastro() {
                 </label>
               </div>
 
-              {/* Botão */}
               <Button type="submit" className="w-full" disabled={isLoading}>
                 {isLoading ? "Criando conta..." : "Criar conta grátis"}
               </Button>

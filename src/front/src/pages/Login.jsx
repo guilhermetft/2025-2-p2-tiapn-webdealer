@@ -18,7 +18,6 @@ export default function Login() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  // 🔥 LOGIN REAL VALIDANDO COM O BACKEND
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
@@ -52,11 +51,7 @@ export default function Login() {
         throw new Error(data.error || "Erro ao fazer login");
       }
 
-      console.log("✅ Login bem-sucedido:", data);
-
-      // Se quiser salvar o usuário logado:
-      // localStorage.setItem("usuario", JSON.stringify(data.usuario));
-
+      localStorage.setItem("token", data.token);
       navigate("/home");
     } catch (err) {
       console.error("Erro:", err.message);
@@ -69,7 +64,7 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 flex items-center justify-center p-6">
       <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-8 items-center">
-        
+
         {/* Lado esquerdo */}
         <div className="hidden lg:block space-y-8">
           <div className="space-y-4">
@@ -116,7 +111,7 @@ export default function Login() {
         {/* Lado direito */}
         <Card className="shadow-2xl">
           <CardHeader className="space-y-3">
-            {/* Botão Voltar */}
+
             <Button
               variant="ghost"
               className="w-fit -ml-2"
@@ -140,7 +135,7 @@ export default function Login() {
 
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
-              
+
               {error && (
                 <Alert variant="destructive">
                   <AlertCircle className="h-4 w-4" />
@@ -148,7 +143,6 @@ export default function Login() {
                 </Alert>
               )}
 
-              {/* Email */}
               <div className="space-y-2">
                 <Label htmlFor="email">E-mail</Label>
                 <div className="relative">
@@ -165,7 +159,6 @@ export default function Login() {
                 </div>
               </div>
 
-              {/* Senha */}
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <Label htmlFor="password">Senha</Label>
@@ -191,7 +184,6 @@ export default function Login() {
                 </div>
               </div>
 
-              {/* Lembrar de mim */}
               <div className="flex items-center space-x-2">
                 <Checkbox
                   id="remember"
@@ -204,12 +196,10 @@ export default function Login() {
                 </label>
               </div>
 
-              {/* Botão */}
               <Button type="submit" className="w-full" disabled={isLoading}>
                 {isLoading ? "Entrando..." : "Entrar"}
               </Button>
 
-              {/* Separador */}
               <div className="relative">
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-border" />
@@ -219,7 +209,6 @@ export default function Login() {
                 </div>
               </div>
 
-              {/* Botão Cadastro */}
               <div className="text-center text-sm">
                 <span className="text-muted-foreground">Não tem uma conta? </span>
                 <button
