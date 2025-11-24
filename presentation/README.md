@@ -4,7 +4,11 @@
 
 
 ## Slides
+Veja abaixo os slides apresentados em cada sprint do desenvolvimento, contendo os avanços, decisões técnicas e funcionalidades implementadas ao longo do projeto.
 
+- Webdealer Slide Sprint 1 []
+- Webdealer Slide Sprint 2 []
+- Webdealer Slide Sprint 3 []
 
 [Apresentação TIAPN.pdf](https://github.com/user-attachments/files/22163870/Apresentacao.TIAPN.pdf)<br>
 [Apresentação Splint 02.pdf](https://github.com/user-attachments/files/22672822/Apresentacao.Splint.02.pdf)
