@@ -6,16 +6,14 @@ Layout padrão da aplicação que será utilizado em todas as páginas, definind
 
 > **Template de cores**:
 
-![Template de cores](./images/template.png)
-
 > **Especificações**:
 
-| Cor                | Código Hex          | Uso                                 |
-| ------------------ | ------------------- | ----------------------------------- |
-| Roxo suave         | #BA9DCD             | Background, destaques               |
-| Roxo escuro        | #58355B             | Cabeçalhos, botões principais       |
-| Off-white          | #FEFCFD             | Background principal, seções claras |
-| Preto transparente | rgba(0, 0, 0, 0.68) | Textos secundários, sombras         |
+- **White** `(#FEFCFD)` – Utilizado em todas as páginas como fundo
+- **Wisteria** `(#BA9DCD)` – Usado como se fossem 'blocos' para colocar o conteúdo da página
+
+<img width="1600" height="1200" alt="Paleta Cores" src="https://github.com/user-attachments/assets/18b1cafd-48b4-47d8-b554-62c42a49169f" />
+
+---
 
 > **Tipografias**:
 
