@@ -18,13 +18,6 @@ O projeto segue a seguinte convenção para o nome de branches:
 - `testing`: versão em testes do software
 - `dev`: versão de desenvolvimento do software
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
 Além das branches e etiquetas o grupo adotou a criação de branches individuais para o desenvolvimento dos artefatos do projeto separadamente, evitando assim conflitos e outros problemas.
 
 ## Planejamento do projeto
