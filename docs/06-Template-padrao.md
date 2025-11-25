@@ -15,6 +15,23 @@ Layout padrão da aplicação que será utilizado em todas as páginas, definind
 
 ---
 
+## 2. **Layout Padrão**
+
+
+
+---
+
+## 3. **Responsividade**
+
+
+
+---
+## 4. **Iconografia**
+
+
+
+---
+
 > **Tipografias**:
 
 | Fonte principal: Roboto, sans-serif 
@@ -24,10 +41,3 @@ H2: 28px, Semi-bold
 H3: 24px, Medium
 | Texto padrão: 16px, Regular
 Links e botões: 14-16px, Medium
-
-> **Links úteis**:
->
-> - [CSS website layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website page layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect liquid layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and why icons improve your web design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
