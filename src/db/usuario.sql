@@ -3,4 +3,4 @@ CREATE TABLE tb_usuario (
   nome_usuario TEXT NOT NULL,
   email_usuario VARCHAR NOT NULL,
   senha_usuario VARCHAR NOT NULL,
-);
+)
