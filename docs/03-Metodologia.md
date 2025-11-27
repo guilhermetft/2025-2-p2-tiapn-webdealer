@@ -139,6 +139,7 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 | Repositório de código fonte         | GitHub                             | [ GitHub WebDealer ](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-2-p2-tiapn-webdealer) |
 | Documentos do projeto               | GitHub                             | [Documentação / Relatório](https://sgapucminasbr-my.sharepoint.com/personal/1597028_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQALcptVzWncRasgmwycV4dJAYd9qRuyzVCE8z49BFaVDR4) |
 | Projeto de interface                | Figma                              | [Protótipo Interativo](https://www.figma.com/make/0jE2TzXJ9y1p6pnAbKvBpT/WebDealer---TIAPN?node-id=0-1&p=f&t=zebUSrSR73qQSHnS-0&fullscreen=1)                           |
-| Gerenciamento do projeto            | GitHub Projects                    | [ GitHub Projects WebDealer ](https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69) |
+| Gerenciamento do projeto            | GitHub Projects                    | [ GitHub Projects WebDealer ]([https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-2-p2-tiapn-webdealer/projects?query=is%3Aopen)) |
 | Hospedagem                          | Vercel                             | |
-| Criação quadros BPMN                | Heflo                              | [http://....   ](https://app.heflo.com/Process/Editor#&)                         |
+| Criação quadros BPMN                | Heflo                              | [Heflo](https://www.heflo.com/pt-br) |
+| Criação do diagrama de Banco de Dados | Draw.io | [Draw.io](https://app.diagrams.net) |
