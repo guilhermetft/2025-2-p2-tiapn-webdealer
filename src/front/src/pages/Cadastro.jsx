@@ -10,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
-import { Checkbox } from "../components/ui/checkbox";
 import {
   ArrowLeft,
   Mail,
@@ -32,7 +31,6 @@ export default function Cadastro() {
     password: "",
     confirmPassword: "",
   });
-  const [acceptTerms, setAcceptTerms] = useState(false);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -73,12 +71,6 @@ export default function Cadastro() {
 
     if (formData.password !== formData.confirmPassword) {
       setError("As senhas não coincidem");
-      setIsLoading(false);
-      return;
-    }
-
-    if (!acceptTerms) {
-      setError("Você precisa aceitar os termos de uso");
       setIsLoading(false);
       return;
     }
@@ -255,26 +247,6 @@ export default function Cadastro() {
                     disabled={isLoading}
                   />
                 </div>
-              </div>
-
-              <div className="flex items-start space-x-2">
-                <Checkbox
-                  id="terms"
-                  checked={acceptTerms}
-                  onCheckedChange={(checked) => setAcceptTerms(!!checked)}
-                  disabled={isLoading}
-                  className="mt-1"
-                />
-                <label htmlFor="terms" className="text-sm cursor-pointer">
-                  Eu aceito os{" "}
-                  <button type="button" className="text-primary hover:underline">
-                    termos de uso
-                  </button>{" "}
-                  e a{" "}
-                  <button type="button" className="text-primary hover:underline">
-                    política de privacidade
-                  </button>
-                </label>
               </div>
 
               <Button type="submit" className="w-full" disabled={isLoading}>
