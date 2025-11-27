@@ -117,34 +117,46 @@ Explique como a hospedagem e o lançamento da plataforma foram realizados.
 
 ## Qualidade de software
 
-- Completude Funcional <br>
- O software implementa todas as funções especificadas nos requisitos do usuário e do sistema. Avalia se todas as funcionalidades prometidas estão de fato disponíveis para o usuário final.
- <strong>Métrica:</strong> Cobertura de Requisitos: Porcentagem de requisitos funcionais implementados e testados. * Contagem de Funções Ausentes: Número de funções críticas especificadas que não foram implementadas.
-- Utilização de Recursos <br>
-  O software utiliza os recursos de hardware e software (memória, CPU, largura de banda, armazenamento) de forma estratégica e eficiente, garantindo o desempenho esperado ao custo mínimo.
-   <strong>Métrica:</strong> Utilização Média de CPU/Memória: Porcentagem média de uso da CPU e memória em picos de carga. * Taxa de Transferência de Dados: Volume de dados processados por unidade de tempo, comparado ao limite do sistema.
-- Operabilidade <br>
-  O sistema é fácil de operar e controlar. Suas operações são intuitivas e estão diretamente interligadas e alinhadas com o fluxo de trabalho e as funções lógicas que o usuário precisa executar.
-   <strong>Métrica:</strong> Tempo Médio para Conclusão da Tarefa (TMT): Tempo que um usuário leva para executar uma tarefa específica pela primeira vez. * Cliques por Tarefa: Número de interações necessárias para completar uma função-chave.
-- Proteção Contra Erro do Usuário <br>
- O sistema previne ativamente que o usuário cometa erros ou, quando ocorrem, minimiza o impacto e oferece mecanismos de recuperação claros (ex: avisos de confirmação, desfazimento de ações, validações de entrada robustas).
- <strong>Métrica:</strong> Taxa de Erros por Tarefa: Número de erros de entrada ou operação que o usuário comete por tarefa (antes de ser corrigido pelo sistema ou pelo próprio usuário). * Taxa de Sucesso na Recuperação: Porcentagem de vezes que o usuário consegue se recuperar de um erro usando os recursos do sistema.
-- Disponibilidade <br>
-  O software permanece acessível e operacional para o uso durante períodos de tempo acordados. A exigência de manutenção no sistema é minimizada e planejada, e o tempo de inatividade não planejado é extremamente baixo.
-   <strong>Métrica:</strong> Disponibilidade (Uptime): Porcentagem de tempo em que o sistema está operacional (ex: $99,9\%$ de disponibilidade). * Tempo Médio Entre Falhas (MTBF): Tempo médio entre ocorrências de falhas do sistema.  Tempo Médio Para Reparo (MTTR): Tempo médio necessário para restaurar a operação após uma falha.
-- Integridade <br>
- Os dados e o próprio software mantêm a precisão, completude e validade (integridade dos dados) e evitam modificações não autorizadas ou inconsistentes. Garante que as funções do sistema não sejam comprometidas.
- <strong>Métrica:</strong> Taxa de Sucesso de Hash de Verificação: Porcentagem de vezes que a verificação de integridade de dados (ex: hashes de arquivos) é bem-sucedida. * Número de Alterações de Dados Não Autorizadas: Contagem de tentativas de manipulação de dados que foram detectadas e prevenidas.
-- Responsabilidade <br>
-  Ações e eventos dentro do sistema são rastreáveis e atribuíveis a uma entidade (usuário, sistema ou componente). O sistema e seus colaboradores são responsáveis legal e tecnicamente pela proteção, registro e tratamento dos dados do usuário.
-   <strong>Métrica:</strong> Rastreabilidade de Eventos Críticos: Porcentagem de eventos de segurança (login, transação) que possuem logs completos com data, hora, usuário e ação. * Frequência de Auditorias de Acesso: Número de verificações de logs para garantir que o acesso aos dados é justificado.
-- Autenticidade <br>
-  As identidades de usuários, processos e dados são comprovadas e verificadas de forma segura. O sistema garante que as entidades que se apresentam são de fato quem/o que afirmam ser (ex: via login e senhas fortes, certificados digitais).
-  <strong>Métrica:</strong>: Taxa de Tentativas de Login Bem-Sucedidas (em relação a falhas): Mede a eficácia dos mecanismos de autenticação. * Conformidade com Padrões de Senha: Porcentagem de senhas que aderem aos requisitos de complexidade e periodicidade
-- Modificabilidade <br>
- A capacidade de realizar modificações e melhorias de forma eficiente e segura no sistema, seja para correção de defeitos, adaptação a novos ambientes ou evolução de requisitos. Isso exige baixo risco de introduzir novos defeitos.
- <strong>Métrica:</strong> Tempo Médio para Implementar uma Mudança (MTTI): Tempo necessário desde a aprovação de uma mudança até o deploy em produção. * Índice de Instabilidade da Mudança: Número de defeitos introduzidos por nova release de código ou modificação.
-- estabilidade <br>
- O software mantém seu nível de desempenho e qualidade em condições de uso variadas e ao longo do tempo. O sistema deve ser estável e confiável, possuindo uma arquitetura e hospedagem sólida e sistemas bem otimizados.
- Métrica: Taxa de Falhas de Componentes: Número de falhas por módulo ou serviço após um período de tempo. * Variação no Tempo de Resposta (Latência): Desvio padrão no tempo de resposta sob carga constante.
+# Qualidade de Software
 
+A qualidade de software pode ser entendida como o conjunto de características que garante que o produto atenda às necessidades dos usuários e expectativas dos stakeholders. No desenvolvimento deste projeto, a equipe selecionou algumas subcaracterísticas do padrão **ISO/IEC 25010** para nortear o desenvolvimento e medir a qualidade do sistema.
+
+**Completude Funcional**  
+O software implementa todas as funções especificadas nos requisitos, garantindo que as funcionalidades prometidas estejam disponíveis para o usuário.  
+*Métricas:* Cobertura de requisitos funcionais; contagem de funções críticas ausentes.  
+
+**Utilização de Recursos**  
+Os recursos de hardware e software (CPU, memória, armazenamento, largura de banda) são utilizados de forma eficiente, garantindo desempenho ao menor custo.  
+*Métricas:* Utilização média de CPU/memória; taxa de transferência de dados.  
+
+**Operabilidade**  
+O sistema é fácil de operar e intuitivo, com fluxos alinhados às tarefas do usuário.  
+*Métricas:* Tempo médio para conclusão de tarefas; número de cliques por tarefa.  
+
+**Proteção Contra Erro do Usuário**  
+O software previne erros e oferece mecanismos de recuperação claros.  
+*Métricas:* Taxa de erros por tarefa; taxa de sucesso na recuperação.  
+
+**Disponibilidade**  
+O sistema permanece acessível durante períodos planejados, com manutenção mínima e baixo tempo de inatividade.  
+*Métricas:* Disponibilidade (uptime); tempo médio entre falhas (MTBF); tempo médio para reparo (MTTR).  
+
+**Integridade**  
+Os dados e funções do sistema mantêm precisão, completude e validade, prevenindo alterações não autorizadas.  
+*Métricas:* Sucesso em verificação de integridade (hash); número de alterações não autorizadas.  
+
+**Responsabilidade**  
+Ações e eventos são rastreáveis e atribuíveis, garantindo registro e proteção de dados.  
+*Métricas:* Rastreabilidade de eventos críticos; frequência de auditorias de acesso.  
+
+**Autenticidade**  
+As identidades de usuários, processos e dados são verificadas de forma segura, garantindo que as entidades são de fato quem afirmam ser.  
+*Métricas:* Taxa de tentativas de login bem-sucedidas; conformidade com padrões de senha.  
+
+**Modificabilidade**  
+O sistema permite modificações e melhorias de forma eficiente e segura, com baixo risco de introduzir novos erros.  
+*Métricas:* Tempo médio para implementar uma mudança (MTTI); índice de instabilidade da mudança.  
+
+**Estabilidade**  
+O software mantém desempenho e qualidade consistentes ao longo do tempo, mesmo sob condições variadas.  
+*Métricas:* Taxa de falhas de componentes; variação no tempo de resposta (latência).
