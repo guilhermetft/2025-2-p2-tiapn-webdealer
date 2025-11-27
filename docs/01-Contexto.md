@@ -24,21 +24,15 @@ Além disso, a ausência de ferramentas integradas que reúnam dados, indicadore
 
 O trabalho tem como objetivo geral desenvolver uma aplicação web voltada à gestão e acompanhamento dos projetos internos da empresa Arquivar, com foco na centralização das informações, otimização dos processos e aprimoramento da comunicação entre as equipes envolvidas.
 
-Objetivos específicos:
+Já os objetivos específicos são: 
 
-- Implementar funcionalidades que permitam o cadastro, edição e exclusão de projetos de forma estruturada e segura.
-  
-- Desenvolver módulos para o registro e acompanhamento de tarefas, com definição de responsáveis, prazos e status de execução.
-  
-- Criar um painel interativo (dashboard) que apresente indicadores de desempenho e progresso dos projetos em tempo real.
-  
-- Estabelecer níveis de acesso diferenciados para administradores, gestores e colaboradores.
-  
-- Permitir a emissão de relatórios gerenciais para apoio na tomada de decisões estratégicas.
-  
-- Garantir usabilidade, responsividade e segurança na interface do sistema.
-  
-- Integrar o sistema com ferramentas e fluxos já utilizados pela empresa, quando possível, para facilitar sua adoção. 
+- Implementar funcionalidades que permitam o cadastro, edição e exclusão de projetos de forma estruturada e segura; 
+- Desenvolver módulos para o registro e acompanhamento de tarefas, com definição de responsáveis, prazos e status de execução; 
+- Criar um painel interativo (dashboard) que apresente indicadores de desempenho e progresso dos projetos em tempo real; 
+- Estabelecer níveis de acesso diferenciados para administradores, gestores e colaboradores; 
+- Permitir a emissão de relatórios gerenciais para apoio na tomada de decisões estratégicas; 
+- Garantir usabilidade, responsividade e segurança na interface do sistema; 
+- Integrar o sistema com ferramentas e fluxos já utilizados pela empresa, quando possível, para facilitar sua adoção.
 
 ## Justificativa
 
