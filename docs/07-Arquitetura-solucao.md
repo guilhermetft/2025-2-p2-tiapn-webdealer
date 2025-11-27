@@ -30,12 +30,11 @@ Elabore o modelo utilizando uma ferramenta de modelagem apropriada.
 ### Modelo físico
 
 ```sql
-CREATE TABLE usuario (
-  id_usuario UUID PRIMARY KEY,
-  nome VARCHAR(100) NOT NULL,
-  email VARCHAR(255) UNIQUE NOT NULL,
-  senha TEXT NOT NULL,
-  tipo tipo_usuario NOT NULL DEFAULT 'colaborador'
+CREATE TABLE tb_usuario (
+  id_usuario INT8 PRIMARY KEY,
+  nome_usuario TEXT NOT NULL,
+  email_usuario VARCHAR NOT NULL,
+  senha_usuario VARCHAR NOT NULL,
 );
 
 CREATE TABLE projeto (
