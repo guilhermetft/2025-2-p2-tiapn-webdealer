@@ -6,38 +6,34 @@ Layout padrão da aplicação que será utilizado em todas as páginas, definind
 
 ## 1. **Identidade Visual**
 
-- **White** `(#FEFCFD)` – Utilizado em todas as páginas como fundo
-- **Wisteria** `(#BA9DCD)` – Usado como se fossem 'blocos' para colocar o conteúdo da página
-- **Blackberry Cream** `(#58355B)` – Usado como se fossem 'blocos' para colocar o conteúdo da página
-- **Vintage Grape** `(#3C3242)` – Usado como se fossem 'blocos' para colocar o conteúdo da página
+- **White** `(#FFFFFF)` – Utilizado em todas as páginas como fundo de tela
+- **Platinum** `(#F5F5F7)` – Usado como se fossem 'blocos' para colocar o conteúdo da página
+- **Platinum** `(#ECECF0)` – Usado como se fossem 'blocos' para colocar o conteúdo da página
+- **Ink Black** `(#030213)` – Utilizado para textos, molduras
+- **Blackberry Cream** `(#58355B)` – Utilizado para nas logos, slides de apresentação
 
-<img width="1600" height="1200" alt="Paleta Cores" src="https://github.com/user-attachments/assets/18b1cafd-48b4-47d8-b554-62c42a49169f" />
+<img width="1600" height="1200" alt="template" src="https://github.com/user-attachments/assets/cf7094ea-febf-4006-a69a-fe516f2c3496" />
 
 ---
 
 ## 2. **Layout Padrão**
 
+Todas as páginas seguem uma estrutura padrão, para deixar a experiencia do usuario mais agradavel e mais intuitiva
 
+- **Sidebar** com o logotipo do Webdealer, links de navegação entre as diferentes funcionalidade do software
 
 ---
 
 ## 3. **Responsividade**
 
-
+O layout foi desenvolvido utilizando React, o que garante que grande parte da aplicação seja naturalmente responsiva e adaptável a diferentes tamanhos de tela, como celulares, tablets, notebooks, desktops e outros dispositivos.
 
 ---
 ## 4. **Iconografia**
 
+O nome da marca WebDealer representa a união entre tecnologia e intermediação digital. O termo “Web” faz referência à própria internet, enquanto “Dealer” simboliza o papel de intermediário, reforçando a ideia da plataforma como um elo central que conecta pessoas, projetos e soluções no ambiente digital.
 
+O ícone da marca é representado por uma aranha, escolhida como um trocadilho visual com a palavra web (teia). Assim como a aranha constrói e gerencia sua teia de forma estratégica, a WebDealer atua na organização, conexão e gestão de informações, agora com uma estética moderna e tecnológica que traduz inovação e inteligência digital.
 
----
-
-> **Tipografias**:
-
-| Fonte principal: Roboto, sans-serif 
-| Hierarquia de títulos:
-H1: 32px, Bold
-H2: 28px, Semi-bold
-H3: 24px, Medium
-| Texto padrão: 16px, Regular
-Links e botões: 14-16px, Medium
+<img width="1024" height="1024" alt="Logo Webdealer" src="https://github.com/user-attachments/assets/e62f9d77-c229-4ca0-9636-bf39243f1ab4" />
+<img width="715" height="728" alt="webdeal" src="https://github.com/user-attachments/assets/ad8deaa0-4380-4dd9-bd42-fc9558c1b425" />
