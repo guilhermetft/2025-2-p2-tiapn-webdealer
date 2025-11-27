@@ -120,7 +120,8 @@ Descrição das telas relativas às atividades do processo 1.
 
 Descrição das telas relativas às atividades do processo 2.
 
-> Inserir imagens das telas correspondentes às atividades do processo 2.
+<img width="1855" height="876" alt="image" src="https://github.com/user-attachments/assets/b717cfcd-f7e3-49f5-8c2e-9531c5436318" />
+<img width="1855" height="876" alt="image" src="https://github.com/user-attachments/assets/ffd00d5f-2833-4224-a6a2-744ecd3d6c3f" />
 
 ### Demais telas do sistema
 
