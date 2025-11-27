@@ -22,6 +22,10 @@ Todas as páginas seguem uma estrutura padrão, para deixar a experiencia do usu
 
 - **Sidebar** com o logotipo do Webdealer, links de navegação entre as diferentes funcionalidade do software
 
+**Exemplo de Layout**
+
+<img width="1842" height="947" alt="image" src="https://github.com/user-attachments/assets/6d8c80a6-af1c-449f-a1e7-f8d50aad748a" />
+
 ---
 
 ## 3. **Responsividade**
