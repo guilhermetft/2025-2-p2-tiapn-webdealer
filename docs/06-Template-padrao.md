@@ -32,6 +32,8 @@ Todas as páginas seguem uma estrutura padrão, para deixar a experiencia do usu
 
 O layout foi desenvolvido utilizando React, o que garante que grande parte da aplicação seja naturalmente responsiva e adaptável a diferentes tamanhos de tela, como celulares, tablets, notebooks, desktops e outros dispositivos.
 
+- Ícones e botões se reorganizam automaticamente para manter a usabilidade em dispositivos móveis.
+
 ---
 ## 4. **Iconografia**
 
