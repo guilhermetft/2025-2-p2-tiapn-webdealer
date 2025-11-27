@@ -86,23 +86,22 @@ O front-end será desenvolvido utilizando React em conjunto com o Vite, visando 
 
 Na camada de back-end, será utilizada a stack Node.js, responsável pelo processamento das requisições e comunicação entre o front-end e o banco de dados. A API será estruturada de forma modular e escalável, adotando o padrão RESTful para integração eficiente com o cliente. 
 
-O sistema de persistência de dados será implementado com o MySQL, banco relacional amplamente utilizado, que garantirá a integridade e o desempenho das operações de leitura e escrita. A comunicação entre o servidor e o banco será feita através de consultas SQL diretas, priorizando simplicidade e clareza nas interações. 
+O sistema de persistência de dados será implementado com o Supabase, um banco de dados online fácil de usar, baseado em PostgreSQL. Ele garante integridade, segurança e desempenho nas operações de leitura e escrita. A comunicação entre o servidor e o banco será feita através de consultas SQL e APIs fornecidas pelo Supabase, priorizando simplicidade, clareza e rápida integração.
 
 O versionamento do código será gerenciado pelo Git, com repositório hospedado no GitHub, permitindo controle de histórico, colaboração em equipe e integração com ferramentas de deploy. 
 
-A hospedagem da aplicação será realizada na plataforma Microsoft Azure, que fornecerá os serviços de deploy do back-end e front-end, além da integração com o banco de dados em nuvem. O Azure permitirá o gerenciamento unificado dos recursos do sistema, com escalabilidade automática e monitoramento contínuo de desempenho. 
+A hospedagem da aplicação será realizada na plataforma Microsoft Azure, que fornecerá os serviços de deploy do back-end e front-end, além de integração direta com o banco de dados em nuvem. O Azure permitirá o gerenciamento unificado dos recursos do sistema, com escalabilidade automática, monitoramento contínuo de desempenho e facilidade na manutenção.
 
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
-| Front-end | HTML5 + CSS + JS |
+| Front-end | React + CSS + JavaScript |
 | Back-end | Node.js |
 | Frameworks e Bibliotecas | React + Tailwind + jQuery |
-| SGBD | MySQL |
+| SGBD | SupaBase |
 | Autenticação |  |
-| Hospedagem / Deploy | Vercel |
+| Hospedagem / Deploy | Azure |
 | Versionamento | Git + GitHub |
 | IDE | Visual Studio Code |
-
 
 ## Hospedagem
 
