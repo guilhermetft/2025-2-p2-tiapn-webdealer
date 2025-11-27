@@ -44,13 +44,11 @@ São protótipos usados no design de interface para sugerir a estrutura de um si
 
 <img width="1365" height="718" alt="Captura de tela 2025-10-22 162312" src="https://github.com/user-attachments/assets/2678ee76-7e7e-4e5f-9f53-2a36328798d9" />
 
-
 ## Protótipo interativo
 
 Apresente o protótipo interativo das telas da aplicação, permitindo a navegação simulada pelo sistema. Esse protótipo deve refletir as funcionalidades e interações planejadas, e servir como base para validação com usuários e equipe.  
 
-https://www.figma.com/make/WD2rlAIzSZIrzUfVSAnEW3/WebDealer---TIAPN?t=OPfhF10590WUiQTv-1
-
+[Protótipo Interativo - Figma](https://www.figma.com/make/0jE2TzXJ9y1p6pnAbKvBpT/WebDealer---TIAPN?node-id=0-1&p=f&t=zebUSrSR73qQSHnS-0&fullscreen=1)
 
 ## Jornada do usuário
 
