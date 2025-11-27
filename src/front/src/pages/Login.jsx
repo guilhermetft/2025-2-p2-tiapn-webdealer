@@ -54,14 +54,13 @@ export default function Login() {
         throw new Error(data.error || "Erro ao fazer login");
       }
 
-      if (!data.token) {
-        throw new Error("Token de autenticação não recebido.");
+      if (!data.usuario) {
+        throw new Error("Usuário ou senha inválidos");
       }
 
-      localStorage.setItem("token", data.token);
       localStorage.setItem("usuario", JSON.stringify(data.usuario));
-
       navigate("/home");
+
     } catch (err) {
       console.error("Erro:", err);
 
