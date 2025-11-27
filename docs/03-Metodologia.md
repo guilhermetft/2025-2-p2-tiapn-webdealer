@@ -44,6 +44,12 @@ Além das branches e etiquetas o grupo adotou a criação de branches individuai
 - Apresentação, desenvolvimento de wireframes e diagramas: Daniel Bleme, Marcus Vinícius, João Vitor, 
 - Diagrama, modelos e scripts do banco de dados: Vinícius Muniz, Lara Rossini, Gustavo Santiago
 
+#### Sprint 4
+- _Scrum master_: Guilherme Teixeira
+- Apresentação, documentação, relatório: Guilherme Teixeira
+- Preenchimento GitHub: Daniel Bleme, Guilherme Teixeira
+- Artefatos da aplicação: Daniel Bleme, Guilherme Teixeira, Gustavo Santiago, João Vitor, Lara Rossini, Marcus Vinícius, Vinícius Muniz
+
 ###  Quadro de tarefas
 
 > Divisão de tarefas entre os membros do grupo e o acompanhamento da execução.
@@ -99,13 +105,13 @@ Atualizado em: 22/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Daniel |  |  |  |  |  |
-| Guilherme |  |  |  |  |  |
-| Gustavo |  |  |  |  |  |
-| João |  |  |  |  |  |
-| Lara |  |  |  |  |  |
-| Marcus |  |  |  |  |  |
-| Vinicius |  |  |  |  |  |
+| Daniel | Calendario | 01/11/2025 | 27/11/2025 | 📝 | 27/11/2025 |
+| Guilherme | Cadastro e Login de Usuario | 27/10/2025 | 27/11/2025 | 📝 | 27/11/2025 |
+| Gustavo |  |  | 27/11/2025 | 📝 | 27/11/2025 |
+| João |  |  | 27/11/2025 | 📝 | 27/11/2025 |
+| Lara |  |  | 27/11/2025 | 📝 | 27/11/2025 |
+| Marcus |  |  | 27/11/2025 | 📝 | 27/11/2025 |
+| Vinicius |  |  | 27/11/2025 | 📝 | 27/11/2025 |
 
 Legenda:
 - ✔️: terminado
@@ -131,8 +137,8 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | [ GitHub WebDealer ](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-2-p2-tiapn-webdealer) |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de interface                | Figma                              | http://....                            |
+| Documentos do projeto               | GitHub                             | [Documentação / Relatório](https://sgapucminasbr-my.sharepoint.com/personal/1597028_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQALcptVzWncRasgmwycV4dJAYd9qRuyzVCE8z49BFaVDR4) |
+| Projeto de interface                | Figma                              | [Protótipo Interativo](https://www.figma.com/make/0jE2TzXJ9y1p6pnAbKvBpT/WebDealer---TIAPN?node-id=0-1&p=f&t=zebUSrSR73qQSHnS-0&fullscreen=1)                           |
 | Gerenciamento do projeto            | GitHub Projects                    | [ GitHub Projects WebDealer ](https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69) |
-| Hospedagem                          | Vercel                             | http://....                            |
+| Hospedagem                          | Vercel                             | |
 | Criação quadros BPMN                | Heflo                              | [http://....   ](https://app.heflo.com/Process/Editor#&)                         |
