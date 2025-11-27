@@ -36,4 +36,4 @@ O nome da marca WebDealer representa a união entre tecnologia e intermediação
 O ícone da marca é representado por uma aranha, escolhida como um trocadilho visual com a palavra web (teia). Assim como a aranha constrói e gerencia sua teia de forma estratégica, a WebDealer atua na organização, conexão e gestão de informações, agora com uma estética moderna e tecnológica que traduz inovação e inteligência digital.
 
 <img width="256" height="256" alt="Logo Webdealer" src="https://github.com/user-attachments/assets/e62f9d77-c229-4ca0-9636-bf39243f1ab4" />
-<img width="715" height="728" alt="webdeal" src="https://github.com/user-attachments/assets/ad8deaa0-4380-4dd9-bd42-fc9558c1b425" />
+<img width="256" height="256" alt="Logo webdealer" src="https://github.com/user-attachments/assets/ad8deaa0-4380-4dd9-bd42-fc9558c1b425" />
