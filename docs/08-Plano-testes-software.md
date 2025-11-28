@@ -28,6 +28,14 @@ Por exemplo:
 | Critério de êxito | - Alterações salvas! |
 | Responsável pela elaboração do caso de teste | Marcus Vinícius |
 
+| **Caso de teste**  | **CT-003 – Gerenciar tarefas**  |
+|:---: |:---: |
+| Requisito associado | RF-00Y - A aplicação deve obter o CRUD completo para gerenciamento de tarefas |
+| Objetivo do teste | Verificar o funcionamento do sistema de tarefas da aplicação |
+| Passos | - Acessar a página de tarefas <br> - Testar a criação de uma tarefa <br> - Clicar no botão "Salvar" <br> - Preencher os campos de criação da tarefa <br> - Verificar se foi criado com êxito tanto na interface quanto no banco efetuando requisições <br> - Tentar editar uma tarefa <br> - Tentar deletar uma tarefa <br> - Tentar concluir uma tarefa <br> |
+| Critério de êxito | - Todas as funcionalidades do CRUD funcionaram com êxito |
+| Responsável pela elaboração do caso de teste | Gustavo Silva Santiago |
+
 
 ## Ferramentas de testes (opcional)
 
