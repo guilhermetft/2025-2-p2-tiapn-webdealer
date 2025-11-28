@@ -39,3 +39,11 @@
 | Passos | - Acessar a página de tarefas <br> - Testar a criação de uma tarefa <br> - Clicar no botão "Salvar" <br> - Preencher os campos de criação da tarefa <br> - Verificar se foi criado com êxito tanto na interface quanto no banco efetuando requisições <br> - Tentar editar uma tarefa <br> - Tentar deletar uma tarefa <br> - Tentar concluir uma tarefa <br> |
 | Critério de êxito | - Todas as funcionalidades do CRUD funcionaram com êxito |
 | Responsável pela elaboração do caso de teste | Gustavo Silva Santiago |
+
+| **Caso de teste**  | **CT-004 – Solicitacoes **  |
+|:---: |:---: |
+| Requisito associado | RF-00Y - A aplicação deve obter o CRUD completo para gerenciamento de tarefas |
+| Objetivo do teste | Verificar o funcionamento do sistema de solicitações da aplicação |
+| Passos | - Acessar a página de solicitações <br> - Clicar no botão nova solicitação <br> - Preencher os campos obrigatorios (titúli, descrição, prioridade, solicitante, data) <br> - Clicar no botão salvar <br> - Verificar se a solciitação aparece imediatamente na lista de interface <br> - confirmar no banco (via suprabase) <br> - |
+| Critério de êxito | - A solicitação é criada corretamente na interface e no banco - As edições são salvas e refletidas tanto no front quanto no banco |
+| Responsável pela elaboração do caso de teste | Lara Rossini Rhis |
