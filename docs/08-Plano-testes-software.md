@@ -24,7 +24,7 @@
 
 <br>
 
-| **Caso de teste**  | **CT-002 – Configurações (mudanças de dados de perfil**  |
+| **Caso de teste**  | **CT-003 – Configurações (mudanças de dados de perfil**  |
 |:---: |:---: |
 | Requisito associado | RF-00Y - A aplicação deve estar logada em alguma conta(para testes, está logada no id 1) |
 | Objetivo do teste | Alterar dados do perfil |
@@ -32,7 +32,7 @@
 | Critério de êxito | - Alterações salvas! |
 | Responsável pela elaboração do caso de teste | Marcus Vinícius |
 
-| **Caso de teste**  | **CT-003 – Gerenciar tarefas**  |
+| **Caso de teste**  | **CT-004 – Gerenciar tarefas**  |
 |:---: |:---: |
 | Requisito associado | RF-00Y - A aplicação deve obter o CRUD completo para gerenciamento de tarefas |
 | Objetivo do teste | Verificar o funcionamento do sistema de tarefas da aplicação |
@@ -40,7 +40,7 @@
 | Critério de êxito | - Todas as funcionalidades do CRUD funcionaram com êxito |
 | Responsável pela elaboração do caso de teste | Gustavo Silva Santiago |
 
-| **Caso de teste**  | **CT-004 – Solicitações **  |
+| **Caso de teste**  | **CT-005 – Solicitações **  |
 |:---: |:---: |
 | Requisito associado | RF-00Y - A aplicação deve obter o CRUD completo para gerenciamento de tarefas |
 | Objetivo do teste | Verificar o funcionamento do sistema de solicitações da aplicação |
@@ -49,7 +49,7 @@
 | Responsável pela elaboração do caso de teste | Lara Rossini Rhis |
 
 
-| **Caso de teste**  | **CT-005 – Gerenciamento de Equipe**  |
+| **Caso de teste**  | **CT-006 – Gerenciamento de Equipe**  |
 |:---: |:---: |
 | Requisito associado | RF-00Y - A aplicação deve realizar o CRUD relacionado ao gerenciamento de membros a equipes |
 | Objetivo do teste | Gerenciar corretamente os membros e as diversas equipes |
