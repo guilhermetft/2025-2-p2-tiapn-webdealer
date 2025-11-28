@@ -40,10 +40,19 @@
 | Critério de êxito | - Todas as funcionalidades do CRUD funcionaram com êxito |
 | Responsável pela elaboração do caso de teste | Gustavo Silva Santiago |
 
-| **Caso de teste**  | **CT-004 – Solicitacoes **  |
+| **Caso de teste**  | **CT-004 – Solicitações **  |
 |:---: |:---: |
 | Requisito associado | RF-00Y - A aplicação deve obter o CRUD completo para gerenciamento de tarefas |
 | Objetivo do teste | Verificar o funcionamento do sistema de solicitações da aplicação |
-| Passos | - Acessar a página de solicitações <br> - Clicar no botão nova solicitação <br> - Preencher os campos obrigatorios (titúli, descrição, prioridade, solicitante, data) <br> - Clicar no botão salvar <br> - Verificar se a solciitação aparece imediatamente na lista de interface <br> - confirmar no banco (via suprabase) <br> - |
+| Passos | - Acessar a página de solicitações <br> - Clicar no botão nova solicitação <br> - Preencher os campos obrigatorios (título, descrição, prioridade, solicitante, data) <br> - Clicar no botão salvar <br> - Verificar se a solciitação aparece imediatamente na lista de interface <br> - confirmar no banco (via suprabase) <br> - |
 | Critério de êxito | - A solicitação é criada corretamente na interface e no banco - As edições são salvas e refletidas tanto no front quanto no banco |
 | Responsável pela elaboração do caso de teste | Lara Rossini Rhis |
+
+
+| **Caso de teste**  | **CT-005 – Gerenciamento de Equipe**  |
+|:---: |:---: |
+| Requisito associado | RF-00Y - A aplicação deve realizar o CRUD relacionado ao gerenciamento de membros a equipes |
+| Objetivo do teste | Gerenciar corretamente os membros e as diversas equipes |
+| Passos | - Acessar a página de equipes <br> - Selecionar um usuário <br> - Selecionar uma equipe/departamento <br> - Clicar em "Salvar" <br> Verificar se um novo card foi gerado na tela <br> Tentar editar o card |
+| Critério de êxito | - Alerta "Sucesso. Membro vinculado." |
+| Responsável pela elaboração do caso de teste | Vinicius Muniz |
