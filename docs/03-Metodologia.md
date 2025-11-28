@@ -111,7 +111,7 @@ Atualizado em: 22/10/2025
 | João | Chat de Equipe | 26/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 | Lara |  |  | 27/11/2025 | ✔️ | 27/11/2025 |
 | Marcus |  |  | 27/11/2025 | ✔️| 27/11/2025 |
-| Vinicius |  |  | 27/11/2025 | ✔️ | 27/11/2025 |
+| Vinicius | Gerenciamento de Equipes | 15/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 
 Legenda:
 - ✔️: terminado
