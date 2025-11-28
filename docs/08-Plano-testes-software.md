@@ -40,7 +40,7 @@
 | Critério de êxito | - Todas as funcionalidades do CRUD funcionaram com êxito |
 | Responsável pela elaboração do caso de teste | Gustavo Silva Santiago |
 
-| **Caso de teste**  | **CT-005 – Solicitações **  |
+| **Caso de teste**  | **CT-005 – Solicitações**  |
 |:---: |:---: |
 | Requisito associado | RF-00Y - A aplicação deve obter o CRUD completo para gerenciamento de tarefas |
 | Objetivo do teste | Verificar o funcionamento do sistema de solicitações da aplicação |
