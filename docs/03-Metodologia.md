@@ -107,10 +107,10 @@ Atualizado em: 22/10/2025
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Daniel | Calendario | 01/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 | Guilherme | Cadastro e Login de Usuario | 27/10/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
-| Gustavo |  | Gerenciamento de tarefas | 12/11/2025 | ✔️ | 27/11/2025 |
+| Gustavo | Gerenciamento de tarefas | 12/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 | João | Chat de Equipe | 01/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 | Lara | Solicitações | 02/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
-| Marcus | Configurações |  | 07/11/2025 | ✔️| 27/11/2025 |
+| Marcus | Configurações | 07/11/2025 | 27/11/2025 | ✔️| 27/11/2025 |
 | Vinicius | Gerenciamento de Equipes | 15/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 
 Legenda:
