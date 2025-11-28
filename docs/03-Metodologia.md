@@ -109,7 +109,7 @@ Atualizado em: 22/10/2025
 | Guilherme | Cadastro e Login de Usuario | 27/10/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 | Gustavo |  |  | 27/11/2025 | ✔️ | 27/11/2025 |
 | João | Chat de Equipe | 26/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
-| Lara |  |  | 27/11/2025 | ✔️ | 27/11/2025 |
+| Lara | Solicitações | 26/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 | Marcus |  |  | 27/11/2025 | ✔️| 27/11/2025 |
 | Vinicius | Gerenciamento de Equipes | 15/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 
