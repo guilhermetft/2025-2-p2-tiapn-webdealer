@@ -12,8 +12,6 @@
 | Critério de êxito | - O cadastro foi realizado com sucesso. |
 | Guilherme Teixeira | Guilherme Teixeira. |
 
-<br>
-
 | **Caso de teste**  | **CT-002 – Efetuar login**  |
 |:---: |:---: |
 | Requisito associado | RF-002 - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail e senha. |
@@ -21,8 +19,6 @@
 | Passos | - Acessar o navegador <br> - Informar o endereço do site http://localhost:5173/login <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
 | Critério de êxito | - O login foi realizado com sucesso. |
 | Guilherme Teixeira | Guilherme Teixeira. |
-
-<br>
 
 | **Caso de teste**  | **CT-003 – Configurações (mudanças de dados de perfil**  |
 |:---: |:---: |
@@ -47,7 +43,6 @@
 | Passos | - Acessar a página de solicitações <br> - Clicar no botão nova solicitação <br> - Preencher os campos obrigatorios (título, descrição, prioridade, solicitante, data) <br> - Clicar no botão salvar <br> - Verificar se a solciitação aparece imediatamente na lista de interface <br> - confirmar no banco (via suprabase) <br> - |
 | Critério de êxito | - A solicitação é criada corretamente na interface e no banco - As edições são salvas e refletidas tanto no front quanto no banco |
 | Responsável pela elaboração do caso de teste | Lara Rossini Rhis |
-
 
 | **Caso de teste**  | **CT-006 – Gerenciamento de Equipe**  |
 |:---: |:---: |

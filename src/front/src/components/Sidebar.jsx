@@ -14,7 +14,7 @@ export default function Sidebar() {
     <aside className="sidebar">
       <nav>
         <h3>WebDealer</h3>
-        <NavLink to="/" end>
+        <NavLink to="/home" end>
           <FaHome /> Início
         </NavLink>
         <NavLink to="/painel">
