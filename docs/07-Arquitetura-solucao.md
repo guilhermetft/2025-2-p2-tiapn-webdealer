@@ -30,12 +30,11 @@ Elabore o modelo utilizando uma ferramenta de modelagem apropriada.
 ### Modelo físico
 
 ```sql
-CREATE TABLE usuario (
-  id_usuario UUID PRIMARY KEY,
-  nome VARCHAR(100) NOT NULL,
-  email VARCHAR(255) UNIQUE NOT NULL,
-  senha TEXT NOT NULL,
-  tipo tipo_usuario NOT NULL DEFAULT 'colaborador'
+CREATE TABLE tb_usuario (
+  id_usuario INT8 PRIMARY KEY,
+  nome_usuario TEXT NOT NULL,
+  email_usuario VARCHAR NOT NULL,
+  senha_usuario VARCHAR NOT NULL,
 );
 
 CREATE TABLE projeto (
@@ -87,23 +86,22 @@ O front-end será desenvolvido utilizando React em conjunto com o Vite, visando 
 
 Na camada de back-end, será utilizada a stack Node.js, responsável pelo processamento das requisições e comunicação entre o front-end e o banco de dados. A API será estruturada de forma modular e escalável, adotando o padrão RESTful para integração eficiente com o cliente. 
 
-O sistema de persistência de dados será implementado com o MySQL, banco relacional amplamente utilizado, que garantirá a integridade e o desempenho das operações de leitura e escrita. A comunicação entre o servidor e o banco será feita através de consultas SQL diretas, priorizando simplicidade e clareza nas interações. 
+O sistema de persistência de dados será implementado com o Supabase, um banco de dados online fácil de usar, baseado em PostgreSQL. Ele garante integridade, segurança e desempenho nas operações de leitura e escrita. A comunicação entre o servidor e o banco será feita através de consultas SQL e APIs fornecidas pelo Supabase, priorizando simplicidade, clareza e rápida integração.
 
 O versionamento do código será gerenciado pelo Git, com repositório hospedado no GitHub, permitindo controle de histórico, colaboração em equipe e integração com ferramentas de deploy. 
 
-A hospedagem da aplicação será realizada na plataforma Microsoft Azure, que fornecerá os serviços de deploy do back-end e front-end, além da integração com o banco de dados em nuvem. O Azure permitirá o gerenciamento unificado dos recursos do sistema, com escalabilidade automática e monitoramento contínuo de desempenho. 
+A hospedagem da aplicação será realizada na plataforma Microsoft Azure, que fornecerá os serviços de deploy do back-end e front-end, além de integração direta com o banco de dados em nuvem. O Azure permitirá o gerenciamento unificado dos recursos do sistema, com escalabilidade automática, monitoramento contínuo de desempenho e facilidade na manutenção.
 
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
-| Front-end | HTML5 + CSS + JS |
+| Front-end | React + CSS + JavaScript |
 | Back-end | Node.js |
 | Frameworks e Bibliotecas | React + Tailwind + jQuery |
-| SGBD | MySQL |
+| SGBD | SupaBase |
 | Autenticação |  |
-| Hospedagem / Deploy | Vercel |
+| Hospedagem / Deploy | Azure |
 | Versionamento | Git + GitHub |
 | IDE | Visual Studio Code |
-
 
 ## Hospedagem
 
@@ -117,13 +115,46 @@ Explique como a hospedagem e o lançamento da plataforma foram realizados.
 
 ## Qualidade de software
 
-Conceituar qualidade é uma tarefa complexa, mas ela pode ser vista como um método gerencial que, por meio de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+# Qualidade de Software
 
-No contexto do desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem atendidas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, esse nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+A qualidade de software pode ser entendida como o conjunto de características que garante que o produto atenda às necessidades dos usuários e expectativas dos stakeholders. No desenvolvimento deste projeto, a equipe selecionou algumas subcaracterísticas do padrão **ISO/IEC 25010** para nortear o desenvolvimento e medir a qualidade do sistema.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software. Com base nessas características e nas respectivas subcaracterísticas, identifique as subcaracterísticas que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software, considerando alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão à equipe avaliar os objetos de interesse.
+**Completude Funcional**  
+O software implementa todas as funções especificadas nos requisitos, garantindo que as funcionalidades prometidas estejam disponíveis para o usuário.  
+*Métricas:* Cobertura de requisitos funcionais; contagem de funções críticas ausentes.  
 
-> **Links úteis**:
-> - [ISO/IEC 25010:2011 - Systems and Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE) — System and Software Quality Models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de software - Engenharia de Software](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209)
+**Utilização de Recursos**  
+Os recursos de hardware e software (CPU, memória, armazenamento, largura de banda) são utilizados de forma eficiente, garantindo desempenho ao menor custo.  
+*Métricas:* Utilização média de CPU/memória; taxa de transferência de dados.  
+
+**Operabilidade**  
+O sistema é fácil de operar e intuitivo, com fluxos alinhados às tarefas do usuário.  
+*Métricas:* Tempo médio para conclusão de tarefas; número de cliques por tarefa.  
+
+**Proteção Contra Erro do Usuário**  
+O software previne erros e oferece mecanismos de recuperação claros.  
+*Métricas:* Taxa de erros por tarefa; taxa de sucesso na recuperação.  
+
+**Disponibilidade**  
+O sistema permanece acessível durante períodos planejados, com manutenção mínima e baixo tempo de inatividade.  
+*Métricas:* Disponibilidade (uptime); tempo médio entre falhas (MTBF); tempo médio para reparo (MTTR).  
+
+**Integridade**  
+Os dados e funções do sistema mantêm precisão, completude e validade, prevenindo alterações não autorizadas.  
+*Métricas:* Sucesso em verificação de integridade (hash); número de alterações não autorizadas.  
+
+**Responsabilidade**  
+Ações e eventos são rastreáveis e atribuíveis, garantindo registro e proteção de dados.  
+*Métricas:* Rastreabilidade de eventos críticos; frequência de auditorias de acesso.  
+
+**Autenticidade**  
+As identidades de usuários, processos e dados são verificadas de forma segura, garantindo que as entidades são de fato quem afirmam ser.  
+*Métricas:* Taxa de tentativas de login bem-sucedidas; conformidade com padrões de senha.  
+
+**Modificabilidade**  
+O sistema permite modificações e melhorias de forma eficiente e segura, com baixo risco de introduzir novos erros.  
+*Métricas:* Tempo médio para implementar uma mudança (MTTI); índice de instabilidade da mudança.  
+
+**Estabilidade**  
+O software mantém desempenho e qualidade consistentes ao longo do tempo, mesmo sob condições variadas.  
+*Métricas:* Taxa de falhas de componentes; variação no tempo de resposta (latência).

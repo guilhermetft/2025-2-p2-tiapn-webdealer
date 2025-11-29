@@ -28,10 +28,6 @@ São protótipos usados no design de interface para sugerir a estrutura de um si
 
 <img width="1365" height="717" alt="Captura de tela 2025-10-22 162048" src="https://github.com/user-attachments/assets/8b792537-d463-428b-85ec-d8296e636cd9" />
 
-<img width="1364" height="718" alt="Captura de tela 2025-10-22 162104" src="https://github.com/user-attachments/assets/3d59f579-8894-4cd1-824d-85313d216c33" />
-
-<img width="1365" height="718" alt="Captura de tela 2025-10-22 162119" src="https://github.com/user-attachments/assets/43012e4c-563b-492e-99c1-1f852c80f3ed" />
-
 <img width="1365" height="719" alt="Captura de tela 2025-10-22 162130" src="https://github.com/user-attachments/assets/9358f6e0-8234-4610-9f92-b95e5a35c331" />
 
 <img width="1365" height="718" alt="Captura de tela 2025-10-22 162143" src="https://github.com/user-attachments/assets/6e4ce96c-72dd-41df-8c95-391184cca4e7" />
@@ -44,17 +40,17 @@ São protótipos usados no design de interface para sugerir a estrutura de um si
 
 <img width="1365" height="718" alt="Captura de tela 2025-10-22 162312" src="https://github.com/user-attachments/assets/2678ee76-7e7e-4e5f-9f53-2a36328798d9" />
 
+---
 
 ## Protótipo interativo
 
 Apresente o protótipo interativo das telas da aplicação, permitindo a navegação simulada pelo sistema. Esse protótipo deve refletir as funcionalidades e interações planejadas, e servir como base para validação com usuários e equipe.  
 
-https://www.figma.com/make/WD2rlAIzSZIrzUfVSAnEW3/WebDealer---TIAPN?t=OPfhF10590WUiQTv-1
+[Protótipo Interativo - Figma](https://www.figma.com/make/0jE2TzXJ9y1p6pnAbKvBpT/WebDealer---TIAPN?node-id=0-1&p=f&t=zebUSrSR73qQSHnS-0&fullscreen=1)
 
+---
 
 ## Jornada do usuário
-
-# 🧭 Mapa da Jornada do Usuário – Projeto Webdealer
 
 ## 📌 Introdução
 O mapa da jornada do usuário descreve as etapas percorridas pelos diferentes perfis de usuários durante o uso do sistema **Webdealer**, desde o primeiro contato até a utilização efetiva.  
@@ -90,13 +86,11 @@ O Webdealer é uma aplicação web desenvolvida para a empresa **Arquivar**, com
 
 ![Mapa Jornada](images/mapa_jornada.png)
 
----
-
 ## ✅ Conclusão
 O mapa da jornada do usuário do **Webdealer** evidencia o papel central da aplicação na transformação digital da empresa **Arquivar**.  
 Ao alinhar tecnologia, gestão e experiência do usuário, o sistema se consolida como uma ferramenta estratégica para aumentar a eficiência, a transparência e a colaboração entre equipes.
 
-
+---
 
 ## Interface do sistema
 
@@ -122,7 +116,8 @@ Descrição das telas relativas às atividades do processo 1.
 
 Descrição das telas relativas às atividades do processo 2.
 
-> Inserir imagens das telas correspondentes às atividades do processo 2.
+<img width="1855" height="876" alt="image" src="https://github.com/user-attachments/assets/b717cfcd-f7e3-49f5-8c2e-9531c5436318" />
+<img width="1855" height="876" alt="image" src="https://github.com/user-attachments/assets/ffd00d5f-2833-4224-a6a2-744ecd3d6c3f" />
 
 ### Demais telas do sistema
 

@@ -18,13 +18,6 @@ O projeto segue a seguinte convenção para o nome de branches:
 - `testing`: versão em testes do software
 - `dev`: versão de desenvolvimento do software
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
 Além das branches e etiquetas o grupo adotou a criação de branches individuais para o desenvolvimento dos artefatos do projeto separadamente, evitando assim conflitos e outros problemas.
 
 ## Planejamento do projeto
@@ -50,6 +43,12 @@ Além das branches e etiquetas o grupo adotou a criação de branches individuai
 - _Scrum master_: Guilherme Teixeira
 - Apresentação, desenvolvimento de wireframes e diagramas: Daniel Bleme, Marcus Vinícius, João Vitor, 
 - Diagrama, modelos e scripts do banco de dados: Vinícius Muniz, Lara Rossini, Gustavo Santiago
+
+#### Sprint 4
+- _Scrum master_: Guilherme Teixeira
+- Apresentação, documentação, relatório: Guilherme Teixeira
+- Preenchimento GitHub: Daniel Bleme, Guilherme Teixeira
+- Artefatos da aplicação: Daniel Bleme, Guilherme Teixeira, Gustavo Santiago, João Vitor, Lara Rossini, Marcus Vinícius, Vinícius Muniz
 
 ###  Quadro de tarefas
 
@@ -106,13 +105,13 @@ Atualizado em: 22/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Daniel |  |  |  |  |  |
-| Guilherme |  |  |  |  |  |
-| Gustavo |  |  |  |  |  |
-| João |  |  |  |  |  |
-| Lara |  |  |  |  |  |
-| Marcus |  |  |  |  |  |
-| Vinicius |  |  |  |  |  |
+| Daniel | Calendario | 01/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
+| Guilherme | Cadastro e Login de Usuario | 27/10/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
+| Gustavo | Gerenciamento de tarefas | 12/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
+| João | Chat de Equipe | 01/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
+| Lara | Solicitações | 02/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
+| Marcus | Configurações | 07/11/2025 | 27/11/2025 | ✔️| 27/11/2025 |
+| Vinicius | Gerenciamento de Equipes | 15/11/2025 | 27/11/2025 | ✔️ | 27/11/2025 |
 
 Legenda:
 - ✔️: terminado
@@ -123,7 +122,10 @@ Legenda:
 ### Processo
 
 O grupo adotou o Scrum como metodologia de gestão do projeto, estruturando o desenvolvimento em sprints mensais. Para o controle e acompanhamento das tarefas, utilizou-se o GitHub Projects, onde as atividades foram organizadas em colunas correspondentes a cada sprint. Ao final de cada sprint, uma reunião de review foi feita para apresentar os avanços e ajustes necessários foram definidos nas retrospectivas.
-<img width="1860" height="1013" alt="image" src="https://github.com/user-attachments/assets/a4ca1c0c-aedb-4db6-accb-eba08e25763c" />
+<img width="1860" height="1013" alt="GitHub Projects 1" src="https://github.com/user-attachments/assets/a4ca1c0c-aedb-4db6-accb-eba08e25763c" />
+<img width="1876" height="928" alt="GitHub Projects 2" src="https://github.com/user-attachments/assets/d6900367-6c1d-4421-9278-b9e429918883" />
+<img width="1876" height="859" alt="GitHub Projects 3" src="https://github.com/user-attachments/assets/4ff0adfa-415e-434e-ae30-44d6988c9dd4" />
+<img width="1869" height="928" alt="GitHub Projects 4" src="https://github.com/user-attachments/assets/746d7717-2248-4e82-a0b9-b6fdc8c3d304" />
 
  
 ## Ferramentas
@@ -135,8 +137,9 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | [ GitHub WebDealer ](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-2-p2-tiapn-webdealer) |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de interface                | Figma                              | http://....                            |
-| Gerenciamento do projeto            | GitHub Projects                    | [ GitHub Projects WebDealer ](https://github.com/orgs/ICEI-PUC-Minas-PCO-ADS-TI/projects/69) |
-| Hospedagem                          | Vercel                             | http://....                            |
-| Criação quadros BPMN                | Heflo                              | [http://....   ](https://app.heflo.com/Process/Editor#&)                         |
+| Documentos do projeto               | GitHub                             | [Documentação / Relatório](https://sgapucminasbr-my.sharepoint.com/personal/1597028_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=IQALcptVzWncRasgmwycV4dJAYd9qRuyzVCE8z49BFaVDR4) |
+| Projeto de interface                | Figma                              | [Protótipo Interativo](https://www.figma.com/make/0jE2TzXJ9y1p6pnAbKvBpT/WebDealer---TIAPN?node-id=0-1&p=f&t=zebUSrSR73qQSHnS-0&fullscreen=1)                           |
+| Gerenciamento do projeto            | GitHub Projects                    | [ GitHub Projects WebDealer ](https://github.com/ICEI-PUC-Minas-PCO-ADS-TI/2025-2-p2-tiapn-webdealer/projects?query=is%3Aopen) |
+| Hospedagem                          |  |  |
+| Criação quadros BPMN                | Heflo                              | [Heflo](https://www.heflo.com/pt-br) |
+| Criação do diagrama de Banco de Dados | Draw.io | [Draw.io](https://app.diagrams.net) |
