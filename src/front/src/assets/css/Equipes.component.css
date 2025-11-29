@@ -1,0 +1,47 @@
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+
+#main-title {
+    color: black;
+    text-align: left;
+    padding: 10px;
+    margin: 10px 160px;
+}
+
+#main-p {
+    text-align: left;
+    margin: 10px 170px;
+    color: #4b5563;
+}
+
+#btn-add {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 40px 150px;
+    align-items: center;
+}
+
+
+#espaco-membros {
+    max-width: 80%;
+    max-height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #92969b;;
+    border-radius: 20px;
+}
+
+#espaco-membros h1 {
+    color: black;
+    text-align: left;
+    margin: 30px 170px;
+}
+

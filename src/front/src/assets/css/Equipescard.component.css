@@ -1,0 +1,84 @@
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  background-color: #fff;
+  max-width: 70%;
+}
+
+/*lado esquerdo do card*/
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.nome-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nome {
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+}
+
+.status {
+  background-color: #d1fae5;
+  color: #047857;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+
+.funcao {
+  color: #4b5563;
+  margin: 2px 0;
+}
+
+.email {
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/*lado direito do card*/
+.card-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tarefas {
+  color: #4b5563;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
