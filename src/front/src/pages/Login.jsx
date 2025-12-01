@@ -6,7 +6,7 @@ import { Label } from "../components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Checkbox } from "../components/ui/checkbox";
 import { ArrowLeft, Mail, Lock, AlertCircle } from "lucide-react";
-import logo from "../assets/webdealerlogo.jpeg";
+import logo from "../assets/images/webdeal.png";
 import { Alert, AlertDescription } from "../components/ui/alert";
 
 export default function Login() {

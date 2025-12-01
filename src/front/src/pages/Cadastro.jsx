@@ -18,7 +18,7 @@ import {
   AlertCircle,
   CheckCircle2,
 } from "lucide-react";
-import logo from "../assets/webdealerlogo.jpeg";
+import logo from "../assets/images/webdeal.png";
 import { Alert, AlertDescription } from "../components/ui/alert";
 import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 

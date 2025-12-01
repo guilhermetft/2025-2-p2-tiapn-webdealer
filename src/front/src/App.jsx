@@ -9,7 +9,7 @@ import Chat from "./pages/Chat";
 import Calendario from "./pages/Calendario";
 import Solicitacao from "./pages/Solicitacao";
 import Configuracao from "./pages/Configuracao";
-import Landing from "./pages/Landing";
+import LandingPage from "./pages/Landing";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import "./App.css";
@@ -19,7 +19,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Rotas públicas */}
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
 
