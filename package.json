@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "@radix-ui/react-select": "^2.2.6",
     "axios": "^1.13.2",
     "bcrypt": "^6.0.0",
     "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.555.0",
     "react-router-dom": "^7.9.5"
   }
 }
