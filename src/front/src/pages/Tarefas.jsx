@@ -3,22 +3,24 @@ import '../assets/css/Tarefas.css';
 
 function Tarefas() {
   const [tarefas, setTarefas] = useState([]);
+  const [usuarios, setUsuarios] = useState([]);
   const [menuAbertoId, setMenuAbertoId] = useState(null);
-  
+
   const [modalAberto, setModalAberto] = useState(false);
   const [tarefaEmEdicao, setTarefaEmEdicao] = useState(null);
-  
+
   const [busca, setBusca] = useState('');
   const [filtroStatus, setFiltroStatus] = useState('Todos os Status');
 
   const [formData, setFormData] = useState({
     titulo: '',
-    nome_remetente: '', 
+    responsavel_tarefa: '',
     prioridade: 'media',
-    data_limite: ''
+    prazo_tarefa: ''
   });
 
   const API_URL = 'http://localhost:5000/api/tarefas';
+  const API_USUARIOS = 'http://localhost:5000/api/usuarios';
 
   useEffect(() => {
     const handleClickOutside = () => setMenuAbertoId(null);
@@ -28,43 +30,71 @@ function Tarefas() {
 
   useEffect(() => {
     fetchTarefas();
+    fetchUsuarios();
   }, []);
 
   async function fetchTarefas() {
     try {
       const response = await fetch(API_URL);
       const data = await response.json();
-      setTarefas(data);
+
+      if (Array.isArray(data)) {
+        setTarefas(data);
+      } else {
+        console.error('API não retornou um array:', data);
+        setTarefas([]);
+      }
     } catch (error) {
       console.error('Erro ao buscar tarefas:', error);
+      setTarefas([]);
+    }
+  }
+
+  async function fetchUsuarios() {
+    try {
+      const response = await fetch(API_USUARIOS);
+      const data = await response.json();
+
+      if (Array.isArray(data)) {
+        setUsuarios(data);
+      } else {
+        console.error('API não retornou um array de usuários:', data);
+        setUsuarios([]);
+      }
+    } catch (error) {
+      console.error('Erro ao buscar usuários:', error);
+      setUsuarios([]);
     }
   }
 
   const tarefasFiltradas = tarefas.filter((tarefa) => {
     const textoDigitado = busca.toLowerCase();
     const tituloTarefa = tarefa.titulo_tarefa ? tarefa.titulo_tarefa.toLowerCase() : '';
-    const correspondeBusca = tituloTarefa.includes(textoDigitado);
 
     let correspondeStatus = true;
     if (filtroStatus === 'Pendente') {
-        correspondeStatus = tarefa.status_tarefa === 'pendente';
+      correspondeStatus = tarefa.status_tarefa === 'pendente';
     } else if (filtroStatus === 'Concluída') {
-        correspondeStatus = tarefa.status_tarefa === 'concluida';
+      correspondeStatus = tarefa.status_tarefa === 'concluida';
     }
 
-    return correspondeBusca && correspondeStatus;
+    return tituloTarefa.includes(textoDigitado) && correspondeStatus;
   });
 
   const handleSalvarTarefa = async (e) => {
     e.preventDefault();
-    
+
     const method = tarefaEmEdicao ? 'PUT' : 'POST';
-    const url = tarefaEmEdicao ? `${API_URL}/${tarefaEmEdicao.id}` : API_URL;
-    
+    const url = tarefaEmEdicao
+      ? `${API_URL}/${tarefaEmEdicao.id_tarefa}`
+      : API_URL;
+
     const body = {
-      ...formData,
-      nome_remetente: formData.nome_remetente || 'Usuário',
-      status: tarefaEmEdicao ? tarefaEmEdicao.status_tarefa : 'pendente'
+      titulo: formData.titulo,
+      prioridade: formData.prioridade,
+      status: tarefaEmEdicao ? tarefaEmEdicao.status_tarefa : 'pendente',
+      prazo_tarefa: formData.prazo_tarefa || null,
+      responsavel_tarefa: Number(formData.responsavel_tarefa)
     };
 
     try {
@@ -93,8 +123,8 @@ function Tarefas() {
   const toggleConcluido = async (id, statusAtual) => {
     const novoStatus = statusAtual === 'concluida' ? 'pendente' : 'concluida';
 
-    setTarefas(tarefas.map(t => 
-      t.id === id ? { ...t, status_tarefa: novoStatus } : t
+    setTarefas(tarefas.map(t =>
+      t.id_tarefa === id ? { ...t, status_tarefa: novoStatus } : t
     ));
 
     try {
@@ -111,16 +141,22 @@ function Tarefas() {
 
   const deletarTarefa = async (id) => {
     if (!window.confirm("Excluir esta tarefa?")) return;
+
     try {
       await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
-      setTarefas(tarefas.filter(t => t.id !== id));
+      setTarefas(tarefas.filter(t => t.id_tarefa !== id));
     } catch (error) {
       console.error('Erro ao deletar:', error);
     }
   };
 
   const limparFormulario = () => {
-    setFormData({ titulo: '', nome_remetente: '', prioridade: 'media', data_limite: '' });
+    setFormData({
+      titulo: '',
+      responsavel_tarefa: '',
+      prioridade: 'media',
+      prazo_tarefa: ''
+    });
   };
 
   const abrirNovaTarefa = () => {
@@ -133,9 +169,9 @@ function Tarefas() {
     setTarefaEmEdicao(tarefa);
     setFormData({
       titulo: tarefa.titulo_tarefa,
-      nome_remetente: tarefa.nome_remetente || '',
+      responsavel_tarefa: tarefa.responsavel_tarefa || '',
       prioridade: tarefa.prioridade_tarefa,
-      data_limite: tarefa.data_limite || ''
+      prazo_tarefa: tarefa.prazo_tarefa || ''
     });
     setModalAberto(true);
   };
@@ -153,17 +189,17 @@ function Tarefas() {
       </header>
 
       <div className="filters-area">
-        <input 
-            type="text" 
-            className="search-input" 
-            placeholder="🔍 Buscar tarefas..." 
-            value={busca}
-            onChange={(e) => setBusca(e.target.value)}
+        <input
+          type="text"
+          className="search-input"
+          placeholder="🔍 Buscar tarefas..."
+          value={busca}
+          onChange={(e) => setBusca(e.target.value)}
         />
-        <select 
-            className="filter-select"
-            value={filtroStatus}
-            onChange={(e) => setFiltroStatus(e.target.value)}
+        <select
+          className="filter-select"
+          value={filtroStatus}
+          onChange={(e) => setFiltroStatus(e.target.value)}
         >
           <option>Todos os Status</option>
           <option>Pendente</option>
@@ -172,79 +208,78 @@ function Tarefas() {
       </div>
 
       <div className="lista-panel">
-         <h3>Lista de Tarefas</h3>
-         
-         <div className="cards-wrapper">
+        <h3>Lista de Tarefas</h3>
+
+        <div className="cards-wrapper">
           {tarefasFiltradas.length === 0 ? (
-              <p style={{textAlign: 'center', color: '#9ca3af', padding: '20px'}}>
-                  Nenhuma tarefa encontrada.
-              </p>
+            <p style={{ textAlign: 'center', color: '#9ca3af', padding: '20px' }}>
+              Nenhuma tarefa encontrada.
+            </p>
           ) : (
             tarefasFiltradas.map((tarefa) => {
-                const isConcluida = tarefa.status_tarefa === 'concluida';
-                const statusLabel = isConcluida ? 'Concluída' : 'Pendente';
-                const statusClass = isConcluida ? 'concluida' : 'pendente';
+              const isConcluida = tarefa.status_tarefa === 'concluida';
+              const statusLabel = isConcluida ? 'Concluída' : 'Pendente';
+              const statusClass = isConcluida ? 'concluida' : 'pendente';
+              const usuario = usuarios.find(u => u.id_usuario === tarefa.responsavel_tarefa);
 
-                return (
-                <div key={tarefa.id} className={`task-card ${isConcluida ? 'card-concluido' : ''}`}>
-                    
-                    <div className="task-left">
+              return (
+                <div key={tarefa.id_tarefa} className={`task-card ${isConcluida ? 'card-concluido' : ''}`}>
+                  <div className="task-left">
                     <div className="checkbox-wrapper">
-                        <input 
-                        type="checkbox" 
-                        checked={isConcluida} 
-                        onChange={() => toggleConcluido(tarefa.id, tarefa.status_tarefa)}
-                        />
+                      <input
+                        type="checkbox"
+                        checked={isConcluida}
+                        onChange={() => toggleConcluido(tarefa.id_tarefa, tarefa.status_tarefa)}
+                      />
                     </div>
                     <div className="task-info">
-                        <h4 className="task-title" onClick={() => toggleConcluido(tarefa.id, tarefa.status_tarefa)}>
+                      <h4 className="task-title" onClick={() => toggleConcluido(tarefa.id_tarefa, tarefa.status_tarefa)}>
                         {tarefa.titulo_tarefa}
-                        </h4>
-                        <span className="task-assignee">
-                        Atribuído a: {tarefa.nome_remetente || 'Não atribuído'}
-                        </span>
+                      </h4>
+                      <span className="task-assignee">
+                        Atribuído a: {usuario?.nome_usuario || 'Não atribuído'}
+                      </span>
                     </div>
-                    </div>
+                  </div>
 
-                    <div className="task-right">
-                        {tarefa.prioridade_tarefa && (
-                        <span className={`badge ${tarefa.prioridade_tarefa}`}>
-                            {tarefa.prioridade_tarefa}
-                        </span>
-                        )}
+                  <div className="task-right">
+                    {tarefa.prioridade_tarefa && (
+                      <span className={`badge ${tarefa.prioridade_tarefa}`}>
+                        {tarefa.prioridade_tarefa}
+                      </span>
+                    )}
 
-                        <span className={`badge-status ${statusClass}`}>
-                        {statusLabel}
-                        </span>
+                    <span className={`badge-status ${statusClass}`}>
+                      {statusLabel}
+                    </span>
 
-                        <span className="task-date">{tarefa.data_limite}</span>
-                        
-                        <div className="menu-container" onClick={(e) => e.stopPropagation()}>
-                        <button 
-                            className="btn-menu-dots" 
-                            onClick={() => setMenuAbertoId(menuAbertoId === tarefa.id ? null : tarefa.id)}
-                        >
-                            ⋮
-                        </button>
+                    <span className="task-date">{tarefa.prazo_tarefa}</span>
 
-                        {menuAbertoId === tarefa.id && (
-                            <div className="dropdown-menu">
-                            <button onClick={() => {
-                                abrirEditarTarefa(tarefa);
-                                setMenuAbertoId(null);
-                            }}>✏️ Editar</button>
-                            
-                            <button className="btn-delete-menu" onClick={() => {
-                                deletarTarefa(tarefa.id);
-                                setMenuAbertoId(null);
-                            }}>🗑️ Excluir</button>
-                            </div>
-                        )}
+                    <div className="menu-container" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        className="btn-menu-dots"
+                        onClick={() => setMenuAbertoId(menuAbertoId === tarefa.id_tarefa ? null : tarefa.id_tarefa)}
+                      >
+                        ⋮
+                      </button>
+
+                      {menuAbertoId === tarefa.id_tarefa && (
+                        <div className="dropdown-menu">
+                          <button onClick={() => {
+                            abrirEditarTarefa(tarefa);
+                            setMenuAbertoId(null);
+                          }}>✏️ Editar</button>
+
+                          <button className="btn-delete-menu" onClick={() => {
+                            deletarTarefa(tarefa.id_tarefa);
+                            setMenuAbertoId(null);
+                          }}>🗑️ Excluir</button>
                         </div>
+                      )}
                     </div>
-
+                  </div>
                 </div>
-                );
+              );
             })
           )}
         </div>
@@ -255,35 +290,40 @@ function Tarefas() {
           <div className="modal-content">
             <h2>{tarefaEmEdicao ? 'Editar Tarefa' : 'Nova Tarefa'}</h2>
             <form onSubmit={handleSalvarTarefa}>
-              
               <div className="form-group">
                 <label>Título da Tarefa</label>
-                <input 
-                  type="text" 
-                  placeholder="Ex: Digitalizar documentos..." 
+                <input
+                  type="text"
+                  placeholder="Ex: Digitalizar documentos..."
                   value={formData.titulo}
-                  onChange={e => setFormData({...formData, titulo: e.target.value})}
-                  required 
+                  onChange={e => setFormData({ ...formData, titulo: e.target.value })}
+                  required
                 />
               </div>
 
               <div className="form-group">
                 <label>Atribuído a (Nome do Responsável)</label>
-                <input 
-                  type="text" 
-                  placeholder="Ex: Juliana Oliveira" 
-                  value={formData.nome_remetente}
-                  onChange={e => setFormData({...formData, nome_remetente: e.target.value})}
-                  required 
-                />
+                <select
+                  className="custom-select"
+                  value={formData.responsavel_tarefa}
+                  onChange={e => setFormData({ ...formData, responsavel_tarefa: e.target.value })}
+                  required
+                >
+                  <option value="">Selecione um usuário</option>
+                  {usuarios.map(u => (
+                    <option key={u.id_usuario} value={u.id_usuario}>
+                      {u.nome_usuario}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div className="row-inputs">
                 <div className="form-group">
                   <label>Prioridade</label>
-                  <select 
+                  <select
                     value={formData.prioridade}
-                    onChange={e => setFormData({...formData, prioridade: e.target.value})}
+                    onChange={e => setFormData({ ...formData, prioridade: e.target.value })}
                   >
                     <option value="baixa">Baixa</option>
                     <option value="media">Média</option>
@@ -292,10 +332,10 @@ function Tarefas() {
                 </div>
                 <div className="form-group">
                   <label>Data Limite</label>
-                  <input 
-                    type="date" 
-                    value={formData.data_limite}
-                    onChange={e => setFormData({...formData, data_limite: e.target.value})}
+                  <input
+                    type="date"
+                    value={formData.prazo_tarefa}
+                    onChange={e => setFormData({ ...formData, prazo_tarefa: e.target.value })}
                   />
                 </div>
               </div>
@@ -308,7 +348,6 @@ function Tarefas() {
           </div>
         </div>
       )}
-
     </div>
   );
 }
