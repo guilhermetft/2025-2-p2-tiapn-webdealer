@@ -17,9 +17,6 @@ export default function Sidebar() {
         <NavLink to="/home" end>
           <FaHome /> Início
         </NavLink>
-        <NavLink to="/painel">
-          <LuLayoutDashboard /> Painel
-        </NavLink>
         <NavLink to="/tarefas">
           <FiCheckSquare /> Tarefas
         </NavLink>

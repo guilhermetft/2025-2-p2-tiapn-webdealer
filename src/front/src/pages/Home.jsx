@@ -206,6 +206,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <div className="bg-white p-8 rounded-2xl shadow-xl">
                   <div className="flex items-center justify-center h-64 w-64">
+                    <img src="../assets/images/webdeal.png" alt="webdealerlogo" />
                   </div>
                 </div>
               </div>
