@@ -113,7 +113,7 @@ Explique como a hospedagem e o lançamento da plataforma foram realizados.
 > - [Getting started with Heroku](https://devcenter.heroku.com/start)
 > - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
 
-## Qualidade de software
+
 
 # Qualidade de Software
 

@@ -180,4 +180,42 @@ router.delete(
   }
 );
 
+
+
+// EQUIPE DO USUÁRIO LOGADO
+router.get("/usuarios/:id/equipe", async (req, res) => {
+  const { id } = req.params;
+
+  const { data, error } = await supabase
+    .from("tb_membros")
+    .select(`
+      id_equipes,
+      tb_equipes (
+        id_equipe,
+        titulo_equipe
+      )
+    `)
+    .eq("id_usuario", id)
+    .single();
+
+  if (error) {
+    console.error("Erro ao buscar equipe do usuário:", error.message);
+    return res.status(500).json({ error: error.message });
+  }
+
+  const equipe = data?.tb_equipes;
+
+  return res.json({
+    id_equipe: equipe?.id_equipe ?? data.id_equipes,
+    titulo_equipe: equipe?.titulo_equipe ?? "Sem equipe",
+    // canal para usar na tabela `mensagens`
+    canal: (equipe?.titulo_equipe || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "") 
+      .replace(/\s+/g, "-"), 
+  });
+});
+
+
 export default router;

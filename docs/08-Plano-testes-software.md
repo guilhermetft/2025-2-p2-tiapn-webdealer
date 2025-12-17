@@ -51,3 +51,11 @@
 | Passos | - Acessar a página de equipes <br> - Selecionar um usuário <br> - Selecionar uma equipe/departamento <br> - Clicar em "Salvar" <br> Verificar se um novo card foi gerado na tela <br> Tentar editar o card |
 | Critério de êxito | - Alerta "Sucesso. Membro vinculado." |
 | Responsável pela elaboração do caso de teste | Vinicius Muniz |
+
+| **Caso de teste**  | **CT-007 – Aba do calendário**  |
+|:---: |:---: |
+| Requisito associado | RF-00Y - A aplicação deve executar todos os comandos do CRUD relacionados ao calendário e eventos |
+| Objetivo do teste | Agendar eventos no calendário, marcar datas |
+| Passos | - Acessar a página calendário <br> - Selecionar novo evento <br> - Adicionar Ano - Mês - Dia  <br> - Clicar em "Adicionar novo evento" <br> Verificar se novo evento está relacionado ao dia e exposto no mini_calendário <br> editar ou excluir card |
+| Critério de êxito | - Novo evento é criado no bando de dados, na tabela tb_eventos, os resultados são expostos no front e uma mensagem do back pode ser visualizada na tela |
+| Responsável pela elaboração do caso de teste | Daniel Bleme |

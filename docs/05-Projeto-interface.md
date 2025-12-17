@@ -123,4 +123,6 @@ Descrição das telas relativas às atividades do processo 2.
 
 Apresente e descreva brevemente as demais telas que compõem o sistema, mesmo que não estejam vinculadas diretamente a processos BPMN.
 
-> Inserir imagens das demais telas.
+> Tela da página calendário, registro e marcação de eventos
+> <img width="1351" height="754" alt="image" src="https://github.com/user-attachments/assets/9326c94e-5193-4cba-941a-44643f8625cc" />
+
