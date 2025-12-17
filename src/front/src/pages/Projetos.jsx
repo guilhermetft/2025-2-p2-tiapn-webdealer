@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
@@ -29,17 +30,6 @@ import {
 import { DndProvider, useDrag, useDrop } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../components/ui/dropdown-menu";
-
-const availableUsers = [
-  "Ana Paula Silva",
-  "Carlos Eduardo Santos",
-  "Juliana Oliveira",
-  "Ricardo Ferreira",
-  "Mariana Costa",
-  "Fernando Almeida",
-  "Beatriz Rodrigues",
-  "Paulo Henrique Lima"
-];
 
 const initialProjects = [
   {
@@ -143,6 +133,9 @@ const initialProjects = [
 ];
 
 export default function Projects() {
+  const [usuarios, setUsuarios] = useState([]);
+  const [users, setUsers] = useState([]);
+  const [loadingUsers, setLoadingUsers] = useState(false);
   const [projects, setProjects] = useState(initialProjects);
   const [selectedProject, setSelectedProject] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
@@ -165,6 +158,20 @@ export default function Projects() {
     deadline: "",
     participants: []
   });
+
+  useEffect(() => {
+    async function carregarUsuarios() {
+      try {
+        const response = await fetch("http://localhost:5000/usuarios");
+        const data = await response.json();
+        setUsuarios(data);
+      } catch (err) {
+        console.error("Erro ao buscar usuários", err);
+      }
+    }
+
+    carregarUsuarios();
+  }, []);
 
   const getStatusColor = (status) => {
     switch (status) {
@@ -333,7 +340,7 @@ export default function Projects() {
     if (!projectForm.participants.includes(user)) {
       setProjectForm({
         ...projectForm,
-        participants: [...projectForm.participants, user]
+        participants: [...projectForm.participants, user],
       });
     }
   };
@@ -341,7 +348,7 @@ export default function Projects() {
   const handleRemoveParticipant = (user) => {
     setProjectForm({
       ...projectForm,
-      participants: projectForm.participants.filter(p => p !== user)
+      participants: projectForm.participants.filter(p => p !== user),
     });
   };
 
@@ -986,18 +993,18 @@ export default function Projects() {
               </Label>
 
               <div className="border rounded-lg p-4 space-y-3 max-h-60 overflow-y-auto">
-                {availableUsers.map((user) => (
+                {usuarios.map((user) => (
                   <div
-                    key={user}
+                    key={user.id_usuario}
                     className="flex items-center justify-between p-2 rounded hover:bg-accent"
                   >
-                    <span className="text-sm">{user}</span>
+                    <span className="text-sm">{user.nome_usuario}</span>
 
-                    {projectForm.participants.includes(user) ? (
+                    {projectForm.participants.includes(user.id_usuario) ? (
                       <Button
                         size="sm"
                         variant="destructive"
-                        onClick={() => handleRemoveParticipant(user)}
+                        onClick={() => handleRemoveParticipant(user.id_usuario)}
                       >
                         Remover
                       </Button>
@@ -1005,7 +1012,7 @@ export default function Projects() {
                       <Button
                         size="sm"
                         variant="outline"
-                        onClick={() => handleAddParticipant(user)}
+                        onClick={() => handleAddParticipant(user.id_usuario)}
                       >
                         Adicionar
                       </Button>

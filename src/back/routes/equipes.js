@@ -1,108 +1,183 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-
 import express from "express";
 import { createClient } from "@supabase/supabase-js";
 
 const router = express.Router();
 
-// Conexão com o Supabase
+// Conexão com Supabase
 const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_SERVICE_KEY
 );
 
-// LISTAR USUÁRIOS
+/* =========================
+   USUÁRIOS
+========================= */
+
+// Listar usuários (para selects do front)
 router.get("/usuarios", async (req, res) => {
   const { data, error } = await supabase
     .from("tb_usuario")
-    .select("*");
+    .select(`
+      id_usuario,
+      nome_usuario,
+      email_usuario,
+      cargo,
+      departamento,
+      telefone
+    `);
 
   if (error) return res.status(500).json({ error: error.message });
 
   res.json(data);
 });
 
-// LISTAR EQUIPES
+/* =========================
+   EQUIPES
+========================= */
+
+// Listar equipes (COM membros)
 router.get("/equipes", async (req, res) => {
   const { data, error } = await supabase
-    .from("tb_equipes")
-    .select("*");
+    .from("tb_equipe")
+    .select(`
+      id_equipe,
+      titulo_equipe,
+      descricao,
+      departamento,
+      lider_id,
+      created_at,
+      tb_membros (
+        tb_usuario (
+          id_usuario,
+          nome_usuario,
+          email_usuario,
+          cargo,
+          departamento,
+          telefone
+        )
+      )
+    `);
 
   if (error) return res.status(500).json({ error: error.message });
 
-  res.json(data);
+  const equipesFormatadas = data.map(equipe => ({
+    id: equipe.id_equipe,
+    name: equipe.titulo_equipe,
+    description: equipe.descricao,
+    department: equipe.departamento,
+    leaderId: equipe.lider_id,
+    createdDate: equipe.created_at
+      ? new Date(equipe.created_at).toLocaleDateString("pt-BR")
+      : null,
+    members: equipe.tb_membros.map(m => ({
+      id: m.tb_usuario.id_usuario,
+      name: m.tb_usuario.nome_usuario,
+      email: m.tb_usuario.email_usuario,
+      role: m.tb_usuario.cargo,
+      department: m.tb_usuario.departamento,
+      phone: m.tb_usuario.telefone
+    }))
+  }));
+
+  res.json(equipesFormatadas);
 });
 
-// CRIAR VÍNCULO (MEMBROS)
-router.post("/membros", async (req, res) => {
-  const { id_usuario, id_equipe } = req.body;
+// Criar equipe
+router.post("/equipes", async (req, res) => {
+  const { name, description, department, leaderId } = req.body;
 
-  if (!id_usuario || !id_equipe) {
-    return res
-      .status(400)
-      .json({ error: "Usuário e equipe são obrigatórios." });
+  if (!name || !department || !leaderId) {
+    return res.status(400).json({ error: "Campos obrigatórios faltando." });
+  }
+
+  const { data: equipe, error } = await supabase
+    .from("tb_equipe")
+    .insert([
+      {
+        titulo_equipe: name,
+        descricao: description,
+        departamento: department,
+        lider_id: leaderId
+      }
+    ])
+    .select()
+    .single();
+
+  if (error) return res.status(500).json({ error: error.message });
+
+  // líder também entra como membro
+  await supabase.from("tb_membros").insert([
+    {
+      id_usuario: leaderId,
+      id_equipes: equipe.id_equipe
+    }
+  ]);
+
+  res.status(201).json(equipe);
+});
+
+// Excluir equipe
+router.delete("/equipes/:idEquipe", async (req, res) => {
+  const { idEquipe } = req.params;
+
+  await supabase.from("tb_membros").delete().eq("id_equipes", idEquipe);
+  await supabase.from("tb_equipe").delete().eq("id_equipe", idEquipe);
+
+  res.json({ message: "Equipe excluída com sucesso." });
+});
+
+/* =========================
+   MEMBROS
+========================= */
+
+// Adicionar membro
+router.post("/equipes/:idEquipe/membros", async (req, res) => {
+  const { idUsuario } = req.body;
+  const { idEquipe } = req.params;
+
+  if (!idUsuario) {
+    return res.status(400).json({ error: "Usuário é obrigatório." });
   }
 
   const { error } = await supabase
     .from("tb_membros")
-    .insert([
-      {
-        id_usuario,
-        id_equipes: id_equipe,
-      },
-    ]);
+    .insert([{ id_usuario: idUsuario, id_equipes: idEquipe }]);
 
-  if (error) {
-    console.error("Erro ao salvar no Supabase:", error);
-    return res.status(500).json({ error: error.message });
-  }
+  if (error) return res.status(500).json({ error: error.message });
 
-  res.status(201).json({
-    message: "Sucesso! Membro vinculado.",
-  });
+  res.status(201).json({ message: "Membro adicionado." });
 });
 
-// LISTAR MEMBROS COM JOIN
-router.get("/membros", async (req, res) => {
-  try {
-    const { data, error } = await supabase
-      .from("tb_membros")
-      .select(`
-        *,
-        tb_usuario ( * ),
-        tb_equipes ( * )
-      `);
+// Remover membro (não permite líder)
+router.delete(
+  "/equipes/:idEquipe/membros/:idUsuario",
+  async (req, res) => {
+    const { idEquipe, idUsuario } = req.params;
 
-    if (error) {
-      console.error("Erro ao buscar no Supabase:", error);
-      return res.status(500).json({ error: error.message });
+    const { data: equipe } = await supabase
+      .from("tb_equipe")
+      .select("lider_id")
+      .eq("id_equipe", idEquipe)
+      .single();
+
+    if (equipe?.lider_id === Number(idUsuario)) {
+      return res
+        .status(400)
+        .json({ error: "Não é possível remover o líder da equipe." });
     }
 
-    const listaFormatada = data.map(item => {
-      const usuario = item.tb_usuario || {};
-      const equipe = item.tb_equipes || {};
+    const { error } = await supabase
+      .from("tb_membros")
+      .delete()
+      .match({ id_equipes: idEquipe, id_usuario: idUsuario });
 
-      return {
-        id_vinculo: item.id || item.id_membros || item.id_membro,
-        nome_usuario:
-          usuario.nome_usuario || usuario.nome || "Usuário desconhecido",
-        email_usuario:
-          usuario.email_usuario || usuario.email || "Sem e-mail",
-        nome_equipe:
-          equipe.titulo_equipe ||
-          equipe.nome_equipe ||
-          equipe.nome ||
-          "Sem equipe",
-      };
-    });
+    if (error) return res.status(500).json({ error: error.message });
 
-    res.json(listaFormatada);
-  } catch (err) {
-    console.error("Erro crítico:", err);
-    res.status(500).json({ error: "Erro interno do servidor" });
+    res.json({ message: "Membro removido." });
   }
-});
+);
 
 export default router;
