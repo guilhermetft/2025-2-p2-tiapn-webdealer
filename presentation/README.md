@@ -8,6 +8,8 @@ Veja abaixo os slides apresentados em cada sprint do desenvolvimento, contendo o
 - [Apresentação Webdealer Sprint 1 - TIAPN.pdf](https://github.com/user-attachments/files/23732194/Apresentacao.Webdealer.Sprint.1.-.TIAPN.pdf)
 - [Apresentação Webdealer Sprint 2 - TIAPN.pdf](https://github.com/user-attachments/files/23732199/Apresentacao.Webdealer.Sprint.2.-.TIAPN.pdf)
 - [Apresentação Webdealer Sprint 3 - TIAPN.pdf](https://github.com/user-attachments/files/23732202/Apresentacao.Webdealer.Sprint.3.-.TIAPN.pdf)
+- [Apresentação Webdealer Sprint 4 - TIAPN.pdf](https://github.com/user-attachments/files/24203266/Apresentacao.Webdealer.Sprint.4.-.TIAPN.pdf)
+
 
 ## Vídeo
 
