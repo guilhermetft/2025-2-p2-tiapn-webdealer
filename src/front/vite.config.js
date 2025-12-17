@@ -5,6 +5,9 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  optimizeDeps: {
+    include: ['@supabase/supabase-js'],
+  },
   resolve: {
     alias: {
       react: path.resolve('./node_modules/react'),
