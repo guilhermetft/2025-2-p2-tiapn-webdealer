@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-
+//Codigo de cadastro de usuario
 import express from "express";
 import { createClient } from "@supabase/supabase-js";
 import bcrypt from "bcrypt";
