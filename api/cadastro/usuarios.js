@@ -6,6 +6,7 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_KEY
 );
 
+//exportar a função
 export default async function handler(req, res) {
   try {
     if (req.method === "POST") {
@@ -50,8 +51,9 @@ export default async function handler(req, res) {
       return res.json(data);
     }
 
-    return res.status(405).end(); // método não permitido
+    return res.status(405).end(); 
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 }
+
