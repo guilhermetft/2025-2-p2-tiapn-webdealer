@@ -156,7 +156,8 @@ export default function Projects() {
     name: "",
     description: "",
     deadline: "",
-    participants: []
+    participants: [],
+    status: "planning" // novo
   });
 
   useEffect(() => {
@@ -211,8 +212,8 @@ export default function Projects() {
 
   const filteredProjects = projects.filter(project => {
     const matchesSearch =
-      project.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      project.description.toLowerCase().includes(searchTerm.toLowerCase());
+      (project.name || "").toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (project.description || "").toLowerCase().includes(searchTerm.toLowerCase());
 
     const matchesStatus =
       statusFilter === "all" || project.status === statusFilter;
@@ -263,7 +264,8 @@ export default function Projects() {
       name: project.name,
       description: project.description,
       deadline: project.deadline,
-      participants: [...project.participants]
+      participants: [...project.participants],
+      status: project.status // novo
     });
     setIsProjectDialogOpen(true);
   };
@@ -275,50 +277,53 @@ export default function Projects() {
   };
 
   // SAVE - Salvar projeto
-  const handleSaveProject = () => {
+  const handleSaveProject = async () => {
     if (!projectForm.name || !projectForm.deadline || projectForm.participants.length === 0) {
       alert("Por favor, preencha todos os campos obrigatórios");
       return;
     }
 
-    if (editingProject) {
-      // Atualizar projeto existente
-      const updatedProjects = projects.map(project =>
-        project.id === editingProject.id
-          ? {
-            ...project,
-            ...projectForm,
-            progress: calculateProgress(project.tasks)
-          }
-          : project
-      );
-      setProjects(updatedProjects);
-
-      // Atualizar projeto selecionado se for o mesmo
-      if (selectedProject?.id === editingProject.id) {
-        setSelectedProject(
-          updatedProjects.find(p => p.id === editingProject.id) || null
-        );
-      }
-    } else {
-      // Criar novo projeto
-      const newProject = {
-        id: `proj-${Date.now()}`,
-        ...projectForm,
-        progress: 0,
-        status: "planning",
-        tasks: [],
-        createdDate: new Date().toLocaleDateString("pt-BR", {
-          day: "2-digit",
-          month: "short",
-          year: "numeric"
-        })
+    try {
+      const payload = {
+        name: projectForm.name,
+        description: projectForm.description,
+        status: projectForm.status,
+        deadline: projectForm.deadline,
+        participants: projectForm.participants,
       };
-      setProjects([newProject, ...projects]);
-    }
 
-    setIsProjectDialogOpen(false);
-    setEditingProject(null);
+      const response = await fetch(
+        editingProject
+          ? `http://localhost:5000/projetos/${editingProject.id}`
+          : "http://localhost:5000/projetos",
+        {
+          method: editingProject ? "PUT" : "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const savedProject = await response.json();
+
+      if (!response.ok) {
+        alert("Erro ao salvar projeto: " + (savedProject.error || "Erro desconhecido"));
+        return;
+      }
+
+      // Atualizar estado local
+      if (editingProject) {
+        setProjects(projects.map(p => (p.id === savedProject.id_projeto ? savedProject : p)));
+      } else {
+        setProjects([savedProject, ...projects]);
+      }
+
+      setIsProjectDialogOpen(false);
+      setEditingProject(null);
+
+    } catch (err) {
+      console.error("Erro ao salvar projeto:", err);
+      alert("Erro ao salvar projeto");
+    }
   };
 
   // DELETE - Deletar projeto
@@ -336,11 +341,11 @@ export default function Projects() {
   };
 
   // Gerenciamento de Participantes
-  const handleAddParticipant = (user) => {
-    if (!projectForm.participants.includes(user)) {
+  const handleAddParticipant = (userId) => {
+    if (!projectForm.participants.includes(userId)) {
       setProjectForm({
         ...projectForm,
-        participants: [...projectForm.participants, user],
+        participants: [...projectForm.participants, userId],
       });
     }
   };
@@ -542,9 +547,9 @@ export default function Projects() {
                     columnId={columnId}
                     title={getColumnTitle(columnId)}
                     icon={getColumnIcon(columnId)}
-                    tasks={selectedProject.tasks.filter(
+                    tasks={selectedProject?.tasks?.filter(
                       task => task.status === columnId
-                    )}
+                    ) || []}
                     onAddTask={() => openTaskDialog(columnId)}
                     onEditTask={(task) => openTaskDialog(columnId, task)}
                     onDeleteTask={handleDeleteTask}
@@ -609,23 +614,20 @@ export default function Projects() {
                   <div className="pt-4 border-t">
                     <h4 className="mb-3">Equipe do Projeto</h4>
                     <div className="space-y-2">
-                      {selectedProject.participants
-                        .slice(0, 5)
-                        .map((participant, idx) => (
-                          <div
-                            key={idx}
-                            className="flex items-center gap-2"
-                          >
+                      {selectedProject.participants.slice(0, 5).map((participantId, idx) => {
+                        const user = usuarios.find(u => u.id_usuario === participantId);
+                        const name = user ? user.nome_usuario : "??";
+                        return (
+                          <div key={idx} className="flex items-center gap-2">
                             <Avatar className="h-8 w-8">
                               <AvatarFallback className="bg-primary text-primary-foreground text-xs">
-                                {getInitials(participant)}
+                                {getInitials(name)}
                               </AvatarFallback>
                             </Avatar>
-                            <span className="text-sm">
-                              {participant}
-                            </span>
+                            <span className="text-sm">{name}</span>
                           </div>
-                        ))}
+                        );
+                      })}
                       {selectedProject.participants.length > 5 && (
                         <p className="text-xs text-muted-foreground">
                           +
@@ -821,8 +823,8 @@ export default function Projects() {
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="all">Todos os Status</SelectItem>
-            <SelectItem value="active">Ativo</SelectItem>
             <SelectItem value="planning">Planejamento</SelectItem>
+            <SelectItem value="active">Ativo</SelectItem>
             <SelectItem value="completed">Concluído</SelectItem>
           </SelectContent>
         </Select>
@@ -832,7 +834,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredProjects.map((project) => (
           <Card
-            key={project.id}
+            key={project.id_projeto}
             className="hover:shadow-lg transition-shadow"
           >
             <CardHeader>
@@ -898,7 +900,7 @@ export default function Projects() {
                 <div className="flex items-center gap-1 text-muted-foreground">
                   <Users className="h-4 w-4" />
                   <span>
-                    {project.participants.length} membros
+                    {(project.participants || []).length} membros
                   </span>
                 </div>
                 <div className="flex items-center gap-1 text-muted-foreground">
@@ -971,6 +973,25 @@ export default function Projects() {
                 }
                 rows={3}
               />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="projectStatus">Status *</Label>
+              <Select
+                value={projectForm.status}
+                onValueChange={(value) =>
+                  setProjectForm({ ...projectForm, status: value })
+                }
+              >
+                <SelectTrigger id="projectStatus">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="planning">Planejamento</SelectItem>
+                  <SelectItem value="active">Ativo</SelectItem>
+                  <SelectItem value="completed">Concluído</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
 
             <div className="space-y-2">
