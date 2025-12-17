@@ -16,8 +16,7 @@ export default async function handler(req, res) {
         .select("*")
         .limit(1);
 
-      if (error)
-        return res.status(500).json({ conectado: false, erro: error.message });
+      if (error) return res.status(500).json({ conectado: false, erro: error.message });
 
       return res.json({ conectado: true, exemplo: data });
     }
@@ -27,9 +26,7 @@ export default async function handler(req, res) {
       const { nome_usuario, email_usuario, senha_usuario } = req.body;
 
       if (!nome_usuario || !email_usuario || !senha_usuario) {
-        return res
-          .status(400)
-          .json({ error: "Todos os campos são obrigatórios." });
+        return res.status(400).json({ error: "Todos os campos são obrigatórios." });
       }
 
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -58,8 +55,41 @@ export default async function handler(req, res) {
       });
     }
 
-    // Aqui você pode adicionar GET, PUT, DELETE para /usuarios/:id e login
-    // usando if (req.method === "...") e req.url.includes("/usuarios")
+    // LOGIN DE USUÁRIO
+    if (req.method === "POST" && req.url.endsWith("/login")) {
+      const { email_usuario, senha_usuario } = req.body;
+
+      if (!email_usuario || !senha_usuario) {
+        return res.status(400).json({ error: "E-mail e senha são obrigatórios." });
+      }
+
+      const { data: usuarios, error } = await supabase
+        .from("tb_usuario")
+        .select("*")
+        .eq("email_usuario", email_usuario)
+        .limit(1);
+
+      if (error) return res.status(500).json({ error: error.message });
+      if (!usuarios || usuarios.length === 0) {
+        return res.status(404).json({ error: "Usuário não encontrado." });
+      }
+
+      const usuario = usuarios[0];
+      const senhaValida = await bcrypt.compare(senha_usuario, usuario.senha_usuario);
+
+      if (!senhaValida) {
+        return res.status(401).json({ error: "Senha incorreta." });
+      }
+
+      return res.json({
+        message: "Login realizado com sucesso!",
+        usuario: {
+          id_usuario: usuario.id_usuario,
+          nome_usuario: usuario.nome_usuario,
+          email_usuario: usuario.email_usuario,
+        },
+      });
+    }
 
     return res.status(404).json({ message: "Rota não encontrada" });
   } catch (err) {
