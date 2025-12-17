@@ -932,8 +932,9 @@ export default function Projects() {
         open={isProjectDialogOpen}
         onOpenChange={setIsProjectDialogOpen}
       >
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-          <DialogHeader>
+        <DialogContent className="max-w-2xl h-[90vh] flex flex-col overflow-hidden">
+          {/* HEADER */}
+          <DialogHeader className="shrink-0">
             <DialogTitle>
               {editingProject ? "Editar Projeto" : "Novo Projeto"}
             </DialogTitle>
@@ -944,7 +945,8 @@ export default function Projects() {
             </DialogDescription>
           </DialogHeader>
 
-          <div className="space-y-4 py-4">
+          {/* BODY */}
+          <div className="flex-1 min-h-0 flex flex-col gap-4 py-4 overflow-hidden">
             <div className="space-y-2">
               <Label htmlFor="projectName">Nome do Projeto *</Label>
               <Input
@@ -986,17 +988,17 @@ export default function Projects() {
               />
             </div>
 
-            <div className="space-y-2">
+            {/* PARTICIPANTES */}
+            <div className="flex flex-col space-y-2 flex-shrink-0">
               <Label>
-                Participantes do Projeto * (
-                {projectForm.participants.length} selecionados)
+                Participantes do Projeto * ({projectForm.participants.length} selecionados)
               </Label>
 
-              <div className="border rounded-lg p-4 space-y-3 max-h-60 overflow-y-auto">
+              <div className="h-48 border rounded-lg overflow-y-auto">
                 {usuarios.map((user) => (
                   <div
                     key={user.id_usuario}
-                    className="flex items-center justify-between p-2 rounded hover:bg-accent"
+                    className="flex items-center justify-between px-3 py-2 hover:bg-accent"
                   >
                     <span className="text-sm">{user.nome_usuario}</span>
 
@@ -1023,7 +1025,8 @@ export default function Projects() {
             </div>
           </div>
 
-          <DialogFooter>
+          {/* FOOTER */}
+          <DialogFooter className="shrink-0">
             <Button
               variant="outline"
               onClick={() => setIsProjectDialogOpen(false)}
@@ -1036,6 +1039,7 @@ export default function Projects() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+
     </div>
   );
 
