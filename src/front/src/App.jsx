@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
-import Painel from "./pages/Painel";
 import Tarefas from "./pages/Tarefas";
 import Projetos from "./pages/Projetos";
 import Equipe from "./pages/Equipe";
