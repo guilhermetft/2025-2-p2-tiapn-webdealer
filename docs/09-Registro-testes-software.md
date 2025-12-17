@@ -22,6 +22,14 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
  https://github.com/user-attachments/assets/77072a41-a48e-4130-be67-cc6a21941b06 
 
+| **Caso de teste** 	| **CT-003 – Adicionar evento no calendário** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-00Y - Na página deve ser apresentado os dias de cada mês do ano e permitir que o usúario adicione, Edite, Visualize ou exclua eventos. |
+ 
+ Responsável pelo registro da evidência: Daniel Bleme
+
+https://github.com/user-attachments/assets/a50972cc-5146-4c01-bfca-61b78c77a089
+
 
 > **Links úteis**:
 > - [Screencast: entenda o que é e como gravar vídeos com ele](https://rockcontent.com/br/blog/screencast/) 
