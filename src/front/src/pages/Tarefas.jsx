@@ -19,15 +19,10 @@ function Tarefas() {
     prazo_tarefa: ''
   });
 
-  const API_URL = 'https://backwebdealer.onrender.com/tarefas';
-  const API_USUARIOS = 'https://backwebdealer.onrender.com/usuarios';
+  const API_URL = 'http://localhost:5000/api/tarefas';
+  const API_USUARIOS = 'http://localhost:5000/api/usuarios';
 
-  useEffect(() => {
-    const handleClickOutside = () => setMenuAbertoId(null);
-    window.addEventListener('click', handleClickOutside);
-    return () => window.removeEventListener('click', handleClickOutside);
-  }, []);
-
+  // Buscar tarefas e usuários
   useEffect(() => {
     fetchTarefas();
     fetchUsuarios();
@@ -37,13 +32,7 @@ function Tarefas() {
     try {
       const response = await fetch(API_URL);
       const data = await response.json();
-
-      if (Array.isArray(data)) {
-        setTarefas(data);
-      } else {
-        console.error('API não retornou um array:', data);
-        setTarefas([]);
-      }
+      setTarefas(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error('Erro ao buscar tarefas:', error);
       setTarefas([]);
@@ -54,13 +43,7 @@ function Tarefas() {
     try {
       const response = await fetch(API_USUARIOS);
       const data = await response.json();
-
-      if (Array.isArray(data)) {
-        setUsuarios(data);
-      } else {
-        console.error('API não retornou um array de usuários:', data);
-        setUsuarios([]);
-      }
+      setUsuarios(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error('Erro ao buscar usuários:', error);
       setUsuarios([]);
@@ -69,7 +52,7 @@ function Tarefas() {
 
   const tarefasFiltradas = tarefas.filter((tarefa) => {
     const textoDigitado = busca.toLowerCase();
-    const tituloTarefa = tarefa.titulo_tarefa ? tarefa.titulo_tarefa.toLowerCase() : '';
+    const tituloTarefa = tarefa.titulo_tarefa?.toLowerCase() || '';
 
     let correspondeStatus = true;
     if (filtroStatus === 'Pendente') {
@@ -81,13 +64,11 @@ function Tarefas() {
     return tituloTarefa.includes(textoDigitado) && correspondeStatus;
   });
 
+  // Criar/editar tarefa
   const handleSalvarTarefa = async (e) => {
     e.preventDefault();
-
     const method = tarefaEmEdicao ? 'PUT' : 'POST';
-    const url = tarefaEmEdicao
-      ? `${API_URL}/${tarefaEmEdicao.id_tarefa}`
-      : API_URL;
+    const url = tarefaEmEdicao ? `${API_URL}/${tarefaEmEdicao.id_tarefa}` : API_URL;
 
     const body = {
       titulo: formData.titulo,
@@ -112,7 +93,6 @@ function Tarefas() {
       } else {
         const errorData = await response.json();
         alert(`Erro ao salvar: ${errorData.error || 'Erro desconhecido'}`);
-        console.error('Erro retornado pela API:', errorData);
       }
     } catch (error) {
       console.error('Erro de conexão/rede:', error);
@@ -120,12 +100,10 @@ function Tarefas() {
     }
   };
 
+  // Alternar concluído
   const toggleConcluido = async (id, statusAtual) => {
     const novoStatus = statusAtual === 'concluida' ? 'pendente' : 'concluida';
-
-    setTarefas(tarefas.map(t =>
-      t.id_tarefa === id ? { ...t, status_tarefa: novoStatus } : t
-    ));
+    setTarefas(tarefas.map(t => t.id_tarefa === id ? { ...t, status_tarefa: novoStatus } : t));
 
     try {
       await fetch(`${API_URL}/${id}`, {
@@ -139,9 +117,9 @@ function Tarefas() {
     }
   };
 
+  // Deletar tarefa
   const deletarTarefa = async (id) => {
     if (!window.confirm("Excluir esta tarefa?")) return;
-
     try {
       await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
       setTarefas(tarefas.filter(t => t.id_tarefa !== id));
@@ -209,7 +187,6 @@ function Tarefas() {
 
       <div className="lista-panel">
         <h3>Lista de Tarefas</h3>
-
         <div className="cards-wrapper">
           {tarefasFiltradas.length === 0 ? (
             <p style={{ textAlign: 'center', color: '#9ca3af', padding: '20px' }}>
@@ -223,7 +200,11 @@ function Tarefas() {
               const usuario = usuarios.find(u => u.id_usuario === tarefa.responsavel_tarefa);
 
               return (
-                <div key={tarefa.id_tarefa} className={`task-card ${isConcluida ? 'card-concluido' : ''}`}>
+                <div
+                  key={tarefa.id_tarefa}
+                  className={`task-card ${isConcluida ? 'card-concluido' : ''}`}
+                  onClick={() => setMenuAbertoId(null)} // Fecha menu ao clicar fora
+                >
                   <div className="task-left">
                     <div className="checkbox-wrapper">
                       <input
@@ -248,17 +229,18 @@ function Tarefas() {
                         {tarefa.prioridade_tarefa}
                       </span>
                     )}
-
                     <span className={`badge-status ${statusClass}`}>
                       {statusLabel}
                     </span>
-
                     <span className="task-date">{tarefa.prazo_tarefa}</span>
 
                     <div className="menu-container" onClick={(e) => e.stopPropagation()}>
                       <button
                         className="btn-menu-dots"
-                        onClick={() => setMenuAbertoId(menuAbertoId === tarefa.id_tarefa ? null : tarefa.id_tarefa)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setMenuAbertoId(menuAbertoId === tarefa.id_tarefa ? null : tarefa.id_tarefa);
+                        }}
                       >
                         ⋮
                       </button>
@@ -277,7 +259,6 @@ function Tarefas() {
                         </div>
                       )}
                     </div>
-
                   </div>
                 </div>
               );
