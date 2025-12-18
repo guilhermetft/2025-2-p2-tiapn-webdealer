@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
-import { LuLayoutDashboard } from "react-icons/lu";
+import { FaHome } from "react-icons/fa"; 
 import { FiCheckSquare } from "react-icons/fi";
 import { LuFolderKanban } from "react-icons/lu";
 import { RiTeamLine } from "react-icons/ri";
@@ -9,34 +8,46 @@ import { CiCalendar } from "react-icons/ci";
 import { IoIosGitPullRequest } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 
-export default function Sidebar() {
+// Recebemos isOpen como prop vinda do App.jsx
+export default function Sidebar({ isOpen }) {
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isOpen ? "open" : "closed"}`}>
       <nav>
-        <h3>WebDealer</h3>
-        <NavLink to="/home" end>
-          <FaHome /> Início
+        <div className="sidebar-header">
+          {/* O nome só aparece se estiver aberta. O botão sumiu daqui. */}
+          {isOpen && <h3>WebDealer</h3>}
+        </div>
+
+        <NavLink to="/home" end title="Início">
+          <FaHome /> {isOpen && "Início"}
         </NavLink>
-        <NavLink to="/tarefas">
-          <FiCheckSquare /> Tarefas
+        
+        <NavLink to="/tarefas" title="Tarefas">
+          <FiCheckSquare /> {isOpen && "Tarefas"}
         </NavLink>
-        <NavLink to="/projetos">
-          <LuFolderKanban /> Projetos
+        
+        <NavLink to="/projetos" title="Projetos">
+          <LuFolderKanban /> {isOpen && "Projetos"}
         </NavLink>
-        <NavLink to="/equipe">
-          <RiTeamLine /> Equipe
+        
+        <NavLink to="/equipe" title="Equipe">
+          <RiTeamLine /> {isOpen && "Equipe"}
         </NavLink>
-        <NavLink to="/chat">
-          <IoChatboxEllipsesOutline /> Chat
+        
+        <NavLink to="/chat" title="Chat">
+          <IoChatboxEllipsesOutline /> {isOpen && "Chat"}
         </NavLink>
-        <NavLink to="/calendario">
-          <CiCalendar /> Calendário
+        
+        <NavLink to="/calendario" title="Calendário">
+          <CiCalendar /> {isOpen && "Calendário"}
         </NavLink>
-        <NavLink to="/solicitacao">
-          <IoIosGitPullRequest /> Solicitações
+        
+        <NavLink to="/solicitacao" title="Solicitações">
+          <IoIosGitPullRequest /> {isOpen && "Solicitações"}
         </NavLink>
-        <NavLink to="/configuracao">
-          <IoSettingsOutline /> Configurações
+        
+        <NavLink to="/configuracao" title="Configurações">
+          <IoSettingsOutline /> {isOpen && "Configurações"}
         </NavLink>
       </nav>
     </aside>
