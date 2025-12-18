@@ -13,7 +13,6 @@ import { Popover, PopoverContent, PopoverTrigger } from "../components/ui/popove
 import { CalendarIcon, CheckCircle2, Clock, AlertCircle } from "lucide-react";
 
 export default function TaskRequest() {
-  // --- ESTADOS ---
   const [date, setDate] = useState();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -22,12 +21,12 @@ export default function TaskRequest() {
   const [usuarios, setUsuarios] = useState([]);
   const [requests, setRequests] = useState([]);
 
+  // URLs configuradas corretamente
   const API_BASE = "https://backwebdealer.onrender.com/solicitacoes";
   const USUARIOS_URL = `${API_BASE}/usuarios`;
 
-  // 1. BUSCAR DADOS DO BACK-END
   useEffect(() => {
-    // 1. Buscar Usuários
+    // Buscar Usuários
     fetch(USUARIOS_URL)
       .then((res) => {
         if (!res.ok) throw new Error("Falha ao carregar usuários");
@@ -36,7 +35,7 @@ export default function TaskRequest() {
       .then((data) => setUsuarios(data))
       .catch((err) => console.error("Erro front usuários:", err));
 
-    // 2. Buscar Solicitações
+    // Buscar Solicitações
     fetch(API_BASE)
       .then((res) => res.json())
       .then((data) => {
@@ -54,7 +53,6 @@ export default function TaskRequest() {
       .catch((err) => console.error("Erro front solicitações:", err));
   }, []);
 
-  // 2. ENVIAR PARA O BACK-END
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -63,12 +61,12 @@ export default function TaskRequest() {
       descricao: description,
       prioridade: priority,
       responsavel_tarefa: assignee,
-      prazo_tarefa: date ? date.toISOString() : null,
-      solicitante: "Usuário Logado"
+      prazo_tarefa: date ? date.toISOString() : null
     };
 
     try {
-      const response = await fetch(API_URL, {
+      // AJUSTADO: Aqui deve ser API_BASE para bater com a variável definida acima
+      const response = await fetch(API_BASE, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(novaSolicitacao),
@@ -76,8 +74,7 @@ export default function TaskRequest() {
 
       if (response.ok) {
         const itemSalvo = await response.json();
-
-        // Adiciona o novo item no topo da lista
+        
         setRequests([{
           id: itemSalvo.id_tarefa,
           title: itemSalvo.titulo_tarefa,
@@ -88,7 +85,6 @@ export default function TaskRequest() {
           date: itemSalvo.prazo_tarefa
         }, ...requests]);
 
-        // Limpa o formulário
         setTitle("");
         setDescription("");
         setPriority("");
@@ -101,7 +97,7 @@ export default function TaskRequest() {
     }
   };
 
-  // --- FUNÇÕES DE ESTILO ---
+  // Funções de estilo mantidas...
   const getStatusIcon = (status) => {
     switch (status) {
       case "approved": return <CheckCircle2 className="h-4 w-4 text-green-600" />;
@@ -138,27 +134,19 @@ export default function TaskRequest() {
       <Card>
         <CardHeader>
           <CardTitle>Enviar Nova Solicitação</CardTitle>
-          <CardDescription>Preencha o formulário abaixo para solicitar uma nova tarefa</CardDescription>
+          <CardDescription>Preencha o formulário abaixo</CardDescription>
         </CardHeader>
         <CardContent>
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="title">Nome da Solicitação</Label>
-                <Input
-                  id="title"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                  placeholder="Digite o título da tarefa"
-                  required
-                />
+                <Input id="title" value={title} onChange={(e) => setTitle(e.target.value)} required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="priority">Prioridade</Label>
                 <Select onValueChange={setPriority} value={priority} required>
-                  <SelectTrigger id="priority">
-                    <SelectValue placeholder="Selecione a prioridade" />
-                  </SelectTrigger>
+                  <SelectTrigger><SelectValue placeholder="Prioridade" /></SelectTrigger>
                   <SelectContent>
                     <SelectItem value="low">Baixa</SelectItem>
                     <SelectItem value="medium">Média</SelectItem>
@@ -170,23 +158,14 @@ export default function TaskRequest() {
 
             <div className="space-y-2">
               <Label htmlFor="description">Descrição</Label>
-              <Textarea
-                id="description"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-                placeholder="Forneça uma descrição detalhada da tarefa"
-                rows={4}
-                required
-              />
+              <Textarea id="description" value={description} onChange={(e) => setDescription(e.target.value)} rows={4} required />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="assignee">Atribuir Para</Label>
                 <Select onValueChange={setAssignee} value={assignee} required>
-                  <SelectTrigger id="assignee">
-                    <SelectValue placeholder="Selecione um membro" />
-                  </SelectTrigger>
+                  <SelectTrigger><SelectValue placeholder="Selecione um membro" /></SelectTrigger>
                   <SelectContent>
                     {usuarios.map((user) => (
                       <SelectItem key={user.id_usuario} value={user.nome_usuario}>
@@ -211,53 +190,36 @@ export default function TaskRequest() {
                 </Popover>
               </div>
             </div>
-
             <Button type="submit" className="w-full">Enviar Solicitação</Button>
           </form>
         </CardContent>
       </Card>
 
+      {/* Listagem... */}
       <Card>
-        <CardHeader>
-          <CardTitle>Solicitações Recentes</CardTitle>
-        </CardHeader>
+        <CardHeader><CardTitle>Solicitações Recentes</CardTitle></CardHeader>
         <CardContent>
           <div className="space-y-4">
-            {requests.length > 0 ? (
-              requests.map((request) => (
-                <div
-                  key={request.id}
-                  className="flex items-start gap-4 p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
-                >
-                  <div className="mt-1">
-                    {getStatusIcon(request.status)}
+            {requests.map((request) => (
+              <div key={request.id} className="flex items-start gap-4 p-4 rounded-lg border">
+                <div className="mt-1">{getStatusIcon(request.status)}</div>
+                <div className="flex-1">
+                  <div className="flex justify-between">
+                    <div>
+                      <p className="font-medium">{request.title}</p>
+                      <p className="text-sm text-muted-foreground">{request.description}</p>
+                    </div>
+                    <div className="flex gap-2">
+                      <Badge className={getPriorityColor(request.priority)}>{request.priority}</Badge>
+                      <Badge className={getStatusColor(request.status)}>{request.status}</Badge>
+                    </div>
                   </div>
-                  <div className="flex-1 space-y-2">
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <p className="font-medium">{request.title}</p>
-                        <p className="text-sm text-muted-foreground">{request.description}</p>
-                      </div>
-                      <div className="flex gap-2">
-                        <Badge className={getPriorityColor(request.priority)}>
-                          {request.priority}
-                        </Badge>
-                        <Badge className={getStatusColor(request.status)}>
-                          {request.status}
-                        </Badge>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                      <span>Solicitado para: {request.requester}</span>
-                      <span>•</span>
-                      <span>{request.date ? new Date(request.date).toLocaleDateString("pt-BR") : "Sem prazo"}</span>
-                    </div>
+                  <div className="text-sm text-muted-foreground mt-2">
+                    Para: {request.requester} • {request.date ? new Date(request.date).toLocaleDateString("pt-BR") : "Sem prazo"}
                   </div>
                 </div>
-              ))
-            ) : (
-              <p className="text-sm text-muted-foreground text-center py-4">Nenhuma solicitação encontrada.</p>
-            )}
+              </div>
+            ))}
           </div>
         </CardContent>
       </Card>
