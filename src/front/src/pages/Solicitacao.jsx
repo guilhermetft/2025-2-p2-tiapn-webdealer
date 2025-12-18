@@ -21,10 +21,10 @@ export default function TaskRequest() {
   const [usuarios, setUsuarios] = useState([]);
   const [requests, setRequests] = useState([]);
 
-  // URLs configuradas corretamente
   const API_BASE = "https://backwebdealer.onrender.com/solicitacoes";
   const USUARIOS_URL = `${API_BASE}/usuarios`;
 
+  // 1. Buscar dados iniciais
   useEffect(() => {
     // Buscar Usuários
     fetch(USUARIOS_URL)
@@ -39,19 +39,25 @@ export default function TaskRequest() {
     fetch(API_BASE)
       .then((res) => res.json())
       .then((data) => {
-        const formattedData = data.map(item => ({
-          id: item.id_tarefa,
-          title: item.titulo_tarefa,
-          description: item.descricao_tarefa,
-          requester: item.responsavel_tarefa || "Não atribuído",
-          priority: item.prioridade_tarefa,
-          status: item.status_tarefa,
-          date: item.prazo_tarefa || item.criacao_tarefa
-        }));
+        const formattedData = data.map(item => {
+          // Busca o nome do usuário correspondente ao ID que veio do banco
+          const userObj = usuarios.find(u => u.id_usuario.toString() === item.responsavel_tarefa?.toString());
+          
+          return {
+            id: item.id_tarefa,
+            title: item.titulo_tarefa,
+            description: item.descricao_tarefa,
+            // Exibe o nome se encontrar, senão exibe o ID ou "Não atribuído"
+            requester: userObj ? userObj.nome_usuario : (item.responsavel_tarefa || "Não atribuído"),
+            priority: item.prioridade_tarefa,
+            status: item.status_tarefa,
+            date: item.prazo_tarefa || item.criacao_tarefa
+          };
+        });
         setRequests(formattedData);
       })
       .catch((err) => console.error("Erro front solicitações:", err));
-  }, []);
+  }, [usuarios]); // Recalcula a lista de nomes quando 'usuarios' for carregado
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -60,12 +66,11 @@ export default function TaskRequest() {
       titulo: title,
       descricao: description,
       prioridade: priority,
-      responsavel_tarefa: assignee,
+      responsavel_tarefa: assignee, // Aqui vai o ID (String) que o back dará parseInt
       prazo_tarefa: date ? date.toISOString() : null
     };
 
     try {
-      // AJUSTADO: Aqui deve ser API_BASE para bater com a variável definida acima
       const response = await fetch(API_BASE, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -75,29 +80,37 @@ export default function TaskRequest() {
       if (response.ok) {
         const itemSalvo = await response.json();
         
+        // Buscar nome do usuário para a atualização imediata da lista na tela
+        const userObj = usuarios.find(u => u.id_usuario.toString() === itemSalvo.responsavel_tarefa?.toString());
+
         setRequests([{
           id: itemSalvo.id_tarefa,
           title: itemSalvo.titulo_tarefa,
           description: itemSalvo.descricao_tarefa,
-          requester: itemSalvo.responsavel_tarefa,
+          requester: userObj ? userObj.nome_usuario : itemSalvo.responsavel_tarefa,
           priority: itemSalvo.prioridade_tarefa,
           status: itemSalvo.status_tarefa,
           date: itemSalvo.prazo_tarefa
         }, ...requests]);
 
+        // Limpar formulário
         setTitle("");
         setDescription("");
         setPriority("");
         setAssignee("");
         setDate(null);
         alert("Solicitação enviada com sucesso!");
+      } else {
+        const errorData = await response.json();
+        alert("Erro ao enviar: " + errorData.error);
       }
     } catch (error) {
       console.error("Erro ao enviar:", error);
+      alert("Erro de conexão com o servidor.");
     }
   };
 
-  // Funções de estilo mantidas...
+  // Funções de estilo
   const getStatusIcon = (status) => {
     switch (status) {
       case "approved": return <CheckCircle2 className="h-4 w-4 text-green-600" />;
@@ -168,7 +181,7 @@ export default function TaskRequest() {
                   <SelectTrigger><SelectValue placeholder="Selecione um membro" /></SelectTrigger>
                   <SelectContent>
                     {usuarios.map((user) => (
-                      <SelectItem key={user.id_usuario} value={user.nome_usuario}>
+                      <SelectItem key={user.id_usuario} value={user.id_usuario.toString()}>
                         {user.nome_usuario}
                       </SelectItem>
                     ))}
@@ -195,7 +208,6 @@ export default function TaskRequest() {
         </CardContent>
       </Card>
 
-      {/* Listagem... */}
       <Card>
         <CardHeader><CardTitle>Solicitações Recentes</CardTitle></CardHeader>
         <CardContent>
@@ -220,6 +232,9 @@ export default function TaskRequest() {
                 </div>
               </div>
             ))}
+            {requests.length === 0 && (
+                <p className="text-center text-muted-foreground text-sm py-4">Carregando solicitações...</p>
+            )}
           </div>
         </CardContent>
       </Card>
