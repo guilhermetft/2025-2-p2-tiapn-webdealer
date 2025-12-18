@@ -7,15 +7,26 @@ import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { CiCalendar } from "react-icons/ci";
 import { IoIosGitPullRequest } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
+import logoImg from "../assets/images/webdeal.png";
 
-// Recebemos isOpen como prop vinda do App.jsx
 export default function Sidebar({ isOpen }) {
   return (
     <aside className={`sidebar ${isOpen ? "open" : "closed"}`}>
       <nav>
         <div className="sidebar-header">
-          {/* O nome só aparece se estiver aberta. O botão sumiu daqui. */}
-          {isOpen && <h3>WebDealer</h3>}
+          {/* A logo aparece sempre (mesmo fechada) para identificar o sistema */}
+          <img 
+            src={logoImg} 
+            alt="Logo WebDealer" 
+            className="sidebar-logo" 
+          />
+          
+          {isOpen && (
+            <div className="brand-info">
+              <h3 className="brand-name">WebDealer</h3>
+              <span className="brand-subtitle">by arquivar</span>
+            </div>
+          )}
         </div>
 
         <NavLink to="/home" end title="Início">

@@ -188,3 +188,67 @@ h1 {
 .toggle-btn:hover {
   background-color: #f0f0f0;
 }
+
+/* Cabeçalho da Sidebar */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  min-height: 50px;
+}
+
+/* Estilo da Logo */
+.sidebar-logo {
+  width: 35px; /* Ajuste conforme o tamanho da sua imagem */
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Container dos textos */
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Nome Principal em Negrito */
+.brand-name {
+  color: black;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800; /* Deixa bem em negrito */
+  line-height: 1.1;
+}
+
+/* Subtítulo menor */
+.brand-subtitle {
+  color: #666;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+/* Ajuste para quando a sidebar estiver fechada */
+.sidebar.closed .sidebar-header {
+  justify-content: center;
+  gap: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+  /* A LINHA DIVISÓRIA */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08); /* Preto com apenas 8% de opacidade */
+  
+  padding-bottom: 20px; /* Espaço entre o nome e a linha */
+  margin-bottom: 25px; /* Espaço entre a linha e o primeiro link (Início) */
+  min-height: 50px;
+}
+
+/* Ajuste para quando a sidebar estiver fechada (opcional) */
+.sidebar.closed .sidebar-header {
+  justify-content: center;
+  padding-bottom: 15px;
+}
