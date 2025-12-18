@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react"; // Adicionado useEffect
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -13,53 +13,89 @@ import { Popover, PopoverContent, PopoverTrigger } from "../components/ui/popove
 import { CalendarIcon, CheckCircle2, Clock, AlertCircle } from "lucide-react";
 
 export default function TaskRequest() {
+  // --- ESTADOS PARA O FORMULÁRIO ---
   const [date, setDate] = useState();
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [priority, setPriority] = useState("");
+  const [assignee, setAssignee] = useState("");
+  
+  // --- ESTADO PARA A LISTA (Vindo do Banco) ---
+  const [requests, setRequests] = useState([]);
 
-  const [requests] = useState([
-    {
-      id: "1",
-      title: "Digitalizar documentos contábeis 2024",
-      description: "Digitalizar e indexar todos os documentos contábeis do exercício 2024",
-      requester: "Ana Paula Silva",
-      priority: "high",
-      status: "pending",
-      date: "2025-10-18",
-    },
-    {
-      id: "2",
-      title: "Expandir capacidade de armazenamento",
-      description: "Adicionar 20TB de capacidade nos servidores de backup",
-      requester: "Carlos Eduardo Santos",
-      priority: "medium",
-      status: "approved",
-      date: "2025-10-17",
-    },
-    {
-      id: "3",
-      title: "Otimização sistema de busca",
-      description: "Melhorar velocidade de busca e indexação de documentos",
-      requester: "Ricardo Ferreira",
-      priority: "high",
-      status: "approved",
-      date: "2025-10-16",
-    },
-    {
-      id: "4",
-      title: "Atualizar política de retenção",
-      description: "Revisar e atualizar política de retenção de documentos",
-      requester: "Juliana Oliveira",
-      priority: "low",
-      status: "pending",
-      date: "2025-10-19",
-    },
-  ]);
+  const API_URL = "https://SEU-PROJETO-NO-RENDER.onrender.com/solicitacoes";
 
+  // 1. BUSCAR DADOS DO BACK-END
+  useEffect(() => {
+    fetch(API_URL)
+      .then((res) => res.json())
+      .then((data) => {
+        // Mapeamos os nomes do banco para os nomes que o front usa
+        const formattedData = data.map(item => ({
+          id: item.id_tarefa,
+          title: item.titulo_tarefa,
+          description: item.descricao_tarefa,
+          requester: item.responsavel_tarefa || "Não atribuído",
+          priority: item.prioridade_tarefa,
+          status: item.status_tarefa,
+          date: item.prazo_tarefa || item.criacao_tarefa
+        }));
+        setRequests(formattedData);
+      })
+      .catch((err) => console.error("Erro ao carregar:", err));
+  }, []);
+
+  // 2. ENVIAR PARA O BACK-END
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const novaSolicitacao = {
+      titulo: title,
+      descricao: description,
+      prioridade: priority,
+      responsavel_tarefa: assignee,
+      prazo_tarefa: date ? date.toISOString() : null,
+      solicitante: "Usuário Logado" // Aqui você pode pegar o nome do usuário
+    };
+
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(novaSolicitacao),
+      });
+
+      if (response.ok) {
+        const itemSalvo = await response.json();
+        // Atualiza a lista na tela sem precisar dar F5
+        setRequests([{
+          id: itemSalvo.id_tarefa,
+          title: itemSalvo.titulo_tarefa,
+          description: itemSalvo.descricao_tarefa,
+          requester: itemSalvo.responsavel_tarefa,
+          priority: itemSalvo.prioridade_tarefa,
+          status: itemSalvo.status_tarefa,
+          date: itemSalvo.prazo_tarefa
+        }, ...requests]);
+
+        // Limpa o formulário
+        setTitle("");
+        setDescription("");
+        setDate(null);
+        alert("Solicitação enviada com sucesso!");
+      }
+    } catch (error) {
+      console.error("Erro ao enviar:", error);
+    }
+  };
+
+  // --- FUNÇÕES DE ESTILO (Mantidas) ---
   const getStatusIcon = (status) => {
     switch (status) {
       case "approved": return <CheckCircle2 className="h-4 w-4 text-green-600" />;
       case "pending": return <Clock className="h-4 w-4 text-orange-600" />;
       case "rejected": return <AlertCircle className="h-4 w-4 text-red-600" />;
-      default: return null;
+      default: return <Clock className="h-4 w-4 text-orange-600" />;
     }
   };
 
@@ -67,8 +103,7 @@ export default function TaskRequest() {
     switch (status) {
       case "approved": return "bg-green-100 text-green-800";
       case "pending": return "bg-orange-100 text-orange-800";
-      case "rejected": return "bg-red-100 text-red-800";
-      default: return "bg-gray-100 text-gray-800";
+      default: return "bg-orange-100 text-orange-800";
     }
   };
 
@@ -81,29 +116,11 @@ export default function TaskRequest() {
     }
   };
 
-  const getPriorityLabel = (priority) => {
-    switch (priority) {
-      case "high": return "alta";
-      case "medium": return "média";
-      case "low": return "baixa";
-      default: return priority;
-    }
-  };
-
-  const getStatusLabel = (status) => {
-    switch (status) {
-      case "approved": return "aprovada";
-      case "pending": return "pendente";
-      case "rejected": return "rejeitada";
-      default: return status;
-    }
-  };
-
   return (
     <div className="space-y-6">
       <div>
         <h1>Solicitações de Tarefas</h1>
-        <p className="text-muted-foreground">Envie e revise solicitações de tarefas</p>
+        <p className="text-muted-foreground">Envie e revise solicitações</p>
       </div>
 
       <Card>
@@ -112,15 +129,22 @@ export default function TaskRequest() {
           <CardDescription>Preencha o formulário abaixo para solicitar uma nova tarefa</CardDescription>
         </CardHeader>
         <CardContent>
-          <form className="space-y-4">
+          {/* ADICIONADO O ONSUBMIT */}
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="title">Título da Tarefa</Label>
-                <Input id="title" placeholder="Digite o título da tarefa" />
+                <Label htmlFor="title">Nome da Solicitação</Label>
+                <Input 
+                  id="title" 
+                  value={title} 
+                  onChange={(e) => setTitle(e.target.value)} 
+                  placeholder="Digite o título da tarefa" 
+                  required
+                />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="priority">Prioridade</Label>
-                <Select>
+                <Select onValueChange={setPriority} value={priority}>
                   <SelectTrigger id="priority">
                     <SelectValue placeholder="Selecione a prioridade" />
                   </SelectTrigger>
@@ -137,23 +161,26 @@ export default function TaskRequest() {
               <Label htmlFor="description">Descrição</Label>
               <Textarea
                 id="description"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
                 placeholder="Forneça uma descrição detalhada da tarefa"
                 rows={4}
+                required
               />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="assignee">Atribuir Para</Label>
-                <Select>
+                <Select onValueChange={setAssignee} value={assignee}>
                   <SelectTrigger id="assignee">
                     <SelectValue placeholder="Selecione um membro" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="ana">Ana Paula Silva</SelectItem>
-                    <SelectItem value="carlos">Carlos Eduardo Santos</SelectItem>
-                    <SelectItem value="juliana">Juliana Oliveira</SelectItem>
-                    <SelectItem value="ricardo">Ricardo Ferreira</SelectItem>
+                    <SelectItem value="Ana Paula Silva">Ana Paula Silva</SelectItem>
+                    <SelectItem value="Carlos Eduardo Santos">Carlos Eduardo Santos</SelectItem>
+                    <SelectItem value="Juliana Oliveira">Juliana Oliveira</SelectItem>
+                    <SelectItem value="Ricardo Ferreira">Ricardo Ferreira</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -178,6 +205,7 @@ export default function TaskRequest() {
         </CardContent>
       </Card>
 
+      {/* LISTAGEM DE TAREFAS (Mantida, mas agora usa dados do banco) */}
       <Card>
         <CardHeader>
           <CardTitle>Solicitações Recentes</CardTitle>
@@ -200,17 +228,17 @@ export default function TaskRequest() {
                     </div>
                     <div className="flex gap-2">
                       <Badge className={getPriorityColor(request.priority)}>
-                        {getPriorityLabel(request.priority)}
+                        {request.priority}
                       </Badge>
                       <Badge className={getStatusColor(request.status)}>
-                        {getStatusLabel(request.status)}
+                        {request.status}
                       </Badge>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <span>Solicitado por: {request.requester}</span>
+                    <span>Solicitado para: {request.requester}</span>
                     <span>•</span>
-                    <span>{new Date(request.date).toLocaleDateString("pt-BR")}</span>
+                    <span>{request.date ? new Date(request.date).toLocaleDateString("pt-BR") : "Sem prazo"}</span>
                   </div>
                 </div>
               </div>
