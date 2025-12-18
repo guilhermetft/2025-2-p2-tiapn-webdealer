@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react"; // Adicionado useEffect
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -13,24 +13,30 @@ import { Popover, PopoverContent, PopoverTrigger } from "../components/ui/popove
 import { CalendarIcon, CheckCircle2, Clock, AlertCircle } from "lucide-react";
 
 export default function TaskRequest() {
-  // --- ESTADOS PARA O FORMULÁRIO ---
+  // --- ESTADOS ---
   const [date, setDate] = useState();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState("");
   const [assignee, setAssignee] = useState("");
-  
-  // --- ESTADO PARA A LISTA (Vindo do Banco) ---
+  const [usuarios, setUsuarios] = useState([]);
   const [requests, setRequests] = useState([]);
 
   const API_URL = "https://backwebdealer.onrender.com/solicitacoes";
+  const USUARIOS_URL = "https://backwebdealer.onrender.com/tarefas/usuarios";
 
   // 1. BUSCAR DADOS DO BACK-END
   useEffect(() => {
+    // Buscar Usuários para o Select
+    fetch(USUARIOS_URL)
+      .then((res) => res.json())
+      .then((data) => setUsuarios(data))
+      .catch((err) => console.error("Erro ao carregar usuários:", err));
+
+    // Buscar Solicitações Existentes
     fetch(API_URL)
       .then((res) => res.json())
       .then((data) => {
-        // Mapeamos os nomes do banco para os nomes que o front usa
         const formattedData = data.map(item => ({
           id: item.id_tarefa,
           title: item.titulo_tarefa,
@@ -42,7 +48,7 @@ export default function TaskRequest() {
         }));
         setRequests(formattedData);
       })
-      .catch((err) => console.error("Erro ao carregar:", err));
+      .catch((err) => console.error("Erro ao carregar solicitações:", err));
   }, []);
 
   // 2. ENVIAR PARA O BACK-END
@@ -55,7 +61,7 @@ export default function TaskRequest() {
       prioridade: priority,
       responsavel_tarefa: assignee,
       prazo_tarefa: date ? date.toISOString() : null,
-      solicitante: "Usuário Logado" // Aqui você pode pegar o nome do usuário
+      solicitante: "Usuário Logado" 
     };
 
     try {
@@ -67,7 +73,8 @@ export default function TaskRequest() {
 
       if (response.ok) {
         const itemSalvo = await response.json();
-        // Atualiza a lista na tela sem precisar dar F5
+        
+        // Adiciona o novo item no topo da lista
         setRequests([{
           id: itemSalvo.id_tarefa,
           title: itemSalvo.titulo_tarefa,
@@ -81,6 +88,8 @@ export default function TaskRequest() {
         // Limpa o formulário
         setTitle("");
         setDescription("");
+        setPriority("");
+        setAssignee("");
         setDate(null);
         alert("Solicitação enviada com sucesso!");
       }
@@ -89,7 +98,7 @@ export default function TaskRequest() {
     }
   };
 
-  // --- FUNÇÕES DE ESTILO (Mantidas) ---
+  // --- FUNÇÕES DE ESTILO ---
   const getStatusIcon = (status) => {
     switch (status) {
       case "approved": return <CheckCircle2 className="h-4 w-4 text-green-600" />;
@@ -119,7 +128,7 @@ export default function TaskRequest() {
   return (
     <div className="space-y-6">
       <div>
-        <h1>Solicitações de Tarefas</h1>
+        <h1 className="text-2xl font-bold">Solicitações de Tarefas</h1>
         <p className="text-muted-foreground">Envie e revise solicitações</p>
       </div>
 
@@ -129,7 +138,6 @@ export default function TaskRequest() {
           <CardDescription>Preencha o formulário abaixo para solicitar uma nova tarefa</CardDescription>
         </CardHeader>
         <CardContent>
-          {/* ADICIONADO O ONSUBMIT */}
           <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
@@ -144,7 +152,7 @@ export default function TaskRequest() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="priority">Prioridade</Label>
-                <Select onValueChange={setPriority} value={priority}>
+                <Select onValueChange={setPriority} value={priority} required>
                   <SelectTrigger id="priority">
                     <SelectValue placeholder="Selecione a prioridade" />
                   </SelectTrigger>
@@ -172,15 +180,16 @@ export default function TaskRequest() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="assignee">Atribuir Para</Label>
-                <Select onValueChange={setAssignee} value={assignee}>
+                <Select onValueChange={setAssignee} value={assignee} required>
                   <SelectTrigger id="assignee">
                     <SelectValue placeholder="Selecione um membro" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="Ana Paula Silva">Ana Paula Silva</SelectItem>
-                    <SelectItem value="Carlos Eduardo Santos">Carlos Eduardo Santos</SelectItem>
-                    <SelectItem value="Juliana Oliveira">Juliana Oliveira</SelectItem>
-                    <SelectItem value="Ricardo Ferreira">Ricardo Ferreira</SelectItem>
+                    {usuarios.map((user) => (
+                      <SelectItem key={user.id_usuario} value={user.nome_usuario}>
+                        {user.nome_usuario}
+                      </SelectItem>
+                    ))}
                   </SelectContent>
                 </Select>
               </div>
@@ -205,44 +214,47 @@ export default function TaskRequest() {
         </CardContent>
       </Card>
 
-      {/* LISTAGEM DE TAREFAS (Mantida, mas agora usa dados do banco) */}
       <Card>
         <CardHeader>
           <CardTitle>Solicitações Recentes</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
-            {requests.map((request) => (
-              <div
-                key={request.id}
-                className="flex items-start gap-4 p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
-              >
-                <div className="mt-1">
-                  {getStatusIcon(request.status)}
-                </div>
-                <div className="flex-1 space-y-2">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <p className="font-medium">{request.title}</p>
-                      <p className="text-sm text-muted-foreground">{request.description}</p>
+            {requests.length > 0 ? (
+              requests.map((request) => (
+                <div
+                  key={request.id}
+                  className="flex items-start gap-4 p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors"
+                >
+                  <div className="mt-1">
+                    {getStatusIcon(request.status)}
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <p className="font-medium">{request.title}</p>
+                        <p className="text-sm text-muted-foreground">{request.description}</p>
+                      </div>
+                      <div className="flex gap-2">
+                        <Badge className={getPriorityColor(request.priority)}>
+                          {request.priority}
+                        </Badge>
+                        <Badge className={getStatusColor(request.status)}>
+                          {request.status}
+                        </Badge>
+                      </div>
                     </div>
-                    <div className="flex gap-2">
-                      <Badge className={getPriorityColor(request.priority)}>
-                        {request.priority}
-                      </Badge>
-                      <Badge className={getStatusColor(request.status)}>
-                        {request.status}
-                      </Badge>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                      <span>Solicitado para: {request.requester}</span>
+                      <span>•</span>
+                      <span>{request.date ? new Date(request.date).toLocaleDateString("pt-BR") : "Sem prazo"}</span>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <span>Solicitado para: {request.requester}</span>
-                    <span>•</span>
-                    <span>{request.date ? new Date(request.date).toLocaleDateString("pt-BR") : "Sem prazo"}</span>
-                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p className="text-sm text-muted-foreground text-center py-4">Nenhuma solicitação encontrada.</p>
+            )}
           </div>
         </CardContent>
       </Card>
