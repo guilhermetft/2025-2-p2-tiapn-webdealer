@@ -22,19 +22,22 @@ export default function TaskRequest() {
   const [usuarios, setUsuarios] = useState([]);
   const [requests, setRequests] = useState([]);
 
-  const API_URL = "https://backwebdealer.onrender.com/solicitacoes";
-  const USUARIOS_URL = "https://backwebdealer.onrender.com/tarefas/usuarios";
+  const API_BASE = "https://backwebdealer.onrender.com/solicitacoes";
+  const USUARIOS_URL = `${API_BASE}/usuarios`;
 
   // 1. BUSCAR DADOS DO BACK-END
   useEffect(() => {
-    // Buscar Usuários para o Select
+    // 1. Buscar Usuários
     fetch(USUARIOS_URL)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error("Falha ao carregar usuários");
+        return res.json();
+      })
       .then((data) => setUsuarios(data))
-      .catch((err) => console.error("Erro ao carregar usuários:", err));
+      .catch((err) => console.error("Erro front usuários:", err));
 
-    // Buscar Solicitações Existentes
-    fetch(API_URL)
+    // 2. Buscar Solicitações
+    fetch(API_BASE)
       .then((res) => res.json())
       .then((data) => {
         const formattedData = data.map(item => ({
@@ -48,7 +51,7 @@ export default function TaskRequest() {
         }));
         setRequests(formattedData);
       })
-      .catch((err) => console.error("Erro ao carregar solicitações:", err));
+      .catch((err) => console.error("Erro front solicitações:", err));
   }, []);
 
   // 2. ENVIAR PARA O BACK-END
@@ -61,7 +64,7 @@ export default function TaskRequest() {
       prioridade: priority,
       responsavel_tarefa: assignee,
       prazo_tarefa: date ? date.toISOString() : null,
-      solicitante: "Usuário Logado" 
+      solicitante: "Usuário Logado"
     };
 
     try {
@@ -73,7 +76,7 @@ export default function TaskRequest() {
 
       if (response.ok) {
         const itemSalvo = await response.json();
-        
+
         // Adiciona o novo item no topo da lista
         setRequests([{
           id: itemSalvo.id_tarefa,
@@ -142,11 +145,11 @@ export default function TaskRequest() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="title">Nome da Solicitação</Label>
-                <Input 
-                  id="title" 
-                  value={title} 
-                  onChange={(e) => setTitle(e.target.value)} 
-                  placeholder="Digite o título da tarefa" 
+                <Input
+                  id="title"
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                  placeholder="Digite o título da tarefa"
                   required
                 />
               </div>
