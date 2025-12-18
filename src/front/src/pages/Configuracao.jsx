@@ -50,7 +50,7 @@ export default function Settings() {
 
   const fetchUserData = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/configuracoes/${id}`);
+      const response = await fetch(`http://localhost:5000/configuracoes/${id}`);
       
       if (response.ok) {
         const data = await response.json();
@@ -110,7 +110,7 @@ export default function Settings() {
     if (!userId) return;
 
     try {
-      const response = await fetch(`http://localhost:5000/api/configuracoes/${userId}`, {
+      const response = await fetch(`http://localhost:5000/configuracoes/${userId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -144,7 +144,7 @@ export default function Settings() {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/configuracoes/${userId}`, {
+      const response = await fetch(`http://localhost:5000/configuracoes/${userId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
