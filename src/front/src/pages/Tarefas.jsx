@@ -19,8 +19,8 @@ function Tarefas() {
     prazo_tarefa: ''
   });
 
-  const API_URL = 'http://localhost:5000/api/tarefas';
-  const API_USUARIOS = 'http://localhost:5000/api/usuarios';
+  const API_URL = 'https://backwebdealer.onrender.com/tarefas';
+  const API_USUARIOS = 'https://backwebdealer.onrender.com/usuarios';
 
   // Buscar tarefas e usuários
   useEffect(() => {
