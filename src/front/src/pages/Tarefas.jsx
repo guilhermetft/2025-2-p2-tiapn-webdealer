@@ -19,8 +19,8 @@ function Tarefas() {
     prazo_tarefa: ''
   });
 
-const API_URL = 'https://backwebdealer.onrender.com/tarefas';
-const API_USUARIOS = 'https://backwebdealer.onrender.com/usuarios';
+  const API_URL = 'https://backwebdealer.onrender.com/tarefas';
+  const API_USUARIOS = 'https://backwebdealer.onrender.com/usuarios';
 
   useEffect(() => {
     const handleClickOutside = () => setMenuAbertoId(null);
