@@ -41,7 +41,7 @@ export default function Cadastro() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     setError("");
     setIsLoading(true);
@@ -76,7 +76,7 @@ export default function Cadastro() {
     }
 
     try {
-      const response = await fetch("/api/cadastro/usuarios", {
+      const response = await fetch("https://backwebdealer.onrender.com/usuarios", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
