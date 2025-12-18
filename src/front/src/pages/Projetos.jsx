@@ -382,7 +382,7 @@ export default function Projects() {
       const isEditing = !!editingTask;
       const url = isEditing
         ? `https://backwebdealer.onrender.com/projetos/tarefas/${editingTask.id}`
-        : `https://backwebdealer.onrender.com/${selectedProject.id_projeto}/tarefas`;
+        : `https://backwebdealer.onrender.com/projetos/${selectedProject.id_projeto}/tarefas`;
 
       const response = await fetch(url, {
         method: isEditing ? "PATCH" : "POST", // Patch para status/edit, POST para criar
