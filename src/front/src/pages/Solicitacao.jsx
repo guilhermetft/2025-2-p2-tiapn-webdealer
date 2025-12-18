@@ -23,7 +23,7 @@ export default function TaskRequest() {
   // --- ESTADO PARA A LISTA (Vindo do Banco) ---
   const [requests, setRequests] = useState([]);
 
-  const API_URL = "hhttps://backwebdealer.onrender.com/solicitacoes";
+  const API_URL = "https://backwebdealer.onrender.com/solicitacoes";
 
   // 1. BUSCAR DADOS DO BACK-END
   useEffect(() => {
