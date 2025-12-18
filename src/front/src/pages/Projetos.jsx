@@ -31,112 +31,86 @@ import { DndProvider, useDrag, useDrop } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../components/ui/dropdown-menu";
 
-const initialProjects = [
-  {
-    id: "1",
-    name: "Digitalização Arquivo Histórico",
-    description: "Digitalização completa do acervo histórico municipal",
-    progress: 75,
-    status: "active",
-    participants: ["Juliana Oliveira", "Beatriz Rodrigues", "Paulo Henrique Lima", "Fernando Almeida", "Carlos Eduardo Santos"],
-    deadline: "2025-11-15",
-    createdDate: "15 Ago, 2025",
-    tasks: [
-      { id: "t1", title: "Catalogar documentos físicos", description: "Criar inventário completo de todos os documentos", status: "done", priority: "high" },
-      { id: "t2", title: "Configurar scanners profissionais", description: "Instalar e calibrar equipamentos de digitalização", status: "done", priority: "high" },
-      { id: "t3", title: "Digitalizar lote 1 (1950-1970)", description: "Escanear documentos do primeiro período", status: "inprogress", priority: "high" },
-      { id: "t4", title: "Revisar qualidade das imagens", description: "Verificar resolução e legibilidade", status: "inprogress", priority: "medium" },
-      { id: "t5", title: "Digitalizar lote 2 (1971-1990)", description: "Escanear documentos do segundo período", status: "todo", priority: "high" },
-      { id: "t6", title: "Indexação e metadados", description: "Adicionar tags e informações de busca", status: "todo", priority: "medium" },
-      { id: "t7", title: "Backup em múltiplos servidores", description: "Garantir redundância dos arquivos digitalizados", status: "todo", priority: "high" },
-    ]
-  },
-  {
-    id: "2",
-    name: "Sistema de Gestão Documental",
-    description: "Implementação de novo GED para clientes corporativos",
-    progress: 45,
-    status: "active",
-    participants: ["Carlos Eduardo Santos", "Ricardo Ferreira", "Ana Paula Silva", "Mariana Costa"],
-    deadline: "2025-12-30",
-    createdDate: "01 Set, 2025",
-    tasks: [
-      { id: "t8", title: "Levantamento de requisitos", description: "Reuniões com stakeholders", status: "done", priority: "high" },
-      { id: "t9", title: "Desenvolvimento do módulo de upload", description: "Criar interface de envio de documentos", status: "inprogress", priority: "high" },
-      { id: "t10", title: "Sistema de permissões", description: "Controle de acesso por usuário e grupo", status: "inprogress", priority: "high" },
-      { id: "t11", title: "Módulo de busca avançada", description: "Implementar filtros e busca full-text", status: "todo", priority: "medium" },
-      { id: "t12", title: "Dashboard de relatórios", description: "Criar visualizações e estatísticas", status: "todo", priority: "low" },
-    ]
-  },
-  {
-    id: "3",
-    name: "Migração Cloud Storage",
-    description: "Migração de servidores físicos para infraestrutura em nuvem",
-    progress: 90,
-    status: "active",
-    participants: ["Fernando Almeida", "Ricardo Ferreira", "Carlos Eduardo Santos"],
-    deadline: "2025-10-31",
-    createdDate: "10 Set, 2025",
-    tasks: [
-      { id: "t13", title: "Contratar serviço cloud", description: "Definir fornecedor e plano", status: "done", priority: "high" },
-      { id: "t14", title: "Migração de dados fase 1", description: "Transferir 50% dos arquivos", status: "done", priority: "high" },
-      { id: "t15", title: "Migração de dados fase 2", description: "Transferir restante dos arquivos", status: "inprogress", priority: "high" },
-      { id: "t16", title: "Testes de integridade", description: "Validar todos os arquivos migrados", status: "todo", priority: "high" },
-    ]
-  },
-  {
-    id: "4",
-    name: "Portal Autoatendimento",
-    description: "Portal web para clientes acessarem documentos digitalizados",
-    progress: 30,
-    status: "active",
-    participants: ["Carlos Eduardo Santos", "Mariana Costa"],
-    deadline: "2026-01-20",
-    createdDate: "20 Set, 2025",
-    tasks: [
-      { id: "t17", title: "Design da interface", description: "Criar wireframes e mockups", status: "done", priority: "medium" },
-      { id: "t18", title: "Desenvolvimento frontend", description: "Implementar páginas em React", status: "inprogress", priority: "high" },
-      { id: "t19", title: "Integração com API", description: "Conectar com backend existente", status: "todo", priority: "high" },
-      { id: "t20", title: "Sistema de autenticação", description: "Login seguro para clientes", status: "todo", priority: "high" },
-    ]
-  },
-  {
-    id: "5",
-    name: "Certificação ISO 27001",
-    description: "Implementação de normas de segurança da informação",
-    progress: 100,
-    status: "completed",
-    participants: ["Fernando Almeida", "Ana Paula Silva", "Paulo Henrique Lima", "Beatriz Rodrigues"],
-    deadline: "2025-10-01",
-    createdDate: "15 Jul, 2025",
-    tasks: [
-      { id: "t21", title: "Auditoria inicial", description: "Avaliação do estado atual", status: "done", priority: "high" },
-      { id: "t22", title: "Implementar controles", description: "Aplicar requisitos da norma", status: "done", priority: "high" },
-      { id: "t23", title: "Auditoria de certificação", description: "Avaliação final", status: "done", priority: "high" },
-    ]
-  },
-  {
-    id: "6",
-    name: "App Mobile Arquivar",
-    description: "Aplicativo para consulta de documentos via smartphone",
-    progress: 15,
-    status: "planning",
-    participants: ["Carlos Eduardo Santos", "Ricardo Ferreira", "Mariana Costa"],
-    deadline: "2026-03-15",
-    createdDate: "25 Set, 2025",
-    tasks: [
-      { id: "t24", title: "Pesquisa de mercado", description: "Analisar concorrentes e necessidades", status: "inprogress", priority: "medium" },
-      { id: "t25", title: "Definir stack tecnológica", description: "Escolher framework mobile", status: "todo", priority: "high" },
-      { id: "t26", title: "Protótipo navegável", description: "Criar MVP para validação", status: "todo", priority: "medium" },
-    ]
-  },
-];
+// Componente para o Card Arrastável
+const TaskCard = ({ task, onEditTask, onDeleteTask, getPriorityColor, getPriorityLabel }) => {
+  const [{ isDragging }, drag] = useDrag(() => ({
+    type: "TASK",
+    item: { id: task.id },
+    collect: (monitor) => ({
+      isDragging: !!monitor.isDragging(),
+    }),
+  }));
+
+  return (
+    <Card
+      ref={drag}
+      className={`mb-3 cursor-grab active:cursor-grabbing ${isDragging ? "opacity-50 border-dashed border-primary" : ""}`}
+    >
+      <CardContent className="p-4">
+        <div className="flex justify-between items-start mb-2">
+          <Badge className={getPriorityColor(task.priority)}>
+            {getPriorityLabel(task.priority)}
+          </Badge>
+          <div className="flex gap-1">
+            <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => onEditTask(task)}>
+              <Edit className="h-3.5 w-3.5" />
+            </Button>
+            <Button variant="ghost" size="icon" className="h-7 w-7 text-red-500" onClick={() => onDeleteTask(task.id)}>
+              <Trash2 className="h-3.5 w-3.5" />
+            </Button>
+          </div>
+        </div>
+        <h4 className="font-medium text-sm mb-1">{task.title}</h4>
+        <p className="text-xs text-muted-foreground line-clamp-2">{task.description}</p>
+      </CardContent>
+    </Card>
+  );
+};
+
+// Componente para a Coluna (Alvo do Drop)
+const KanbanColumn = ({ columnId, title, icon, tasks, onAddTask, onEditTask, onDeleteTask, onMoveTask, getPriorityColor, getPriorityLabel }) => {
+  const [{ isOver }, drop] = useDrop(() => ({
+    accept: "TASK",
+    drop: (item) => onMoveTask(item.id, columnId),
+    collect: (monitor) => ({
+      isOver: !!monitor.isOver(),
+    }),
+  }));
+
+  return (
+    <div ref={drop} className={`flex flex-col h-full rounded-lg p-2 transition-colors ${isOver ? "bg-muted/50 border-2 border-dashed border-primary/20" : "bg-muted/30"}`}>
+      <div className="flex items-center justify-between mb-4 px-2">
+        <div className="flex items-center gap-2">
+          {icon}
+          <h3 className="font-semibold text-sm uppercase tracking-wider text-muted-foreground">{title}</h3>
+          <Badge variant="secondary" className="ml-1">{tasks.length}</Badge>
+        </div>
+        <Button variant="ghost" size="icon" className="h-8 w-8" onClick={onAddTask}>
+          <Plus className="h-4 w-4" />
+        </Button>
+      </div>
+
+      <div className="flex-1 overflow-y-auto min-h-[200px]">
+        {tasks.map((task) => (
+          <TaskCard
+            key={task.id}
+            task={task}
+            onEditTask={onEditTask}
+            onDeleteTask={onDeleteTask}
+            getPriorityColor={getPriorityColor}
+            getPriorityLabel={getPriorityLabel}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default function Projects() {
   const [usuarios, setUsuarios] = useState([]);
   const [users, setUsers] = useState([]);
   const [loadingUsers, setLoadingUsers] = useState(false);
-  const [projects, setProjects] = useState(initialProjects);
+  const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
@@ -161,17 +135,30 @@ export default function Projects() {
   });
 
   useEffect(() => {
-    async function carregarUsuarios() {
+    const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/usuarios");
-        const data = await response.json();
-        setUsuarios(data);
-      } catch (err) {
-        console.error("Erro ao buscar usuários", err);
-      }
-    }
+        const [resUsers, resProj] = await Promise.all([
+          fetch("https://backwebdealer.onrender.com/usuarios"),
+          fetch("https://backwebdealer.onrender.com/projetos")
+        ]);
 
-    carregarUsuarios();
+        const usersData = await resUsers.json();
+        const projData = await resProj.json();
+
+        // Recalcula o progresso de cada projeto baseado nas tarefas reais
+        const projectsWithCalculatedProgress = projData.map(projeto => ({
+          ...projeto,
+          progress: calculateProgress(projeto.tasks || [])
+        }));
+
+        setUsuarios(usersData);
+        setProjects(projectsWithCalculatedProgress);
+      } catch (err) {
+        console.error("Erro ao carregar dados do servidor:", err);
+      }
+    };
+
+    fetchData();
   }, []);
 
   const getStatusColor = (status) => {
@@ -264,8 +251,9 @@ export default function Projects() {
       name: project.name,
       description: project.description,
       deadline: project.deadline,
-      participants: [...project.participants],
-      status: project.status // novo
+      participants: project.participants || [],
+      status: project.status,
+      progress: project.progress
     });
     setIsProjectDialogOpen(true);
   };
@@ -284,59 +272,68 @@ export default function Projects() {
     }
 
     try {
+      const isEditing = !!editingProject;
+      const url = isEditing
+        ? `https://backwebdealer.onrender.com/projetos/${editingProject.id_projeto}`
+        : "https://backwebdealer.onrender.com/projetos";
+
+      // --- ALTERAÇÃO AQUI: Criamos um objeto apenas com os dados, sem o ID antigo ---
       const payload = {
         name: projectForm.name,
         description: projectForm.description,
-        status: projectForm.status,
         deadline: projectForm.deadline,
+        status: projectForm.status,
         participants: projectForm.participants,
+        progress: projectForm.progress || 0 // Garante que o progresso vá como número
       };
 
-      const response = await fetch(
-        editingProject
-          ? `http://localhost:5000/projetos/${editingProject.id}`
-          : "http://localhost:5000/projetos",
-        {
-          method: editingProject ? "PUT" : "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        }
-      );
+      const response = await fetch(url, {
+        method: isEditing ? "PUT" : "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload), // Enviamos o payload limpo
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error("Erro detalhado do servidor:", errorData);
+        throw new Error("Erro na resposta do servidor");
+      }
 
       const savedProject = await response.json();
 
-      if (!response.ok) {
-        alert("Erro ao salvar projeto: " + (savedProject.error || "Erro desconhecido"));
-        return;
-      }
-
-      // Atualizar estado local
-      if (editingProject) {
-        setProjects(projects.map(p => (p.id === savedProject.id_projeto ? savedProject : p)));
+      if (isEditing) {
+        setProjects(projects.map(p => p.id_projeto === savedProject.id_projeto ? savedProject : p));
       } else {
         setProjects([savedProject, ...projects]);
       }
 
       setIsProjectDialogOpen(false);
       setEditingProject(null);
+      setProjectForm({ name: "", description: "", deadline: "", participants: [], status: "planning", progress: 0 });
 
     } catch (err) {
-      console.error("Erro ao salvar projeto:", err);
-      alert("Erro ao salvar projeto");
+      console.error("Erro ao salvar:", err);
+      alert("Falha ao salvar. Verifique o console do servidor para detalhes.");
     }
   };
 
   // DELETE - Deletar projeto
-  const handleDeleteProject = (projectId) => {
-    if (
-      window.confirm(
-        "Tem certeza que deseja excluir este projeto? Todas as tarefas associadas serão perdidas."
-      )
-    ) {
-      setProjects(projects.filter(p => p.id !== projectId));
-      if (selectedProject?.id === projectId) {
-        setSelectedProject(null);
-      }
+  const handleDeleteProject = async (id) => {
+    if (!window.confirm("Tem certeza que deseja excluir este projeto e todas as suas tarefas?")) return;
+
+    try {
+      const response = await fetch(`https://backwebdealer.onrender.com/projetos/${id}`, {
+        method: "DELETE",
+      });
+
+      if (!response.ok) throw new Error("Erro ao excluir no servidor");
+
+      // Remove da lista local para sumir da tela na hora
+      setProjects(prev => prev.filter(p => p.id_projeto !== id));
+      setSelectedProject(null);
+    } catch (err) {
+      console.error(err);
+      alert("Erro ao excluir projeto");
     }
   };
 
@@ -378,61 +375,110 @@ export default function Projects() {
     setIsTaskDialogOpen(true);
   };
 
-  const handleSaveTask = () => {
+  const handleSaveTask = async () => {
     if (!selectedProject || !taskForm.title) return;
 
-    const updatedProjects = projects.map(project => {
-      if (project.id === selectedProject.id) {
-        if (editingTask) {
-          // Editar tarefa existente
-          const updatedTasks = project.tasks.map(task =>
-            task.id === editingTask.id
-              ? { ...task, ...taskForm }
-              : task
-          );
-          return {
-            ...project,
-            tasks: updatedTasks,
-            progress: calculateProgress(updatedTasks)
-          };
-        } else {
-          // Criar nova tarefa
-          const newTask = {
-            id: `t${Date.now()}`,
-            ...taskForm,
-            status: newTaskColumn
-          };
-          const updatedTasks = [...project.tasks, newTask];
-          return {
-            ...project,
-            tasks: updatedTasks,
-            progress: calculateProgress(updatedTasks)
-          };
-        }
-      }
-      return project;
-    });
+    try {
+      const isEditing = !!editingTask;
+      const url = isEditing
+        ? `https://backwebdealer.onrender.com/projetos/tarefas/${editingTask.id}`
+        : `https://backwebdealer.onrender.com/${selectedProject.id_projeto}/tarefas`;
 
-    setProjects(updatedProjects);
-    setSelectedProject(
-      updatedProjects.find(p => p.id === selectedProject.id) || null
-    );
-    setIsTaskDialogOpen(false);
-    setTaskForm({
-      title: "",
-      description: "",
-      priority: "medium"
-    });
-    setEditingTask(null);
+      const response = await fetch(url, {
+        method: isEditing ? "PATCH" : "POST", // Patch para status/edit, POST para criar
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          title: taskForm.title,
+          description: taskForm.description,
+          priority: taskForm.priority,
+          status: isEditing ? editingTask.status : newTaskColumn
+        }),
+      });
+
+      if (!response.ok) throw new Error("Erro ao salvar tarefa");
+
+      const savedTaskFromDb = await response.json();
+
+      // Mapear para o formato do seu Front-end
+      const mappedTask = {
+        id: savedTaskFromDb.id_tarefa,
+        title: savedTaskFromDb.titulo,
+        description: savedTaskFromDb.descricao,
+        status: savedTaskFromDb.status,
+        priority: savedTaskFromDb.prioridade
+      };
+
+      const updatedProjects = projects.map(project => {
+        if (project.id_projeto === selectedProject.id_projeto) {
+          let newTasks;
+          if (isEditing) {
+            newTasks = project.tasks.map(t => t.id === mappedTask.id ? mappedTask : t);
+          } else {
+            newTasks = [...project.tasks, mappedTask];
+          }
+          return { ...project, tasks: newTasks, progress: calculateProgress(newTasks) };
+        }
+        return project;
+      });
+
+      setProjects(updatedProjects);
+      setSelectedProject(updatedProjects.find(p => p.id_projeto === selectedProject.id_projeto));
+      setIsTaskDialogOpen(false);
+      setEditingTask(null);
+    } catch (err) {
+      console.error("Erro ao salvar tarefa no banco:", err);
+      alert("Erro ao salvar tarefa");
+    }
   };
 
-  const handleDeleteTask = (taskId) => {
+  const handleDeleteTask = async (taskId) => {
     if (!selectedProject) return;
 
     if (window.confirm("Tem certeza que deseja excluir esta tarefa?")) {
+      try {
+        // CHAMADA PARA O BACKEND (Faltava esta parte)
+        const response = await fetch(`https://backwebdealer.onrender.com/projetos/tarefas/${taskId}`, {
+          method: "DELETE",
+        });
+
+        if (!response.ok) throw new Error("Erro ao deletar tarefa no servidor");
+
+        // Atualização do Estado (UI)
+        const updatedProjects = projects.map(project => {
+          if (project.id_projeto === selectedProject.id_projeto) {
+            const updatedTasks = project.tasks.filter(task => task.id !== taskId);
+            return { ...project, tasks: updatedTasks, progress: calculateProgress(updatedTasks) };
+          }
+          return project;
+        });
+
+        setProjects(updatedProjects);
+        setSelectedProject(updatedProjects.find(p => p.id_projeto === selectedProject.id_projeto));
+      } catch (err) {
+        console.error("Erro ao deletar tarefa:", err);
+        alert("Não foi possível excluir a tarefa.");
+      }
+    }
+  };
+
+  const moveTask = async (taskId, newStatus) => {
+    if (!selectedProject) return;
+
+    try {
+      const response = await fetch(`https://backwebdealer.onrender.com/projetos/tarefas/${taskId}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ status: newStatus }),
+      });
+
+      if (!response.ok) throw new Error("Erro ao atualizar status no servidor");
+
       const updatedProjects = projects.map(project => {
-        if (project.id === selectedProject.id) {
-          const updatedTasks = project.tasks.filter(task => task.id !== taskId);
+        if (project.id_projeto === selectedProject.id_projeto) {
+          const updatedTasks = project.tasks.map(task =>
+            task.id === taskId ? { ...task, status: newStatus } : task
+          );
+
           return {
             ...project,
             tasks: updatedTasks,
@@ -443,33 +489,14 @@ export default function Projects() {
       });
 
       setProjects(updatedProjects);
-      setSelectedProject(
-        updatedProjects.find(p => p.id === selectedProject.id) || null
-      );
+
+      const currentProj = updatedProjects.find(p => p.id_projeto === selectedProject.id_projeto);
+      setSelectedProject(currentProj);
+
+    } catch (err) {
+      console.error("Erro ao arrastar tarefa:", err);
+      alert("Não foi possível salvar o movimento da tarefa.");
     }
-  };
-
-  const moveTask = (taskId, newStatus) => {
-    if (!selectedProject) return;
-
-    const updatedProjects = projects.map(project => {
-      if (project.id === selectedProject.id) {
-        const updatedTasks = project.tasks.map(task =>
-          task.id === taskId ? { ...task, status: newStatus } : task
-        );
-        return {
-          ...project,
-          tasks: updatedTasks,
-          progress: calculateProgress(updatedTasks)
-        };
-      }
-      return project;
-    });
-
-    setProjects(updatedProjects);
-    setSelectedProject(
-      updatedProjects.find(p => p.id === selectedProject.id) || null
-    );
   };
 
   const getColumnIcon = (column) => {
@@ -521,20 +548,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="flex gap-2">
-              <Button
-                variant="outline"
-                onClick={() => handleEditProject(selectedProject)}
-              >
-                <Edit className="mr-2 h-4 w-4" />
-                Editar Projeto
-              </Button>
-              <Button
-                variant="destructive"
-                onClick={() => handleDeleteProject(selectedProject.id)}
-              >
-                <Trash2 className="mr-2 h-4 w-4" />
-                Excluir Projeto
-              </Button>
+
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -830,11 +844,10 @@ export default function Projects() {
         </Select>
       </div>
 
-      {/* Grid de Projetos */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredProjects.map((project) => (
           <Card
-            key={project.id_projeto}
+            key={project.id_projeto} // Identificador único do banco de dados
             className="hover:shadow-lg transition-shadow"
           >
             <CardHeader>
@@ -854,12 +867,6 @@ export default function Projects() {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
                     <DropdownMenuItem
-                      onClick={() => handleViewProject(project)}
-                    >
-                      <Eye className="mr-2 h-4 w-4" />
-                      Ver Detalhes
-                    </DropdownMenuItem>
-                    <DropdownMenuItem
                       onClick={() => handleEditProject(project)}
                     >
                       <Edit className="mr-2 h-4 w-4" />
@@ -867,7 +874,7 @@ export default function Projects() {
                     </DropdownMenuItem>
                     <DropdownMenuItem
                       onClick={() =>
-                        handleDeleteProject(project.id)
+                        handleDeleteProject(project.id_projeto) // Referência correta ao banco
                       }
                       className="text-destructive"
                     >
@@ -878,7 +885,7 @@ export default function Projects() {
                 </DropdownMenu>
               </div>
 
-              <CardDescription>
+              <CardDescription className="line-clamp-2">
                 {project.description}
               </CardDescription>
             </CardHeader>
