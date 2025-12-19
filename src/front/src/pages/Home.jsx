@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Button } from "../components/ui/button";
+import logo from '../assets/images/logowb.png';
 import {
   FileArchive,
   Cloud,
@@ -206,6 +207,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <div className="bg-white p-8 rounded-2xl shadow-xl">
                   <div className="flex items-center justify-center h-64 w-64">
+                    <img src={logo} alt="Logo" className="max-h-full max-w-full" />
                   </div>
                 </div>
               </div>
