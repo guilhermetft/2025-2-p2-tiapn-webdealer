@@ -24,13 +24,19 @@ O Webdealer tem o propósito de ser uma plataforma que visa apresentar ao mundo 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+### 1 - Acesso à Aplicação
 
-Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+O Webdealer é uma aplicação web, e está totalmente hospedada e pode ser acessada através do link oficial abaixo: <br> https://2025-2-p2-tiapn-webdealer.vercel.app
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+### 2 - Credenciais de Teste
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Para navegar pelas funcionalidades restritas e testar o fluxo completo do sistema, utilize os seguintes dados de acesso:
+
+`E-mail: adm@adm.com`
+
+`Senha: 123456`
+
+
 
 # Documentação
 
